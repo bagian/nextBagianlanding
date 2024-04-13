@@ -28,7 +28,6 @@ const Menu = () => {
   useGSAP(
     () => {
       gsap.set(".menu-link-item-holder", { y: 75 });
-
       tl.current = gsap
         .timeline({ paused: true })
         .to(".menu-overlay", {
@@ -39,11 +38,32 @@ const Menu = () => {
         .to(".menu-link-item-holder", {
           y: 2,
           duration: 1,
-          stagger: 0.15,
+          stagger: 0.12,
           ease: "power4.inOut",
           delay: -0.25,
+        })
+        .to(
+          ".menu-info-social",
+          {
+            x: -4,
+            duration: 0.9,
+            stagger: 0.18,
+            ease: "power4.inOut",
+            delay: -0.2,
+            opacity: 1,
+          },
+          "+=30%"
+        )
+        .to(".info-geo-location", {
+          x: 40,
+          duration: 0.7,
+          stagger: 0.2,
+          ease: "power4.inOut",
+          delay: -0.5,
+          opacity: 1,
         });
     },
+
     { scope: container }
   );
 
@@ -55,62 +75,9 @@ const Menu = () => {
     }
   }, [isMenuOpen]);
   return (
-    // <div className="menu-container" ref={container}>
-    //   <div className="menu-bar">
-    //     <div className="menu-logo">
-    //       <Link href="/">Bagian.Corps</Link>
-    //     </div>
-    //     <div className="menu-open" onClick={toggleMenu}>
-    //       <p className="cursor-pointer">Menu</p>
-    //     </div>
-    //   </div>
-    //   <div className="menu-overlay">
-    //     <div className="menu-overlay-bar">
-    //       <div className="menu-logo">
-    //         <Link href="/">Bagian.Corps</Link>
-    //       </div>
-    //       <div className="menu-close" onClick={toggleMenu}>
-    //         <p className="cursor-pointer">Close</p>
-    //       </div>
-    //     </div>
-    //     <div className="menu-close-icon">
-    //       <p>&#x2715;</p>
-    //     </div>
-    //     <div className="menu-copy">
-    //       <div className="menu-links">
-    //         {menuLinks.map((link, index) => (
-    //           <div className="menu-link-item" key={index}>
-    //             <div className="menu-link-item-holder" onClick={toggleMenu}>
-    //               <Link href={link.path} className="menu-link">
-    //                 {link.label}
-    //               </Link>
-    //             </div>
-    //           </div>
-    //         ))}
-    //       </div>
-    //       <div className="menu-info">
-    //         <div className="menu-info-col">
-    //           <a href="#">lorem&#8599;</a>
-    //           <a href="#">lorem&#8599;</a>
-    //           <a href="#">lorem&#8599;</a>
-    //           <a href="#">lorem&#8599;</a>
-    //           <a href="#">lorem&#8599;</a>
-    //         </div>
-    //         <div className="menu-info-col">
-    //           <p>Indonesia, Jakarta. Sudirman x44, 3rd Floor</p>
-    //           <p>2109 3128 3189</p>
-    //         </div>
-    //       </div>
-    //     </div>
-    //     <div className="menu-preview">
-    //       <p>Need view? please contact</p>
-    //     </div>
-    //   </div>
-    // </div>
-
     <div className="menu-container" ref={container}>
       <div className="menu-bar">
-        <div className="font-extrabold menu-logo">
+        <div className="menu-logo">
           <Link href="/">Bagian.corps</Link>
         </div>
         <div className="menu-open" onClick={toggleMenu}>
@@ -119,7 +86,7 @@ const Menu = () => {
       </div>
       <div className="menu-overlay">
         <div className="menu-overlay-bar">
-          <div className="font-extrabold menu-logo">
+          <div className="menu-logo">
             <Link href="/">Bagian.corps</Link>
           </div>
           <div className="menu-close" onClick={toggleMenu}>
@@ -142,14 +109,14 @@ const Menu = () => {
             ))}
           </div>
           <div className="menu-info">
-            <div className="menu-info-col">
+            <div className="menu-info-col menu-info-social">
               <a href="#">X&#8599;</a>
               <a href="#">Youtube&#8599;</a>
               <a href="#">Behance&#8599;</a>
               <a href="#">Dribbble&#8599;</a>
               <a href="#">Instagram&#8599;</a>
             </div>
-            <div className="menu-info-col">
+            <div className="menu-info-col info-geo-location">
               <p>Indonesia, Surabaya. Sudirman x44, 3rd Floor</p>
               <p>2109 3128 3189</p>
             </div>
