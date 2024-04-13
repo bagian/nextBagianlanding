@@ -45,7 +45,7 @@ const Menu = () => {
         .to(
           ".menu-info-social",
           {
-            x: -4,
+            // x: 10,
             duration: 0.9,
             stagger: 0.18,
             ease: "power4.inOut",
@@ -55,7 +55,7 @@ const Menu = () => {
           "+=30%"
         )
         .to(".info-geo-location", {
-          x: 40,
+          x: 10,
           duration: 0.7,
           stagger: 0.2,
           ease: "power4.inOut",
@@ -74,6 +74,7 @@ const Menu = () => {
       tl.current.reverse();
     }
   }, [isMenuOpen]);
+
   return (
     <div className="menu-container" ref={container}>
       <div className="menu-bar">
@@ -124,7 +125,10 @@ const Menu = () => {
         </div>
         <div className="menu-preview">
           <p>
-            est <sup>2019</sup>
+            est
+            <sup style={{ transform: "rotate(6deg)", display: "inline-flex" }}>
+              2019
+            </sup>
           </p>
         </div>
       </div>
