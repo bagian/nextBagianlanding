@@ -10,6 +10,19 @@
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+  overflow: hidden;
+}
+
+.menu-bar {
+  .menu-logo {
+    mix-blend-mode: difference;
+  }
+}
+
+.menu-overlay-bar {
+  .menu-logo {
+    mix-blend-mode: difference;
+  }
 }
 
 .menu-overlay-bar {
@@ -70,7 +83,7 @@
     left: 0;
     top: 0;
     // bottom: -130px;
-    filter: blur(500px);
+    // filter: blur(500px);
   }
 }
 
@@ -155,6 +168,7 @@
 
 .menu-info-social a {
   line-height: 150%;
+
 }
 
 // .menu-info-social {

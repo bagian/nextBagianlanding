@@ -1,0 +1,42 @@
+@font-face {
+    font-family: LeMurmure;
+    src: url('./fonts/LeMurmure-Regular.woff2'), url('./fonts/LeMurmure-Regular.eot'), url('./fonts/LeMurmure-Regular.woff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.page-header {
+    .page-content {
+        .page-wrapper {
+            // opacity: 0;
+
+            .page-stag {
+                // opacity: 0;
+                // clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+                // clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%),
+            }
+
+            .tagger-tag {
+                // position: absolute;
+                top: 0;
+                right: 64rem;
+                background-color: rgb(51, 49, 49);
+                transform: rotate(-15deg);
+            }
+
+            .title-top {
+                opacity: 0;
+            }
+
+            .title-base {
+                opacity: 0;
+            }
+
+            .title-x {
+                font-size: 190px;
+                line-height: 90%;
+                font-family: 'LeMurmure';
+            }
+        }
+    }
+}

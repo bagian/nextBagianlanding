@@ -7,17 +7,28 @@ body {
   background: #000;
 }
 
+.page-header {
+  max-width: 1440px;
+  margin: auto;
+}
 .page-content {
   width: 100%;
-  height: 100%;
-  min-heigh: 100vh;
-  /* padding: 6em 2em; */
+  /* height: 100%;
+  /* min-heigh: 100vh; */
   color: #fff;
+  /* max-width: 1440px; */
+  justify-content: center;
+  /* position: relative; */
 }
 
-h1 {
-  position: absolute;
-  top: 50%;
-  left: 45%;
-  transform: traslate(-50%, -50%);
+.page-wrapper {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
