@@ -11,7 +11,7 @@ const menuLinks = [
   { path: "/", label: "Home" },
   { path: "/about", label: "About" },
   { path: "/works", label: "Work" },
-  { path: "/contact", label: "Contact" },
+  { path: "/teams", label: "Teams" },
 ];
 
 const Menu = () => {
@@ -79,7 +79,9 @@ const Menu = () => {
     <div className="menu-container" ref={container}>
       <div className="menu-bar">
         <div className="menu-logo">
-          <Link href="/">Bagian.corps</Link>
+          <Link href="/" className="path-logo">
+            Bagian.corps
+          </Link>
         </div>
         <div className="menu-open" onClick={toggleMenu}>
           <p>Menu</p>
@@ -88,7 +90,9 @@ const Menu = () => {
       <div className="menu-overlay">
         <div className="menu-overlay-bar">
           <div className="menu-logo">
-            <Link href="/">Bagian.corps</Link>
+            <Link href="/" className="path-logo">
+              Bagian.corps
+            </Link>
           </div>
           <div className="menu-close" onClick={toggleMenu}>
             <p>Close</p>

@@ -13,15 +13,21 @@
   overflow: hidden;
 }
 
+// .menu-overlay {
+// }
+
 .menu-bar {
+  z-index: 1;
+
   .menu-logo {
-    mix-blend-mode: difference;
+    mix-blend-mode: exclusion;
+    color: white;
   }
 }
 
 .menu-overlay-bar {
   .menu-logo {
-    mix-blend-mode: difference;
+    mix-blend-mode: exclusion;
   }
 }
 

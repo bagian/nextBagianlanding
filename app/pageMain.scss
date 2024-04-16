@@ -33,10 +33,59 @@
             }
 
             .title-x {
-                font-size: 190px;
                 line-height: 90%;
                 font-family: 'LeMurmure';
             }
+
         }
+
+    }
+}
+
+
+
+
+@media (100px <=width <=479px) {
+
+    .title-x {
+        font-size: 50px;
+        line-height: 20%;
+        font-family: 'LeMurmure';
+        display: flex;
+        flex: 2;
+        flex-direction: row;
+        text-align: center;
+        transform: translate(0px, 20px);
+    }
+}
+
+@media (480px <=width <=959px) {
+
+    .title-x {
+        font-size: 90px;
+        line-height: 90%;
+        font-family: 'LeMurmure';
+        display: flex;
+        flex: 4;
+        flex-direction: row;
+        text-align: center;
+    }
+}
+
+@media (960px <=width <=1203px) {
+    .title-x {
+        font-size: 190px;
+        display: flex;
+        flex: 4;
+        flex-direction: row;
+    }
+}
+
+@media (width >=1204px) {
+    .title-x {
+        font-size: 190px;
+        display: flex;
+        flex: 4;
+        flex-direction: row;
     }
 }
