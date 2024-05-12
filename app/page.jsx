@@ -90,7 +90,7 @@ const Home = () => {
         <div className="3d-move">
           <Spline
             style={splineStyles}
-            scene="https://prod.spline.design/IZsnc6rtgQN4fz8I/scene.splinecode"
+            scene="https://prod.spline.design/4Y8X7O6Oe9mN6UL0/scene.splinecode"
           />
           {/* <Spline
             style={splineStyles}
