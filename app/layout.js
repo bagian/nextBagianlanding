@@ -6,6 +6,8 @@ import SmoothScroll from "@/app/components/smoothscroll/SmoothScroll";
 
 const inter = Inter({ subsets: ["latin"] });
 
+<link rel="icon" href="/favicon.ico?<generated>" sizes="32x32" />;
+
 export const metadata = {
   title: "Bagian",
   description:
