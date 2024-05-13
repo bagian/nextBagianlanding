@@ -7,6 +7,8 @@ import Link from "next/link";
 import StarsBw from "./components/svg/StarsBw";
 import StarsWhite from "./components/svg/StarsWhite";
 
+import MarqueeText from "./components/MarqueeText";
+
 import Image from "next/image";
 
 import gsap from "gsap";
@@ -127,17 +129,17 @@ const Home = () => {
                   Get your
                   <span style={pathStyles}>dream</span>
                 </div>
-                <span className="text-center title-x title-base flex flex-row gap-3">
+                <span className="flex flex-row gap-3 text-center title-x title-base">
                   Idea<span style={pathStyles}>to life.</span>
                 </span>
-                <p className="mt-10 text-gray-500 path-p-side flex gap-3">
+                <p className="flex gap-3 mt-10 text-gray-500 path-p-side">
                   We create <StarsBw /> We Deploy <StarsBw /> We Maintenance
                 </p>
                 {/* <span className="getStarted">Get Started</span> */}
               </div>
             </div>
             <div className="page-container">
-              <div className="pageBig-headtitle my-[20em] relative">
+              <div className="pageBig-headtitle mt-[20em] relative">
                 <Image
                   src="/logo/circle-about-bagian_.png"
                   alt="logo"
@@ -147,7 +149,7 @@ const Home = () => {
                   quality={100}
                   className="w-[150px] h-[150px] absolute -top-[3em] z-10 -right-[3em] logosCircle-bagian"
                 />
-                <div className="mt-32 p-8 relative pageBig-item">
+                <div className="relative p-8 mt-32 pageBig-item">
                   <p className="text-[9rem] text-start">Intro.</p>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -161,9 +163,14 @@ const Home = () => {
                   </p>
                 </div>
               </div>
+              <div className="marqueeContainer">
+                <div className="marqueeWrapper">
+                  <MarqueeText />
+                </div>
+              </div>
               <div className="workRecents">
-                <div className="workShowoff xl:flex justify-between items-end h-">
-                  <div className="workShowoff-title flex">
+                <div className="items-end justify-between workShowoff xl:flex h-">
+                  <div className="flex workShowoff-title">
                     <span className="workShowoff-titleChild">Work</span>
                     <StarsWhite style={svgPathStyle} className="hidden" />
                   </div>
@@ -188,13 +195,13 @@ const Home = () => {
                             quality={100}
                             className="object-cover pointer-events-none rounded-3xl imageData"
                           />
-                          <div className="pageLink my-8 flex justify-between items-center">
+                          <div className="flex items-center justify-between my-8 pageLink">
                             <span>Wise Commerce Shop</span>
-                            <div className="labelLink flex flex-row gap-3">
-                              <span className="labelSide-border p-3">
+                            <div className="flex flex-row gap-3 labelLink">
+                              <span className="p-3 labelSide-border">
                                 UI/UX Design
                               </span>
-                              <span className="labelSide-border p-3">
+                              <span className="p-3 labelSide-border">
                                 UI Concept
                               </span>
                             </div>
@@ -202,8 +209,8 @@ const Home = () => {
                         </Link>
                       </div>
                     </div>
-                    <div className="page-items mt-16">
-                      <div className="content-items overflow-hidden">
+                    <div className="mt-16 page-items">
+                      <div className="overflow-hidden content-items">
                         <Link href="https://www.kinayainterior.com">
                           <Image
                             src="/img/dataImg2.jpg"
@@ -214,13 +221,13 @@ const Home = () => {
                             quality={100}
                             className="object-cover pointer-events-none rounded-3xl imageData"
                           />
-                          <div className="pageLink my-8 flex justify-between items-center">
+                          <div className="flex items-center justify-between my-8 pageLink">
                             <span>Kinaya Interior Design</span>
-                            <div className="labelLink flex flex-row gap-3">
-                              <span className="labelSide-border p-3">
+                            <div className="flex flex-row gap-3 labelLink">
+                              <span className="p-3 labelSide-border">
                                 UI/UX Design
                               </span>
-                              <span className="labelSide-border p-3">
+                              <span className="p-3 labelSide-border">
                                 Interior
                               </span>
                             </div>
