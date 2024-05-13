@@ -204,7 +204,7 @@ const Home = () => {
                     </div>
                     <div className="page-items mt-16">
                       <div className="content-items overflow-hidden">
-                        <Link href="kinayainterior.com">
+                        <Link href="https://www.kinayainterior.com">
                           <Image
                             src="/img/dataImg2.jpg"
                             alt="logo"
