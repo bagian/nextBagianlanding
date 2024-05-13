@@ -5,6 +5,17 @@
     font-style: normal;
 }
 
+$base-max-width: 1440px;
+$base-max-margin: auto;
+
+:root {
+
+    --border-content: 1px solid #313131;
+}
+
+
+
+
 .page-header {
     .page-content {
         .page-wrapper {
@@ -25,11 +36,11 @@
             }
 
             .title-top {
-                opacity: 0;
+                opacity: 1;
             }
 
             .title-base {
-                opacity: 0;
+                opacity: 1;
             }
 
             .title-x {
@@ -57,6 +68,22 @@
         text-align: center;
         transform: translate(0px, 20px);
     }
+
+    .logosCircle-bagian {
+        display: none;
+    }
+
+    .workRecents {
+        .workShowoff {
+            .workShowoff-title {
+                .workShowoff-titleChild {
+                    svg {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (480px <=width <=959px) {
@@ -70,7 +97,16 @@
         flex-direction: row;
         text-align: center;
     }
+
+    .logosCircle-bagian {
+        display: none;
+    }
+
+    // .workRecents>.svgPath {
+    //     display: none;
+    // }
 }
+
 
 @media (960px <=width <=1203px) {
     .title-x {
@@ -87,5 +123,76 @@
         display: flex;
         flex: 4;
         flex-direction: row;
+    }
+
+    .path-p-side {
+        font-size: 20px;
+    }
+
+    .page-container {
+        width: $base-max-width;
+        margin: $base-max-margin;
+    }
+}
+
+.pageBig-headtitle {
+    border-radius: 20px;
+    color: #ffffff;
+    // background-color: #111;
+    border: var(--border-content);
+    max-width: fit-content;
+
+
+    .pageBig-item {
+        border-radius: 18px;
+        background-color: #0a0a0a;
+        margin: 35px;
+    }
+}
+
+.logosCircle-bagian {
+    animation: bagianLogos 40s linear infinite;
+}
+
+@keyframes bagianLogos {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.workShowoff {
+    height: min-content;
+    overflow: hidden;
+
+    .workShowoff-titleChild {
+        line-height: 140px;
+    }
+
+    .workShowoff-title {
+        font-weight: 800;
+        font-size: 12em;
+        text-transform: uppercase;
+    }
+}
+
+.imageData {
+    height: 800px;
+    width: 100%;
+}
+
+.pageLink {
+    .labelLink {
+        font-size: 0.8em;
+        color: #ffffff;
+
+        .labelSide-border {
+            border: 1px solid #b3b3b3;
+            border-radius: 10px;
+
+        }
     }
 }

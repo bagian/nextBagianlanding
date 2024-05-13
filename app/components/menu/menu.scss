@@ -20,14 +20,14 @@
   z-index: 1;
 
   .menu-logo {
-    mix-blend-mode: exclusion;
+    mix-blend-mode: difference;
     color: white;
   }
 }
 
 .menu-overlay-bar {
   .menu-logo {
-    mix-blend-mode: exclusion;
+    mix-blend-mode: difference;
   }
 }
 
@@ -203,4 +203,9 @@
   .menu-link-item-holder a {
     font-size: 60px;
   }
+}
+
+.path-logo {
+  font-size: 1.5em;
+  font-weight: 700;
 }

@@ -77,10 +77,10 @@ const Menu = () => {
 
   return (
     <div className="menu-container" ref={container}>
-      <div className="menu-bar">
+      <div className="menu-bar items-center ">
         <div className="menu-logo">
           <Link href="/" className="path-logo">
-            Bagian.corps
+            bagian.
           </Link>
         </div>
         <div className="menu-open" onClick={toggleMenu}>
@@ -91,7 +91,7 @@ const Menu = () => {
         <div className="menu-overlay-bar">
           <div className="menu-logo">
             <Link href="/" className="path-logo">
-              Bagian.corps
+              bagian.
             </Link>
           </div>
           <div className="menu-close" onClick={toggleMenu}>
