@@ -200,7 +200,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="marqueeContainer">
-                <div className="marqueeWrapper">
+                <div className="marqueeWrapper mt-36">
                   <MarqueeText />
                 </div>
               </div>

@@ -1,6 +1,13 @@
+// @font-face {
+//     font-family: LeMurmure;
+//     src: url('./fonts/LeMurmure-Regular.woff2'), url('./fonts/LeMurmure-Regular.eot'), url('./fonts/LeMurmure-Regular.woff') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
 @font-face {
     font-family: LeMurmure;
-    src: url('./fonts/LeMurmure-Regular.woff2'), url('./fonts/LeMurmure-Regular.eot'), url('./fonts/LeMurmure-Regular.woff') format('truetype');
+    src: url('./fonts/LeMurmure-Regular.woff2'), url('./fonts/LeMurmure-Regular.woff2'), url('./fonts/LeMurmure-Regular.eot');
     font-weight: normal;
     font-style: normal;
 }
@@ -43,11 +50,6 @@ $base-max-margin: auto;
 
             .title-base {
                 opacity: 1;
-            }
-
-            .title-x {
-                line-height: 90%;
-                font-family: 'LeMurmure', sans-serif;
             }
         }
     }
@@ -321,6 +323,18 @@ $base-max-margin: auto;
             border: 1px solid #b3b3b3;
             border-radius: 10px;
 
+        }
+    }
+}
+
+
+.page-content {
+    .page-wrapper {
+        .page-stag {
+            .title-x {
+                font-family: 'LeMurmure';
+                line-height: 1em;
+            }
         }
     }
 }
