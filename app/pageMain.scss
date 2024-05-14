@@ -18,7 +18,9 @@ $base-max-margin: auto;
 
 .page-header {
     .page-content {
-        .page-wrapper {
+        overflow: hidden;
+
+        .page-container {
             // opacity: 0;
 
             .page-stag {
@@ -45,11 +47,9 @@ $base-max-margin: auto;
 
             .title-x {
                 line-height: 90%;
-                font-family: 'LeMurmure';
+                font-family: 'LeMurmure', sans-serif;
             }
-
         }
-
     }
 }
 
@@ -59,7 +59,7 @@ $base-max-margin: auto;
 @media (100px <=width <=479px) {
 
     .title-x {
-        font-size: 50px;
+        font-size: 80px;
         line-height: 20%;
         font-family: 'LeMurmure';
         display: flex;
@@ -84,12 +84,67 @@ $base-max-margin: auto;
             }
         }
     }
+
+    .path-p-side {
+        margin-top: 5em;
+        font-size: 14px;
+    }
+
+    .pageBig-headtitle {
+        margin: 10em 20px;
+
+        img {
+            display: none;
+        }
+
+        .pageBig-intro {
+            font-size: 4rem;
+        }
+
+        .pageBig-about {
+            font-size: 14px;
+        }
+    }
+
+    .workShowoff {
+        margin: 20px;
+
+        .workShowoff-titleChild {
+            line-height: 75px;
+        }
+
+        .workShowoff-title {
+            font-weight: 800;
+            font-size: 6em;
+            text-transform: uppercase;
+        }
+
+        .workShowoff-end {
+            display: none;
+        }
+    }
+
+    .imageData {
+        height: 500px;
+        width: 100%;
+    }
+
+    .marqueeContainer {
+        overflow: hidden;
+
+        // overflow-y: auto;
+        .marqueeWrapper {}
+    }
+}
+
+.pageBig-about {
+    line-height: 1.7em;
 }
 
 @media (480px <=width <=959px) {
 
     .title-x {
-        font-size: 90px;
+        font-size: 180px;
         line-height: 90%;
         font-family: 'LeMurmure';
         display: flex;
@@ -105,6 +160,31 @@ $base-max-margin: auto;
     // .workRecents>.svgPath {
     //     display: none;
     // }
+    .pageBig-headtitle {
+        margin: 10em 20px;
+
+        .pageBig-intro {
+            font-size: 6rem;
+        }
+    }
+
+    .workShowoff {
+        margin: 20px;
+
+        .workShowoff-titleChild {
+            line-height: 75px;
+        }
+
+        .workShowoff-title {
+            font-weight: 800;
+            font-size: 6em;
+            text-transform: uppercase;
+        }
+
+        .workShowoff-end {
+            display: none;
+        }
+    }
 }
 
 
@@ -115,11 +195,40 @@ $base-max-margin: auto;
         flex: 4;
         flex-direction: row;
     }
+
+    .pageBig-headtitle {
+        margin: 10em 60px;
+
+
+        .pageBig-intro {
+            font-size: 6rem;
+        }
+
+        .pageBig-about {
+            font-size: 14px;
+        }
+    }
+
+    .workShowoff {
+        margin: 20px;
+
+        .workShowoff-titleChild {
+            line-height: 120px;
+        }
+
+        .workShowoff-title {
+            font-weight: 800;
+            font-size: 10em;
+            text-transform: uppercase;
+        }
+
+    }
+
 }
 
 @media (width >=1204px) {
     .title-x {
-        font-size: 190px;
+        font-size: 290px;
         display: flex;
         flex: 4;
         flex-direction: row;
@@ -132,6 +241,28 @@ $base-max-margin: auto;
     .page-container {
         width: $base-max-width;
         margin: $base-max-margin;
+    }
+
+    .imageData {
+        height: 800px;
+        width: 100%;
+        object-fit: cover;
+        width: max-content;
+    }
+
+    .workShowoff {
+        // margin: 20px;
+
+        .workShowoff-titleChild {
+            line-height: 120px;
+        }
+
+        .workShowoff-title {
+            font-weight: 800;
+            font-size: 10em;
+            text-transform: uppercase;
+        }
+
     }
 }
 
@@ -168,21 +299,18 @@ $base-max-margin: auto;
     height: min-content;
     overflow: hidden;
 
-    .workShowoff-titleChild {
-        line-height: 140px;
-    }
+    // .workShowoff-titleChild {
+    //     line-height: 140px;
+    // }
 
-    .workShowoff-title {
-        font-weight: 800;
-        font-size: 12em;
-        text-transform: uppercase;
-    }
+    // .workShowoff-title {
+    //     font-weight: 800;
+    //     font-size: 12em;
+    //     text-transform: uppercase;
+    // }
 }
 
-.imageData {
-    height: 800px;
-    width: 100%;
-}
+
 
 .pageLink {
     .labelLink {

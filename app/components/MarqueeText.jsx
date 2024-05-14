@@ -10,7 +10,7 @@ import styles from "./Marquee.module.scss";
 
 const _ = {
   content: "Website - Web Design - Web Application",
-  speed: 1.005,
+  speed: 2,
   threshold: 0.014,
   wheelFactor: 1.8,
   dragFactor: 5,
@@ -75,7 +75,7 @@ const InteractiveMarquee = () => {
   });
 
   const opacity = useTransform(speed, [-w * 0.25, 0, w * 0.25], [1, 0, 1]);
-  const skewX = useTransform(speed, [-w * 0.25, 0, w * 0.25], [-25, 0, 25]);
+  const skewX = useTransform(speed, [-w * 0.15, 0, w * 0.25], [-25, 0, 25]);
 
   const onWheel = (e) => {
     const normalized = normalizeWheel(e);
@@ -85,7 +85,7 @@ const InteractiveMarquee = () => {
     window.clearTimeout(isScrolling.current);
     isScrolling.current = setTimeout(function () {
       speed.set(_.speed);
-    }, 30);
+    }, 90);
   };
 
   const onDragStart = () => {
@@ -136,6 +136,8 @@ const InteractiveMarquee = () => {
         // onDragEnd={onDragEnd}
         dragElastic={0.000001} // needs to be > 0 ¯\_(ツ)_/¯
       >
+        <MarqueeItem content={_.content} speed={speed} />
+        <MarqueeItem content={_.content} speed={speed} />
         <MarqueeItem content={_.content} speed={speed} />
         <MarqueeItem content={_.content} speed={speed} />
       </motion.div>

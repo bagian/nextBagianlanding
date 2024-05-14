@@ -17,7 +17,8 @@
 // }
 
 .menu-bar {
-  z-index: 1;
+  z-index: 99;
+  mix-blend-mode: luminosity;
 
   .menu-logo {
     mix-blend-mode: difference;
@@ -43,11 +44,17 @@
   z-index: 99;
 }
 
-// .menu-open p {
-//   border: solid 2px rgb(255, 255, 255);
-//   padding: 4px 30px;
-//   border-radius: 60%;
-// }
+.menu-open {
+
+  z-index: 999;
+
+}
+
+.menu-open p {
+  // border: solid 2px rgb(255, 255, 255);
+  // padding: 4px 30px;
+  // border-radius: 60%;
+}
 
 .menu-bar a,
 .menu-open p {

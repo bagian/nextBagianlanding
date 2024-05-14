@@ -4,6 +4,9 @@ import React, { useState, useRef, useEffect } from "react";
 import "./pageMain.scss";
 import Link from "next/link";
 
+import dataImage1 from "../public/img/dataImg1.png";
+import dataImage2 from "../public/img/dataImg2.jpg";
+
 import StarsBw from "./components/svg/StarsBw";
 import StarsWhite from "./components/svg/StarsWhite";
 
@@ -103,6 +106,39 @@ const Home = () => {
   const svgPathStyle = {
     display: "none",
   };
+
+  const dataContent = [
+    {
+      title: "Wise Commerce",
+      labelOne: "UI/UX Design",
+      labelTwo: "UI Concept",
+      image: [
+        {
+          src: {
+            dataImage: { dataImage1 },
+          },
+        },
+      ],
+    },
+    {
+      title: "Kinaya Interior Design",
+      labelOne: "UI/UX Design",
+      labelTwo: "Data Label",
+      image: <Image src={dataImage2} alt="Projects Two" />,
+    },
+    {
+      title: "Lorem Ipsum 1",
+      labelOne: "Desktop Application",
+      labelTwo: "Minimalist",
+      image: <Image src={dataImage1} alt="Projects Two" />,
+    },
+    {
+      title: "Lorem Ipsum 2",
+      labelOne: "Label Lorem 1",
+      labelTwo: "Label Lorem 2",
+      image: <Image src={dataImage2} alt="Projects Two" />,
+    },
+  ];
   return (
     <>
       <section className="relative page-header">
@@ -125,7 +161,7 @@ const Home = () => {
                 {/* <span className="absolute flex items-center p-3 text-center rounded-full tagger-tag">
                 Our Mission
               </span> */}
-                <div className="flex gap-5 whitespace-nowrap title-x title-top ">
+                <div className="flex gap-5 whitespace-nowrap title-x title-top">
                   Get your
                   <span style={pathStyles}>dream</span>
                 </div>
@@ -139,7 +175,7 @@ const Home = () => {
               </div>
             </div>
             <div className="page-container">
-              <div className="pageBig-headtitle mt-[20em] relative">
+              <div className="pageBig-headtitle xl:mt-[28em] relative">
                 <Image
                   src="/logo/circle-about-bagian_.png"
                   alt="logo"
@@ -147,11 +183,11 @@ const Home = () => {
                   height={600}
                   objectFit="cover"
                   quality={100}
-                  className="w-[150px] h-[150px] absolute -top-[3em] z-10 -right-[3em] logosCircle-bagian"
+                  className="w-[150px] h-[150px] absolute -top-[3em] z-[2] -right-[3em] logosCircle-bagian"
                 />
                 <div className="relative p-8 mt-32 pageBig-item">
-                  <p className="text-[9rem] text-start">Intro.</p>
-                  <p>
+                  <p className="text-[9rem] text-start pageBig-intro">Intro.</p>
+                  <p className="my-5 pageBig-about">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Veniam nam soluta quasi similique et quod, reiciendis
                     provident repellat, facilis dolores explicabo! Obcaecati
@@ -169,70 +205,128 @@ const Home = () => {
                 </div>
               </div>
               <div className="workRecents">
-                <div className="items-end justify-between workShowoff xl:flex h-">
+                <div className="flex items-end justify-between workShowoff mt-80">
                   <div className="flex workShowoff-title">
-                    <span className="workShowoff-titleChild">Work</span>
+                    <span className="block workShowoff-titleChild">Work</span>
                     <StarsWhite style={svgPathStyle} className="hidden" />
                   </div>
                   <div className="justify-end flex text-end w-[20em] gap-6">
-                    <span className="text-gray-500">
-                      Kami membuat sesuai dengan keinginan client.
+                    <span className="text-gray-500 w-52 workShowoff-end">
+                      Kami membuat sesuai dengan keinginan anda.
                     </span>
-                    <StarsWhite />
+                    {/* <StarsWhite /> */}
                   </div>
                 </div>
-                <div className="page-wrapper">
-                  <div className="p-5 mt-[8em] pageContent grid grid-cols-1 gap-16 xl:grid-cols-2">
-                    <div className="page-items">
-                      <div className="content-items">
-                        <Link href="https://www.behance.net/gallery/95266345/Wise-UI-Fashion-Concept">
-                          <Image
-                            src="/img/dataImg1.png"
-                            alt="logo"
-                            width={1000}
-                            height={1000}
-                            objectFit="cover"
-                            quality={100}
-                            className="object-cover pointer-events-none rounded-3xl imageData"
-                          />
-                          <div className="flex items-center justify-between my-8 pageLink">
-                            <span>Wise Commerce Shop</span>
-                            <div className="flex flex-row gap-3 labelLink">
-                              <span className="p-3 labelSide-border">
-                                UI/UX Design
+                <div className="page-container">
+                  <div className="mt-24 pageContent">
+                    <div className="grid grid-cols-1 page-wrapper xl:gap-8 xl:grid-cols-2">
+                      <div className="page-items">
+                        <div className="content-items">
+                          <Link href="https://www.behance.net/gallery/95266345/Wise-UI-Fashion-Concept">
+                            <Image
+                              src={dataImage1}
+                              alt="logo"
+                              width={1000}
+                              height={1000}
+                              objectFit="cover"
+                              quality={100}
+                              className="object-cover pointer-events-none rounded-3xl imageData"
+                            />
+                            <div className="flex items-center justify-between my-8 pageLink">
+                              <span className="relative block">
+                                Lentera Fajar Indonesia
                               </span>
-                              <span className="p-3 labelSide-border">
-                                UI Concept
-                              </span>
+                              <div className="flex flex-row gap-3 labelLink">
+                                <span className="p-3 labelSide-border">
+                                  SLB
+                                </span>
+                                <span className="p-3 labelSide-border">
+                                  Company Profile
+                                </span>
+                              </div>
                             </div>
-                          </div>
-                        </Link>
+                          </Link>
+                        </div>
                       </div>
-                    </div>
-                    <div className="mt-16 page-items">
-                      <div className="overflow-hidden content-items">
-                        <Link href="https://www.kinayainterior.com">
-                          <Image
-                            src="/img/dataImg2.jpg"
-                            alt="logo"
-                            width={1000}
-                            height={1000}
-                            objectFit="cover"
-                            quality={100}
-                            className="object-cover pointer-events-none rounded-3xl imageData"
-                          />
-                          <div className="flex items-center justify-between my-8 pageLink">
-                            <span>Kinaya Interior Design</span>
-                            <div className="flex flex-row gap-3 labelLink">
-                              <span className="p-3 labelSide-border">
-                                UI/UX Design
-                              </span>
-                              <span className="p-3 labelSide-border">
-                                Interior
-                              </span>
+                      <div className="xl:mt-16 page-items">
+                        <div className="overflow-hidden content-items">
+                          <Link href="https://www.kinayainterior.com">
+                            <Image
+                              src={dataImage2}
+                              alt="logo"
+                              width={1000}
+                              height={1000}
+                              objectFit="cover"
+                              quality={100}
+                              className="object-cover pointer-events-none rounded-3xl imageData"
+                            />
+                            <div className="flex items-center justify-between my-8 pageLink">
+                              <span>Kinaya Interior Design</span>
+                              <div className="flex flex-row gap-3 labelLink">
+                                <span className="p-3 labelSide-border">
+                                  Company Profile
+                                </span>
+                                <span className="p-3 labelSide-border">
+                                  Interior
+                                </span>
+                              </div>
                             </div>
-                          </div>
-                        </Link>
+                          </Link>
+                        </div>
+                      </div>
+                      <div className="page-items">
+                        <div className="content-items">
+                          <Link href="https://www.behance.net/gallery/95266345/Wise-UI-Fashion-Concept">
+                            <Image
+                              src={dataImage1}
+                              alt="logo"
+                              width={1000}
+                              height={1000}
+                              objectFit="cover"
+                              quality={100}
+                              className="object-cover pointer-events-none rounded-3xl imageData"
+                            />
+                            <div className="flex items-center justify-between my-8 pageLink">
+                              <span className="relative block">
+                                Lentera Fajar Indonesia
+                              </span>
+                              <div className="flex flex-row gap-3 labelLink">
+                                <span className="p-3 labelSide-border">
+                                  SLB
+                                </span>
+                                <span className="p-3 labelSide-border">
+                                  Company Profile
+                                </span>
+                              </div>
+                            </div>
+                          </Link>
+                        </div>
+                      </div>
+                      <div className="xl:mt-16 page-items">
+                        <div className="overflow-hidden content-items">
+                          <Link href="https://www.kinayainterior.com">
+                            <Image
+                              src={dataImage2}
+                              alt="logo"
+                              width={1000}
+                              height={1000}
+                              objectFit="cover"
+                              quality={100}
+                              className="object-cover pointer-events-none rounded-3xl imageData"
+                            />
+                            <div className="flex items-center justify-between my-8 pageLink">
+                              <span>Kinaya Interior Design</span>
+                              <div className="flex flex-row gap-3 labelLink">
+                                <span className="p-3 labelSide-border">
+                                  Company Profile
+                                </span>
+                                <span className="p-3 labelSide-border">
+                                  Interior
+                                </span>
+                              </div>
+                            </div>
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>
