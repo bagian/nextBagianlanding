@@ -6,6 +6,9 @@ import Link from "next/link";
 
 import dataImage1 from "../public/img/dataImg1.png";
 import dataImage2 from "../public/img/dataImg2.jpg";
+import SoonGreen from "../public/img/soon-backdrop.jpg";
+import SoonBlue from "../public/img/soon-backdrop-blue.jpg";
+import Lentera from "../public/img/lentera-fajar-indonesia.jpg";
 
 import StarsBw from "./components/svg/StarsBw";
 import StarsWhite from "./components/svg/StarsWhite";
@@ -175,7 +178,7 @@ const Home = () => {
               </div>
             </div>
             <div className="page-container">
-              <div className="pageBig-headtitle xl:mt-[28em] relative">
+              <div className="pageBig-headtitle lg:m-28 xl:mt-[28em] relative">
                 <Image
                   src="/logo/circle-about-bagian_.png"
                   alt="logo"
@@ -200,7 +203,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="marqueeContainer">
-                <div className="marqueeWrapper mt-36">
+                <div className="marqueeWrapper xl:mt-36">
                   <MarqueeText />
                 </div>
               </div>
@@ -219,15 +222,18 @@ const Home = () => {
                 </div>
                 <div className="page-container">
                   <div className="mt-24 pageContent">
-                    <div className="grid grid-cols-1 page-wrapper xl:gap-8 xl:grid-cols-2">
+                    <div className="grid grid-cols-1 page-wrapper lg:grid-cols-2 lg:gap-8 xl:gap-8 xl:grid-cols-2">
                       <div className="page-items">
                         <div className="content-items">
-                          <Link href="https://www.behance.net/gallery/95266345/Wise-UI-Fashion-Concept">
+                          <Link
+                            href="https://www.lenterafajarindonesia.sch.id"
+                            target="_blank"
+                          >
                             <Image
-                              src={dataImage1}
+                              src={Lentera}
                               alt="logo"
-                              width={1000}
-                              height={1000}
+                              width={2000}
+                              height={2000}
                               objectFit="cover"
                               quality={100}
                               className="object-cover pointer-events-none rounded-3xl imageData"
@@ -248,14 +254,17 @@ const Home = () => {
                           </Link>
                         </div>
                       </div>
-                      <div className="xl:mt-16 page-items">
+                      <div className="xl:mt-16 lg:mt-16 page-items">
                         <div className="overflow-hidden content-items">
-                          <Link href="https://www.kinayainterior.com">
+                          <Link
+                            href="https://www.kinayainterior.com"
+                            target="_blank"
+                          >
                             <Image
                               src={dataImage2}
                               alt="logo"
-                              width={1000}
-                              height={1000}
+                              width={2000}
+                              height={2000}
                               objectFit="cover"
                               quality={100}
                               className="object-cover pointer-events-none rounded-3xl imageData"
@@ -276,52 +285,52 @@ const Home = () => {
                       </div>
                       <div className="page-items">
                         <div className="content-items">
-                          <Link href="https://www.behance.net/gallery/95266345/Wise-UI-Fashion-Concept">
+                          <Link href="#" target="_blank">
                             <Image
-                              src={dataImage1}
+                              src={SoonBlue}
                               alt="logo"
-                              width={1000}
-                              height={1000}
+                              width={2000}
+                              height={2000}
                               objectFit="cover"
                               quality={100}
                               className="object-cover pointer-events-none rounded-3xl imageData"
                             />
                             <div className="flex items-center justify-between my-8 pageLink">
                               <span className="relative block">
-                                Lentera Fajar Indonesia
+                                Coming Soon
                               </span>
                               <div className="flex flex-row gap-3 labelLink">
                                 <span className="p-3 labelSide-border">
-                                  SLB
+                                  Tbd
                                 </span>
                                 <span className="p-3 labelSide-border">
-                                  Company Profile
+                                  Tbd
                                 </span>
                               </div>
                             </div>
                           </Link>
                         </div>
                       </div>
-                      <div className="xl:mt-16 page-items">
+                      <div className="xl:mt-16 lg:mt-16 page-items">
                         <div className="overflow-hidden content-items">
-                          <Link href="https://www.kinayainterior.com">
+                          <Link href="#" target="_blank">
                             <Image
-                              src={dataImage2}
+                              src={SoonGreen}
                               alt="logo"
-                              width={1000}
-                              height={1000}
+                              width={2000}
+                              height={2000}
                               objectFit="cover"
                               quality={100}
                               className="object-cover pointer-events-none rounded-3xl imageData"
                             />
                             <div className="flex items-center justify-between my-8 pageLink">
-                              <span>Kinaya Interior Design</span>
+                              <span>Coming Soon</span>
                               <div className="flex flex-row gap-3 labelLink">
                                 <span className="p-3 labelSide-border">
-                                  Company Profile
+                                  Tbd
                                 </span>
                                 <span className="p-3 labelSide-border">
-                                  Interior
+                                  Tbd
                                 </span>
                               </div>
                             </div>

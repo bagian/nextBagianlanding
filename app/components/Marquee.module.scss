@@ -47,7 +47,7 @@
 
 .sliderContainer {
     position: relative;
-    // top: calc(100vh - 350px);
+    // top: calc(1vh - 350px);
 }
 
 .slider {
@@ -58,8 +58,8 @@
 .slider p {
     position: relative;
     margin: 0px;
-    color: white;
-    font-size: 450px;
+    color: #fff;
+    // font-size: 450px;
     font-weight: 500;
     // padding-right: -50px;
 }
@@ -70,8 +70,26 @@
     top: 0;
 }
 
-.slider p:nth-of-type(3) {
-    position: absolute;
-    left: 100%;
-    top: 0;
+@media (100px <=width <=479px) {
+    .slider p {
+        font-size: 100px;
+    }
+}
+
+@media (480px <=width <=959px) {
+    .slider p {
+        font-size: 120px;
+    }
+}
+
+@media (960px <=width <=1203px) {
+    .slider p {
+        font-size: 260px;
+    }
+}
+
+@media (width >=1204px) {
+    .slider p {
+        font-size: 450px;
+    }
 }

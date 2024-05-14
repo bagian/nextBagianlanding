@@ -179,12 +179,12 @@ export default function MarqueeText() {
     gsap.to(slider.current, {
       scrollTrigger: {
         trigger: document.documentElement,
-        scrub: 0.2,
-        start: 0,
+        scrub: 5,
+        start: 10,
         end: window.innerHeight,
-        onUpdate: (e) => (direction = e.direction * -0.2),
+        onUpdate: (e) => (direction = e.direction * -0.1),
       },
-      x: "-500px",
+      x: "-1200px",
     });
     requestAnimationFrame(animate);
   }, []);
@@ -205,16 +205,16 @@ export default function MarqueeText() {
     <main className={styles.main}>
       <div className={styles.sliderContainer}>
         <motion.div ref={slider} className={styles.slider}>
-          <p className="flex gap-40" ref={firstText}>
+          <p className="flex gap-10 xl:gap-[17rem]" ref={firstText}>
             Website <StarsWhite /> Web Design
             <StarsWhite />
-            Web Application &nbsp;
+            Web Application
             <StarsWhite />
             &nbsp;
           </p>
-          <p className="flex gap-40" ref={secondText}>
-            &nbsp;Website <StarsWhite /> Web Design <StarsWhite /> Web
-            Application &nbsp;
+          <p className="flex gap-10 xl:gap-[17rem]" ref={secondText}>
+            Website <StarsWhite /> Web Design <StarsWhite /> Web Application
+            &nbsp;
             <StarsWhite />
           </p>
         </motion.div>
