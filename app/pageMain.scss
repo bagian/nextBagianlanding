@@ -14,6 +14,10 @@
 
 $base-max-width: 1440px;
 $base-max-margin: auto;
+$base-max-margin-container: 5rem;
+$base-before-color-bg: rgb(20, 36, 115);
+$base-after-color-bg: rgb(40, 93, 109);
+$base-partnerIncase-bg: rgb(15, 15, 18);
 
 :root {
 
@@ -80,7 +84,7 @@ $base-max-margin: auto;
 
         .page-container {
             .pageContent {
-                margin: 20px;
+                margin: 30px;
             }
         }
 
@@ -120,7 +124,7 @@ $base-max-margin: auto;
     }
 
     .workShowoff {
-        margin: 20px;
+        margin: 30px;
 
         .workShowoff-titleChild {
             line-height: 75px;
@@ -138,13 +142,17 @@ $base-max-margin: auto;
     }
 
     .imageData {
-        height: 600px;
+        height: 480px;
         width: 100%;
     }
 
     .marqueeContainer {
         overflow: hidden;
 
+    }
+
+    .labelLink {
+        display: none;
     }
 }
 
@@ -154,8 +162,9 @@ $base-max-margin: auto;
 
 @media (480px <=width <=959px) {
 
+
     .title-x {
-        font-size: 180px;
+        font-size: 8em;
         line-height: 90%;
         font-family: 'LeMurmure';
         display: flex;
@@ -224,7 +233,7 @@ $base-max-margin: auto;
     }
 
     .imageData {
-        height: 600px;
+        height: 480px;
         width: 100%;
     }
 }
@@ -304,14 +313,24 @@ $base-max-margin: auto;
         font-size: 20px;
     }
 
-    .page-container {
-        width: $base-max-width;
-        margin: $base-max-margin;
+    .workRecents {
+        .workShowoff {
+            max-width: $base-max-width;
+            margin: $base-max-margin;
+        }
+
+        .page-container {
+            margin: $base-max-margin;
+
+            .page-wrapper {
+                max-width: $base-max-width;
+
+            }
+        }
     }
 
     .content-items {
         overflow: hidden;
-
 
         .imageData {
             height: 800px;
@@ -321,7 +340,6 @@ $base-max-margin: auto;
     }
 
     .workShowoff {
-
         .workShowoff-titleChild {
             line-height: 120px;
         }
@@ -344,27 +362,51 @@ $base-max-margin: auto;
         }
 
         .workShowoff {
-            margin: 50px;
             height: 122px;
             line-height: 20px;
             margin-bottom: 125px;
         }
     }
 
+    .page-container {
+        margin-top: 35rem;
+        margin: $base-max-margin-container;
+
+        .pageBig-headtitle {
+            border: var(--border-content);
+            max-width: $base-max-width;
+            margin: $base-max-margin;
+
+        }
+    }
+
+    .partnerIncase-container {
+        border-radius: 60px;
+
+        .partnerIncase-wrapper {
+            max-width: $base-max-width;
+        }
+    }
 }
 
-.pageBig-headtitle {
-    border-radius: 20px;
-    color: #ffffff;
-    // background-color: #111;
-    border: var(--border-content);
-    max-width: fit-content;
+.partnerIncase-bg {
+    background-color: $base-partnerIncase-bg;
+}
+
+.page-container {
+
+    .pageBig-headtitle {
+        border-radius: 20px;
+        color: #ffffff;
+        border: var(--border-content);
+        max-width: $base-max-width;
 
 
-    .pageBig-item {
-        border-radius: 18px;
-        background-color: #0a0a0a;
-        margin: 35px;
+        .pageBig-item {
+            border-radius: 18px;
+            background-color: #0a0a0a;
+            margin: 35px;
+        }
     }
 }
 
@@ -397,7 +439,43 @@ $base-max-margin: auto;
     // }
 }
 
+.pageBig-item {
+    z-index: 2;
 
+    &::before {
+        background-color: $base-before-color-bg;
+        position: absolute;
+        z-index: -1;
+        bottom: -260px;
+        left: -340px;
+        content: "";
+        height: 440px;
+        width: 440px;
+        border-radius: 100%;
+        filter: blur(280px);
+        -o-filter: blur(280px);
+        -ms-filter: blur(280px);
+        -moz-filter: blur(280px);
+        -webkit-filter: blur(280px);
+    }
+
+    &::after {
+        background-color: $base-after-color-bg;
+        position: absolute;
+        z-index: -1;
+        top: -260px;
+        right: -340px;
+        content: "";
+        height: 440px;
+        width: 440px;
+        border-radius: 100%;
+        filter: blur(280px);
+        -o-filter: blur(280px);
+        -ms-filter: blur(280px);
+        -moz-filter: blur(280px);
+        -webkit-filter: blur(280px);
+    }
+}
 
 .pageLink {
     .labelLink {

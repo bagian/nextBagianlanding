@@ -186,24 +186,29 @@ const Home = () => {
                   height={600}
                   objectFit="cover"
                   quality={100}
-                  className="w-[150px] h-[150px] absolute -top-[3em] z-[2] -right-[3em] logosCircle-bagian"
+                  className="w-[150px] h-[150px] absolute -top-[3em] z-[3] -right-[3em] logosCircle-bagian"
                 />
-                <div className="relative p-8 mt-32 pageBig-item">
+                <div className="relative p-8 mt-32 pageBig-item overflow-hidden">
                   <p className="text-[9rem] text-start pageBig-intro">Intro.</p>
                   <p className="my-5 pageBig-about">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Veniam nam soluta quasi similique et quod, reiciendis
-                    provident repellat, facilis dolores explicabo! Obcaecati
-                    quibusdam aperiam eligendi amet nesciunt eius, odio
-                    voluptatum. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Suscipit harum autem officiis maxime sit
-                    non, totam facere ea corporis quas alias, natus odit libero
-                    ratione? Quaerat molestiae rerum eos debitis?
+                    Perusahaan <strong>Bagian</strong> yang bergerak dalam
+                    software house dan pembuatan website memiliki peran penting
+                    dalam memfasilitasi kebutuhan digital perusahaan dan
+                    individu, mulai dari solusi perangkat lunak kustom hingga
+                    representasi online melalui website dan aplikasi. Kami
+                    berusaha untuk memberikan solusi yang inovatif, efisien, dan
+                    sesuai dengan kebutuhan klien kami. Dalam pembuatan website
+                    memiliki peran yang krusial dalam mendukung transformasi
+                    digital perusahaan dan organisasi di era digital ini. Dengan
+                    fokus pada pengembangan perangkat lunak berkualitas tinggi
+                    dan pembuatan website yang menarik, kami membantu klien
+                    mencapai tujuan mereka dan tetap bersaing di pasar yang
+                    semakin kompetitif.
                   </p>
                 </div>
               </div>
               <div className="marqueeContainer">
-                <div className="marqueeWrapper xl:mt-36">
+                <div className="marqueeWrapper md:mt-52 lg:mt-52 xl:mt-52">
                   <MarqueeText />
                 </div>
               </div>
@@ -222,7 +227,7 @@ const Home = () => {
                 </div>
                 <div className="page-container">
                   <div className="mt-24 pageContent">
-                    <div className="grid grid-cols-1 page-wrapper lg:grid-cols-2 lg:gap-8 xl:gap-8 xl:grid-cols-2">
+                    <div className="grid grid-cols-1 page-wrapper md:grid-cols-2 md:gap-8 lg:grid-cols-2 lg:gap-8 xl:gap-8 xl:grid-cols-2">
                       <div className="page-items">
                         <div className="content-items">
                           <Link
@@ -243,10 +248,10 @@ const Home = () => {
                                 Lentera Fajar Indonesia
                               </span>
                               <div className="flex flex-row gap-3 labelLink">
-                                <span className="p-3 labelSide-border">
+                                <span className="p-3 labelSide-border whitespace-nowrap">
                                   SLB
                                 </span>
-                                <span className="p-3 labelSide-border">
+                                <span className="p-3 labelSide-border whitespace-nowrap">
                                   Company Profile
                                 </span>
                               </div>
@@ -254,7 +259,7 @@ const Home = () => {
                           </Link>
                         </div>
                       </div>
-                      <div className="xl:mt-16 lg:mt-16 page-items">
+                      <div className="xl:mt-16 lg:mt-16 md:mt-16 page-items">
                         <div className="overflow-hidden content-items">
                           <Link
                             href="https://www.kinayainterior.com"
@@ -272,10 +277,10 @@ const Home = () => {
                             <div className="flex items-center justify-between my-8 pageLink">
                               <span>Kinaya Interior Design</span>
                               <div className="flex flex-row gap-3 labelLink">
-                                <span className="p-3 labelSide-border">
+                                <span className="p-3 labelSide-border whitespace-nowrap">
                                   Company Profile
                                 </span>
-                                <span className="p-3 labelSide-border">
+                                <span className="p-3 labelSide-border whitespace-nowrap">
                                   Interior
                                 </span>
                               </div>
@@ -300,10 +305,10 @@ const Home = () => {
                                 Coming Soon
                               </span>
                               <div className="flex flex-row gap-3 labelLink">
-                                <span className="p-3 labelSide-border">
+                                <span className="p-3 labelSide-border whitespace-nowrap">
                                   Tbd
                                 </span>
-                                <span className="p-3 labelSide-border">
+                                <span className="p-3 labelSide-border whitespace-nowrap">
                                   Tbd
                                 </span>
                               </div>
@@ -311,7 +316,7 @@ const Home = () => {
                           </Link>
                         </div>
                       </div>
-                      <div className="xl:mt-16 lg:mt-16 page-items">
+                      <div className="xl:mt-16 lg:mt-16 md:mt-16 page-items">
                         <div className="overflow-hidden content-items">
                           <Link href="#" target="_blank">
                             <Image
@@ -326,10 +331,10 @@ const Home = () => {
                             <div className="flex items-center justify-between my-8 pageLink">
                               <span>Coming Soon</span>
                               <div className="flex flex-row gap-3 labelLink">
-                                <span className="p-3 labelSide-border">
+                                <span className="p-3 labelSide-border whitespace-nowrap">
                                   Tbd
                                 </span>
-                                <span className="p-3 labelSide-border">
+                                <span className="p-3 labelSide-border whitespace-nowrap">
                                   Tbd
                                 </span>
                               </div>
@@ -342,6 +347,126 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            {/* <div className="partnerIncase-container partnerIncase-bg my-20">
+              <div className="partnerIncase-wrapper m-auto">
+                <div className="partnerIncase-content flex">
+                  <div className="parnetIncase-items p-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam incidunt id quam possimus natus itaque iusto,
+                    doloremque voluptate ab, sequi iste. Non vero consequatur
+                    illo, maxime quisquam doloribus soluta ex totam perspiciatis
+                    cupiditate tempore harum iste repellat quo beatae. Autem
+                    impedit quod ipsum veritatis ex accusamus consectetur sequi,
+                    at quidem a sunt, suscipit accusantium fugit, nostrum
+                    asperiores inventore. Fugiat similique nam reiciendis
+                    perferendis soluta quisquam, ipsam unde quasi esse magnam
+                    voluptas, fuga qui ipsa? Quo quibusdam unde illo eveniet
+                    odio voluptates ullam repellendus aperiam necessitatibus
+                    animi velit repudiandae a iure, harum soluta quasi cumque
+                    rerum blanditiis consequuntur! Quisquam aliquid odio ipsum
+                    ea deserunt porro vel eum fugit odit fuga? A corporis
+                    numquam iusto repellat veniam unde animi itaque nemo, qui
+                    ipsam excepturi et maxime blanditiis id, odit, sunt
+                    similique sequi eveniet sed asperiores! Dignissimos incidunt
+                    pariatur eveniet debitis laborum quasi labore,
+                    necessitatibus laudantium at nam reprehenderit error
+                    recusandae consequuntur blanditiis ab molestiae,
+                    voluptatibus cumque asperiores nulla. Expedita beatae
+                    quaerat cupiditate eveniet quae voluptatem. Quasi labore
+                    suscipit exercitationem, laborum dolorum facere, ratione
+                    repudiandae atque veritatis, culpa ea recusandae tempore
+                    architecto quas voluptatem blanditiis et possimus. Dolore
+                    tenetur assumenda fugiat modi sequi quas, veniam quae
+                    suscipit quam. Delectus, qui? Quasi modi neque
+                    reprehenderit. Debitis dolorem aliquam voluptas esse cumque
+                    deserunt aut minima? Velit possimus dolorum est magnam, rem
+                    repellat sit aut numquam praesentium inventore, tenetur
+                    dicta ipsa magni nulla esse quasi nesciunt repudiandae
+                    tempore? Quo, incidunt repellendus esse, assumenda ipsa
+                    consequatur deleniti id optio quis suscipit, atque et
+                    maiores. Ipsa enim, voluptate distinctio magnam autem harum
+                    excepturi similique optio nulla facilis quia, sapiente, qui
+                    quidem aspernatur blanditiis vero. Consequatur, cumque
+                    aperiam tenetur quaerat dicta voluptas architecto nostrum
+                    iste in consequuntur deleniti sunt esse repudiandae? Ut
+                    placeat dignissimos consectetur, fuga nulla explicabo
+                    laboriosam architecto, natus dolorum accusantium nobis ea
+                    distinctio corrupti sequi, odit atque aliquam! Perferendis
+                    incidunt ea maiores sit similique magni cumque eius officiis
+                    animi distinctio? Aspernatur labore doloribus nesciunt,
+                    eligendi quam explicabo tempora, soluta consectetur earum
+                    beatae provident est odio delectus ad. Praesentium
+                    dignissimos dolore obcaecati et enim blanditiis, eveniet
+                    unde iusto aliquid consequatur error similique rerum dolores
+                    voluptatum velit. Iste, delectus maxime rerum excepturi vel
+                    ducimus aspernatur quasi, alias odio provident magni quos?
+                    Voluptas explicabo hic dolore quidem, necessitatibus
+                    officia? Excepturi tempore voluptates quaerat architecto,
+                    hic quae rem saepe mollitia facere deserunt maxime odit
+                    velit ipsum, iste corrupti fugit voluptate, facilis
+                    voluptatem itaque accusantium quam ea alias? Consectetur,
+                    dolore asperiores?
+                  </div>
+                  <div className="parnetIncase-items p-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam incidunt id quam possimus natus itaque iusto,
+                    doloremque voluptate ab, sequi iste. Non vero consequatur
+                    illo, maxime quisquam doloribus soluta ex totam perspiciatis
+                    cupiditate tempore harum iste repellat quo beatae. Autem
+                    impedit quod ipsum veritatis ex accusamus consectetur sequi,
+                    at quidem a sunt, suscipit accusantium fugit, nostrum
+                    asperiores inventore. Fugiat similique nam reiciendis
+                    perferendis soluta quisquam, ipsam unde quasi esse magnam
+                    voluptas, fuga qui ipsa? Quo quibusdam unde illo eveniet
+                    odio voluptates ullam repellendus aperiam necessitatibus
+                    animi velit repudiandae a iure, harum soluta quasi cumque
+                    rerum blanditiis consequuntur! Quisquam aliquid odio ipsum
+                    ea deserunt porro vel eum fugit odit fuga? A corporis
+                    numquam iusto repellat veniam unde animi itaque nemo, qui
+                    ipsam excepturi et maxime blanditiis id, odit, sunt
+                    similique sequi eveniet sed asperiores! Dignissimos incidunt
+                    pariatur eveniet debitis laborum quasi labore,
+                    necessitatibus laudantium at nam reprehenderit error
+                    recusandae consequuntur blanditiis ab molestiae,
+                    voluptatibus cumque asperiores nulla. Expedita beatae
+                    quaerat cupiditate eveniet quae voluptatem. Quasi labore
+                    suscipit exercitationem, laborum dolorum facere, ratione
+                    repudiandae atque veritatis, culpa ea recusandae tempore
+                    architecto quas voluptatem blanditiis et possimus. Dolore
+                    tenetur assumenda fugiat modi sequi quas, veniam quae
+                    suscipit quam. Delectus, qui? Quasi modi neque
+                    reprehenderit. Debitis dolorem aliquam voluptas esse cumque
+                    deserunt aut minima? Velit possimus dolorum est magnam, rem
+                    repellat sit aut numquam praesentium inventore, tenetur
+                    dicta ipsa magni nulla esse quasi nesciunt repudiandae
+                    tempore? Quo, incidunt repellendus esse, assumenda ipsa
+                    consequatur deleniti id optio quis suscipit, atque et
+                    maiores. Ipsa enim, voluptate distinctio magnam autem harum
+                    excepturi similique optio nulla facilis quia, sapiente, qui
+                    quidem aspernatur blanditiis vero. Consequatur, cumque
+                    aperiam tenetur quaerat dicta voluptas architecto nostrum
+                    iste in consequuntur deleniti sunt esse repudiandae? Ut
+                    placeat dignissimos consectetur, fuga nulla explicabo
+                    laboriosam architecto, natus dolorum accusantium nobis ea
+                    distinctio corrupti sequi, odit atque aliquam! Perferendis
+                    incidunt ea maiores sit similique magni cumque eius officiis
+                    animi distinctio? Aspernatur labore doloribus nesciunt,
+                    eligendi quam explicabo tempora, soluta consectetur earum
+                    beatae provident est odio delectus ad. Praesentium
+                    dignissimos dolore obcaecati et enim blanditiis, eveniet
+                    unde iusto aliquid consequatur error similique rerum dolores
+                    voluptatum velit. Iste, delectus maxime rerum excepturi vel
+                    ducimus aspernatur quasi, alias odio provident magni quos?
+                    Voluptas explicabo hic dolore quidem, necessitatibus
+                    officia? Excepturi tempore voluptates quaerat architecto,
+                    hic quae rem saepe mollitia facere deserunt maxime odit
+                    velit ipsum, iste corrupti fugit voluptate, facilis
+                    voluptatem itaque accusantium quam ea alias? Consectetur,
+                    dolore asperiores?
+                  </div>
+                </div>
+              </div>
+            </div> */}
           </div>
         </div>
       </section>

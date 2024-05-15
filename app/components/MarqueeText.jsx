@@ -168,9 +168,12 @@ import { motion } from "framer-motion";
 import StarsWhite from "../components/svg/StarsWhite";
 
 export default function MarqueeText() {
-  const firstText = useRef(null);
-  const secondText = useRef(null);
+  // const firstText = useRef(null);
+  const motionTextOne = useRef(null);
+  const motionTextSecond = useRef(null);
+  // const secondText = useRef(null);
   const slider = useRef(null);
+
   let xPercent = 0;
   let direction = -1;
 
@@ -179,12 +182,12 @@ export default function MarqueeText() {
     gsap.to(slider.current, {
       scrollTrigger: {
         trigger: document.documentElement,
-        scrub: 5,
-        start: 10,
+        // scrub: 5,
+        start: "1",
         end: window.innerHeight,
-        onUpdate: (e) => (direction = e.direction * -0.1),
+        onUpdate: (e) => (direction = e.direction * -0.05),
       },
-      x: "-1200px",
+      x: "-500px",
     });
     requestAnimationFrame(animate);
   }, []);
@@ -195,30 +198,93 @@ export default function MarqueeText() {
     } else if (xPercent > 0) {
       xPercent = -100;
     }
-    gsap.set(firstText.current, { xPercent: xPercent });
-    gsap.set(secondText.current, { xPercent: xPercent });
+    // gsap.set(firstText.current, { xPercent: xPercent });
+    // gsap.set(secondText.current, { xPercent: xPercent });
+    gsap.set(motionTextOne.current, { xPercent: xPercent });
+    gsap.set(motionTextSecond.current, { xPercent: xPercent });
+    // gsap.set(motionText.current, { xPercent: xPercent });
     requestAnimationFrame(animate);
-    xPercent += 0.1 * direction;
+    xPercent += 0.06 * direction;
   };
 
   return (
-    <main className={styles.main}>
-      <div className={styles.sliderContainer}>
-        <motion.div ref={slider} className={styles.slider}>
-          <p className="flex gap-10 xl:gap-[17rem]" ref={firstText}>
-            Website <StarsWhite /> Web Design
-            <StarsWhite />
-            Web Application
-            <StarsWhite />
-            &nbsp;
-          </p>
-          <p className="flex gap-10 xl:gap-[17rem]" ref={secondText}>
-            Website <StarsWhite /> Web Design <StarsWhite /> Web Application
-            &nbsp;
-            <StarsWhite />
-          </p>
-        </motion.div>
-      </div>
-    </main>
+    <>
+      <motion.main className={styles.main}>
+        <div className={styles.sliderContainer}>
+          <motion.div ref={slider} className={styles.slider}>
+            <div className={styles.motionContainer}>
+              <div
+                className={styles.motion}
+                style={{ marginRight: "10rem" }}
+                ref={motionTextOne}
+              >
+                <p>
+                  Website <StarsWhite /> Web Design
+                  <StarsWhite />
+                  Web Application
+                  <StarsWhite />
+                </p>
+                <p>
+                  Website <StarsWhite /> Web Design
+                  <StarsWhite />
+                  Web Application
+                  <StarsWhite />
+                </p>
+                <p>
+                  Website <StarsWhite /> Web Design
+                  <StarsWhite />
+                  Web Application
+                  <StarsWhite />
+                </p>
+                <p>
+                  Website <StarsWhite /> Web Design
+                  <StarsWhite />
+                  Web Application
+                  <StarsWhite />
+                </p>
+                <p>
+                  Website <StarsWhite /> Web Design
+                  <StarsWhite />
+                  Web Application
+                  <StarsWhite />
+                </p>
+              </div>
+              <div className={styles.motion} ref={motionTextSecond}>
+                <p>
+                  Website <StarsWhite /> Web Design
+                  <StarsWhite />
+                  Web Application
+                  <StarsWhite />
+                </p>
+                <p>
+                  Website <StarsWhite /> Web Design
+                  <StarsWhite />
+                  Web Application
+                  <StarsWhite />
+                </p>
+                <p>
+                  Website <StarsWhite /> Web Design
+                  <StarsWhite />
+                  Web Application
+                  <StarsWhite />
+                </p>
+                <p>
+                  Website <StarsWhite /> Web Design
+                  <StarsWhite />
+                  Web Application
+                  <StarsWhite />
+                </p>
+                <p>
+                  Website <StarsWhite /> Web Design
+                  <StarsWhite />
+                  Web Application
+                  <StarsWhite />
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </motion.main>
+    </>
   );
 }
