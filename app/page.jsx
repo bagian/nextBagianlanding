@@ -17,6 +17,7 @@ import {
 } from "framer-motion";
 import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { FiArrowRight } from "react-icons/fi";
 
 import StarsBw from "./components/svg/StarsBw";
 import StarsWhite from "./components/svg/StarsWhite";
@@ -179,15 +180,12 @@ const Home = () => {
                 backgroundImage,
               }}
             >
-              <div className="absolute inset-0 z-0">
+              <div className="absolute inset-0">
                 <Canvas>
                   <Stars radius={50} count={400} factor={4} fade speed={3} />
                 </Canvas>
               </div>
-              <div className="absolute flex flex-col items-center justify-center mt-36 flex-nowrap page-stag">
-                {/* <span className="absolute flex items-center p-3 text-center rounded-full tagger-tag">
-                Our Mission
-              </span> */}
+              <div className="absolute flex flex-col items-center justify-center align-middle mt-36 flex-nowrap page-stag">
                 <div className="flex gap-5 whitespace-nowrap title-x title-top">
                   Get your
                   <span style={pathStyles}>dream</span>
@@ -198,6 +196,26 @@ const Home = () => {
                 <p className="flex gap-3 mt-10 text-gray-500 path-p-side">
                   We create <StarsBw /> We Deploy <StarsBw /> We Maintenance
                 </p>
+                <Link href="#" target="_blank">
+                  <motion.button
+                    style={{
+                      border,
+                      boxShadow,
+                    }}
+                    whileHover={{
+                      scale: 1.035,
+                      ease: "easeInOut",
+                    }}
+                    whileTap={{
+                      scale: 0.985,
+                      ease: "easeInOut",
+                    }}
+                    className="relative flex items-center gap-2 px-8 py-4 mt-24 transition-colors rounded-full pointer-events-auto group w-fit bg-gray-950/10 text-gray-50 hover:bg-gray-950/50"
+                  >
+                    Hubungi Kami
+                    <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
+                  </motion.button>
+                </Link>
                 {/* <span className="getStarted">Get Started</span> */}
               </div>
             </motion.section>
@@ -215,19 +233,18 @@ const Home = () => {
                 <div className="relative p-8 mt-32 overflow-hidden pageBig-item">
                   <p className="text-[9rem] text-start pageBig-intro">Intro.</p>
                   <p className="my-5 pageBig-about">
-                    Perusahaan <strong>Bagian</strong> yang bergerak dalam
-                    software house dan pembuatan website memiliki peran penting
-                    dalam memfasilitasi kebutuhan digital perusahaan dan
-                    individu, mulai dari solusi perangkat lunak kustom hingga
-                    representasi online melalui website dan aplikasi. Kami
-                    berusaha untuk memberikan solusi yang inovatif, efisien, dan
-                    sesuai dengan kebutuhan klien kami. Dalam pembuatan website
-                    memiliki peran yang krusial dalam mendukung transformasi
-                    digital perusahaan dan organisasi di era digital ini. Dengan
-                    fokus pada pengembangan perangkat lunak berkualitas tinggi
-                    dan pembuatan website yang menarik, kami membantu klien
-                    mencapai tujuan mereka dan tetap bersaing di pasar yang
-                    semakin kompetitif.
+                    <strong>Bagian.net</strong> bergerak dalam pembuatan website
+                    memiliki peran penting dalam memfasilitasi kebutuhan digital
+                    perusahaan dan individu, mulai dari solusi perangkat lunak
+                    kustom hingga representasi online melalui website dan
+                    aplikasi. Kami berusaha untuk memberikan solusi yang
+                    inovatif, efisien, dan sesuai dengan kebutuhan klien kami.
+                    Dalam pembuatan website memiliki peran yang krusial dalam
+                    mendukung transformasi digital perusahaan dan organisasi di
+                    era digital ini. Dengan fokus pada pengembangan perangkat
+                    lunak berkualitas tinggi dan pembuatan website yang menarik,
+                    kami membantu klien mencapai tujuan mereka dan tetap
+                    bersaing di pasar yang semakin kompetitif.
                   </p>
                 </div>
               </div>

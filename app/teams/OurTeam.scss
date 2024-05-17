@@ -1,0 +1,36 @@
+:root {
+    --teams-text-color: #fff;
+    --max-width: 1440px;
+    --max-margin: auto;
+    --font-max-weight: 800;
+    --margin-container: 30px;
+}
+
+.ourTeam-container {
+    color: var(--teams-text-color);
+    margin: var(--margin-container);
+
+    .ourTeam-wrapper {
+        max-width: var(--max-width);
+        margin: var(--max-margin);
+
+        .teamHeader {
+            h1 {
+                font-weight: var(--font-max-weight);
+                // background-clip: text;
+                // background:
+                //     linear-gradient(52deg, rgb(209, 245, 126) 0%, rgba(115, 207, 35, 1) 51%);
+                // color: transparent;
+                // -webkit-background-clip: text;
+            }
+        }
+    }
+}
+
+@media (100px <=width <=479px) {}
+
+@media (480px <=width <=959px) {}
+
+@media (960px <=width <=1203px) {}
+
+@media (width >=1204px) {}
