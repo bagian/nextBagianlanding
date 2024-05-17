@@ -55,7 +55,7 @@
 
 //   return (
 //     <div className={styles.item} ref={item}>
-//       <div className="flex gap-8 content">{content}</div>
+//       <div className="flex gap-20 content">{content}</div>
 //     </div>
 //   );
 // };
@@ -213,73 +213,235 @@ export default function MarqueeText() {
         <div className={styles.sliderContainer}>
           <motion.div ref={slider} className={styles.slider}>
             <div className={styles.motionContainer}>
-              <div
-                className={styles.motion}
-                style={{ marginRight: "10rem" }}
-                ref={motionTextOne}
-              >
-                <p>
-                  Website <StarsWhite /> Web Design
+              <div className={styles.motion} ref={motionTextOne}>
+                <span className="flex gap-20">
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
                   <StarsWhite />
                   Web Application
                   <StarsWhite />
-                </p>
-                <p>
-                  Website <StarsWhite /> Web Design
-                  <StarsWhite />
-                  Web Application
-                  <StarsWhite />
-                </p>
-                <p>
-                  Website <StarsWhite /> Web Design
-                  <StarsWhite />
-                  Web Application
-                  <StarsWhite />
-                </p>
-                <p>
-                  Website <StarsWhite /> Web Design
-                  <StarsWhite />
-                  Web Application
-                  <StarsWhite />
-                </p>
-                <p>
-                  Website <StarsWhite /> Web Design
-                  <StarsWhite />
-                  Web Application
-                  <StarsWhite />
-                </p>
+                </span>
               </div>
               <div className={styles.motion} ref={motionTextSecond}>
-                <p>
-                  Website <StarsWhite /> Web Design
+                <span className="flex gap-20">
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
+                  <StarsWhite /> Web Application
+                </span>
+                <span className="flex gap-20">
+                  <StarsWhite />
+                  Website
+                  <StarsWhite />
+                  Web Design
                   <StarsWhite />
                   Web Application
                   <StarsWhite />
-                </p>
-                <p>
-                  Website <StarsWhite /> Web Design
-                  <StarsWhite />
-                  Web Application
-                  <StarsWhite />
-                </p>
-                <p>
-                  Website <StarsWhite /> Web Design
-                  <StarsWhite />
-                  Web Application
-                  <StarsWhite />
-                </p>
-                <p>
-                  Website <StarsWhite /> Web Design
-                  <StarsWhite />
-                  Web Application
-                  <StarsWhite />
-                </p>
-                <p>
-                  Website <StarsWhite /> Web Design
-                  <StarsWhite />
-                  Web Application
-                  <StarsWhite />
-                </p>
+                </span>
               </div>
             </div>
           </motion.div>

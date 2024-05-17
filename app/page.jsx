@@ -153,7 +153,6 @@ const Home = () => {
   ];
 
   const COLORS_TOP = ["#13FFAA", "#3D1EC6", "#CE84CF", "#63DD33"];
-
   const color = useMotionValue(COLORS_TOP[0]);
 
   useEffect(() => {
@@ -166,6 +165,7 @@ const Home = () => {
   }, []);
 
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #000 50%, ${color})`;
+  // const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #000 50%, ${color})`;
   const border = useMotionTemplate`1px solid ${color}`;
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
 
@@ -175,27 +175,34 @@ const Home = () => {
         <div className="">
           <div className="page-content" ref={pageHeader}>
             <motion.section
-              className="pointer-events-none flex flex-[4] text-center page-wrapper overflow-hidden xl:h-screen md:h-[50rem] lg:h-screen h-[50rem] rounded-b-[1.5rem] xl:rounded-b-[3rem] md:rounded-b-[3rem] lg:rounded-b-[3rem] relative"
+              className="pointer-events-none flex flex-[4] text-center page-wrapper overflow-hidden xl:h-screen md:h-[50rem] lg:h-screen h-[60rem] rounded-b-[1.5rem] xl:rounded-b-[3rem] md:rounded-b-[3rem] lg:rounded-b-[3rem] relative"
               style={{
                 backgroundImage,
               }}
             >
+              <div className="absolute bottom-0 marqueeContainer">
+                <div className="marqueeWrapper">
+                  <MarqueeText />
+                </div>
+              </div>
               <div className="absolute inset-0">
                 <Canvas>
                   <Stars radius={50} count={400} factor={4} fade speed={3} />
                 </Canvas>
               </div>
               <div className="absolute flex flex-col items-center justify-center align-middle mt-36 flex-nowrap page-stag">
-                <div className="flex gap-5 whitespace-nowrap title-x title-top">
-                  Get your
-                  <span style={pathStyles}>dream</span>
+                <div className="flex flex-col items-center text-center gradientScale">
+                  <div className="flex gap-5 whitespace-nowrap title-x title-top">
+                    Get your
+                    <span style={pathStyles}>dream</span>
+                  </div>
+                  <span className="flex flex-row gap-3 text-center title-x title-base">
+                    Idea<span style={pathStyles}>to life.</span>
+                  </span>
+                  <p className="flex gap-3 mt-10 text-gray-500 path-p-side">
+                    We create <StarsBw /> We Deploy <StarsBw /> We Maintenance
+                  </p>
                 </div>
-                <span className="flex flex-row gap-3 text-center title-x title-base">
-                  Idea<span style={pathStyles}>to life.</span>
-                </span>
-                <p className="flex gap-3 mt-10 text-gray-500 path-p-side">
-                  We create <StarsBw /> We Deploy <StarsBw /> We Maintenance
-                </p>
                 <Link href="#" target="_blank">
                   <motion.button
                     style={{
@@ -248,11 +255,11 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="marqueeContainer">
+              {/* <div className="marqueeContainer">
                 <div className="marqueeWrapper md:mt-52 lg:mt-52 xl:mt-52">
                   <MarqueeText />
                 </div>
-              </div>
+              </div> */}
               <div className="workRecents">
                 <div className="flex items-end justify-between workShowoff mt-80">
                   <div className="flex workShowoff-title">
