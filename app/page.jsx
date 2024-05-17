@@ -9,6 +9,14 @@ import dataImage2 from "../public/img/dataImg2.jpg";
 import SoonGreen from "../public/img/soon-backdrop.jpg";
 import SoonBlue from "../public/img/soon-backdrop-blue.jpg";
 import Lentera from "../public/img/lentera-fajar-indonesia.jpg";
+import {
+  useMotionTemplate,
+  useMotionValue,
+  motion,
+  animate,
+} from "framer-motion";
+import { Stars } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 
 import StarsBw from "./components/svg/StarsBw";
 import StarsWhite from "./components/svg/StarsWhite";
@@ -142,25 +150,41 @@ const Home = () => {
       image: <Image src={dataImage2} alt="Projects Two" />,
     },
   ];
+
+  const COLORS_TOP = ["#13FFAA", "#3D1EC6", "#CE84CF", "#63DD33"];
+
+  const color = useMotionValue(COLORS_TOP[0]);
+
+  useEffect(() => {
+    animate(color, COLORS_TOP, {
+      ease: "easeInOut",
+      duration: 10,
+      repeat: Infinity,
+      repeatType: "mirror",
+    });
+  }, []);
+
+  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #000 50%, ${color})`;
+  const border = useMotionTemplate`1px solid ${color}`;
+  const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
+
   return (
     <>
-      <section className="relative page-header">
-        <div className="3d-move">
-          {/* <Spline
-            style={splineStyles}
-            scene="https://prod.spline.design/u7EWU7frnI6R1MLu/scene.splinecode"
-          />
-          <Spline
-            style={splineStyles}
-            scene="https://prod.spline.design/1YMhEOlCBwBsIIWW/scene.splinecode"
-          />
-          <Spline
-            style={splineStyles}
-            scene="https://prod.spline.design/j3V-sT0nGpV4lHrO/scene.splinecode"
-          /> */}
+      <div className="relative page-header">
+        <div className="">
           <div className="page-content" ref={pageHeader}>
-            <div className="pointer-events-none top-[5em] flex flex-[4] text-center page-wrapper">
-              <div className="flex flex-col items-center justify-center mt-36 flex-nowrap page-stag">
+            <motion.section
+              className="pointer-events-none flex flex-[4] text-center page-wrapper overflow-hidden xl:h-screen md:h-[50rem] lg:h-screen h-[50rem] rounded-b-[1.5rem] xl:rounded-b-[3rem] md:rounded-b-[3rem] lg:rounded-b-[3rem] relative"
+              style={{
+                backgroundImage,
+              }}
+            >
+              <div className="absolute inset-0 z-0">
+                <Canvas>
+                  <Stars radius={50} count={400} factor={4} fade speed={3} />
+                </Canvas>
+              </div>
+              <div className="absolute flex flex-col items-center justify-center mt-36 flex-nowrap page-stag">
                 {/* <span className="absolute flex items-center p-3 text-center rounded-full tagger-tag">
                 Our Mission
               </span> */}
@@ -176,7 +200,7 @@ const Home = () => {
                 </p>
                 {/* <span className="getStarted">Get Started</span> */}
               </div>
-            </div>
+            </motion.section>
             <div className="page-container">
               <div className="pageBig-headtitle lg:m-28 xl:mt-[28em] relative">
                 <Image
@@ -188,7 +212,7 @@ const Home = () => {
                   quality={100}
                   className="w-[150px] h-[150px] absolute -top-[3em] z-[3] -right-[3em] logosCircle-bagian"
                 />
-                <div className="relative p-8 mt-32 pageBig-item overflow-hidden">
+                <div className="relative p-8 mt-32 overflow-hidden pageBig-item">
                   <p className="text-[9rem] text-start pageBig-intro">Intro.</p>
                   <p className="my-5 pageBig-about">
                     Perusahaan <strong>Bagian</strong> yang bergerak dalam
@@ -347,10 +371,10 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="partnerIncase-container partnerIncase-bg my-20">
-              <div className="partnerIncase-wrapper m-auto">
-                <div className="partnerIncase-content flex">
-                  <div className="parnetIncase-items p-8">
+            {/* <div className="my-20 partnerIncase-container partnerIncase-bg">
+              <div className="m-auto partnerIncase-wrapper">
+                <div className="flex partnerIncase-content">
+                  <div className="p-8 parnetIncase-items">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Totam incidunt id quam possimus natus itaque iusto,
                     doloremque voluptate ab, sequi iste. Non vero consequatur
@@ -407,7 +431,7 @@ const Home = () => {
                     voluptatem itaque accusantium quam ea alias? Consectetur,
                     dolore asperiores?
                   </div>
-                  <div className="parnetIncase-items p-8">
+                  <div className="p-8 parnetIncase-items">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Totam incidunt id quam possimus natus itaque iusto,
                     doloremque voluptate ab, sequi iste. Non vero consequatur
@@ -469,7 +493,7 @@ const Home = () => {
             </div> */}
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };
