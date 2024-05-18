@@ -182,10 +182,10 @@ export default function MarqueeText() {
     gsap.to(slider.current, {
       scrollTrigger: {
         trigger: document.documentElement,
-        // scrub: 5,
+        scrub: 8,
         start: "1",
         end: window.innerHeight,
-        onUpdate: (e) => (direction = e.direction * -0.05),
+        onUpdate: (e) => (direction = e.direction * -0.8),
       },
       x: "-500px",
     });
@@ -204,7 +204,7 @@ export default function MarqueeText() {
     gsap.set(motionTextSecond.current, { xPercent: xPercent });
     // gsap.set(motionText.current, { xPercent: xPercent });
     requestAnimationFrame(animate);
-    xPercent += 0.06 * direction;
+    xPercent += 0.0009 * direction;
   };
 
   return (

@@ -1,0 +1,76 @@
+<div className="flex items-end justify-between workShowoff mt-80">
+                  <div className="flex workShowoff-title">
+                    <span className="block workShowoff-titleChild">Work</span>
+                    {/* <StarsWhite style={svgPathStyle} className="hidden" /> */}
+                  </div>
+                  <div className="justify-end flex text-end w-[20em] gap-6">
+                    <span className="text-gray-500 w-52 workShowoff-end">
+                      Kami membuat sesuai dengan keinginan anda.
+                    </span>
+                    {/* <StarsWhite /> */}
+                  </div>
+                </div>
+                <div className="relative overflow-hidden recentData-projects rounded-2xl">
+                        <Image
+                          src={Lentera}
+                          alt="Recent Projects"
+                          height={1200}
+                          width={1200}
+                          quality={100}
+                          objectFit="cover"
+                          style={{
+                            objectFit: "cover",
+                            overflow: "hidden",
+                          }}
+                        />
+                      </div>
+                      <div className="absolute left-0 -top-10 lg:z-10 lg:top-10 xl:z-10 xl:top-10 projectsTop-label xl:left-10 lg:left-10">
+                        <span className="flex gap-5 bg-black rounded-full recentLabels-top xl:px-8 xl:py-4 lg:px-8 lg:py-4">
+                          <StarsWhite />
+                          Recent Projects
+                        </span>
+                      </div>
+                      <div className="lg:absolute md:relative lg:bottom-[2rem] lg:w-[40rem] lg:right-10 lg:mt-3 xl:absolute xl:bottom-[2rem] projectRecent-title xl:w-[50rem] xl:right-10 mt-10 xl:mt-0">
+                        <div className="bg-black projectRecent-item rounded-2xl">
+                          <div className="flex flex-wrap gap-3 text-sm md:justify-between xl:justify-between md:flex-row lg:flex-row xl:flex-row projectRecent-labels xl:text-base xs:sm-0 sm:m-0 md:m-6">
+                            <span className="md:mt-6 px-8 py-2.5 font-semibold border rounded-full whitespace-nowrap flex-wrap">
+                              Lentera Fajar Indonesia
+                            </span>
+                            <span className="md:mt-6 px-8 py-2.5 border rounded-full">
+                              2022
+                            </span>
+                          </div>
+                          <div className="flex flex-row justify-between mt-20 projectRecent-heading">
+                            <div className="flex flex-col justify-between lg:items-end xl:items-end xl:flex-row lg:flex-row sm:mx-0 sm:mb-0 md:mx-8 md:mb-6">
+                              <span className="xl:w-3/6 lg:w-3/6">
+                                <p className="font-semibold lg:text-1xl xl:text-2xl">
+                                  Sekolah Lentera Fajar Indonesia adalah lembaga
+                                  pendidikan khusus menangani anak-anak
+                                  berkebutuhan khusus.
+                                </p>
+                              </span>
+                              <span className="mt-10">
+                                <Link
+                                  href="https://www.lenterafajarindonesia.sch.id/"
+                                  target="_blank"
+                                >
+                                  <motion.button
+                                    whileHover={{
+                                      scale: 1.035,
+                                      ease: "easeInOut",
+                                    }}
+                                    whileTap={{
+                                      scale: 0.985,
+                                      ease: "easeInOut",
+                                    }}
+                                    className="relative flex items-center gap-2 transition-colors rounded-full pointer-events-auto group w-fit "
+                                  >
+                                    Lihat Project
+                                    <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
+                                  </motion.button>
+                                </Link>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>

@@ -31,7 +31,7 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
     .page-content {
         // overflow: hidden;
 
-        .page-container {
+        .recentContainer-projects {
             // opacity: 0;
 
             .page-stag {
@@ -82,7 +82,7 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
     .workRecents {
         margin-top: 20em;
 
-        .page-container {
+        .recentContainer-projects {
             .pageContent {
                 margin: 30px;
             }
@@ -154,6 +154,51 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
     .labelLink {
         display: none;
     }
+
+    .recentData-projects {
+        img {
+            width: 100%;
+            height: 400px;
+            transition: transform 1000ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .contentItems-recents-i {
+        .projectRecent-labels {
+            margin: 30px;
+        }
+
+    }
+
+    .contentWr-image-x {
+        img {
+            width: 100%;
+            height: 400px;
+            transition: transform 1000ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .contentItems-recents-i {
+        background-color: #0f1679;
+    }
+
+    .pageBig-headtitle {
+        max-width: $base-max-width;
+
+        .pageBig-item {
+            border: var(--border-content);
+            border-radius: 30px;
+        }
+
+    }
 }
 
 .pageBig-about {
@@ -191,7 +236,7 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
     .workRecents {
         margin-top: 20em;
 
-        .page-container {
+        .recentContainer-projects {
             .pageContent {
                 margin: 20px;
             }
@@ -214,7 +259,7 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
     .workShowoff {
         margin: 20px;
 
-        .page-container {
+        .recentContainer-projects {
             .pageContent {
                 margin: 20px;
             }
@@ -235,6 +280,44 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
     .imageData {
         height: 480px;
         width: 100%;
+    }
+
+    .recentData-projects {
+        img {
+            width: 100%;
+            height: 600px;
+            transition: transform 1000ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .contentWr-image-x {
+        img {
+            width: 100%;
+            height: 600px;
+            transition: transform 1000ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .contentItems-recents-i {
+        background-color: #0f1679;
+    }
+
+    .pageBig-headtitle {
+        max-width: $base-max-width;
+
+        .pageBig-item {
+            border: var(--border-content);
+            border-radius: 30px;
+        }
+
     }
 }
 
@@ -263,7 +346,7 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
     .workRecents {
         margin-top: 20em;
 
-        .page-container {
+        .recentContainer-projects {
             .pageContent {
                 margin: 50px;
             }
@@ -287,7 +370,6 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
         }
     }
 
-
     .workShowoff-title {
         font-weight: 800;
         font-size: 10em;
@@ -298,6 +380,52 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
         height: 600px;
         width: 100%;
         object-fit: cover;
+    }
+
+    .recentData-projects {
+        img {
+            width: 100%;
+            height: 800px;
+            transition: transform 1000ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .labelRecent-x {
+        background-color: #0f1679;
+        color: #ffffff;
+
+    }
+
+    .contentItems-recents-i {
+        background-color: #0f1679;
+    }
+
+
+    .contentWr-image-x {
+        img {
+            width: 100%;
+            height: 700px;
+            transition: transform 1000ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .pageBig-headtitle {
+        max-width: $base-max-width;
+        margin: $base-max-margin;
+
+        .pageBig-item {
+            border: var(--border-content);
+            border-radius: 30px;
+        }
+
     }
 }
 
@@ -319,23 +447,13 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
             margin: $base-max-margin;
         }
 
-        .page-container {
+        .recentContainer-projects {
             margin: $base-max-margin;
 
             .page-wrapper {
                 max-width: $base-max-width;
 
             }
-        }
-    }
-
-    .content-items {
-        overflow: hidden;
-
-        .imageData {
-            height: 800px;
-            width: 800px;
-            object-fit: cover;
         }
     }
 
@@ -355,7 +473,7 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
     .workRecents {
         margin-top: 20em;
 
-        .page-container {
+        .recentContainer-projects {
             .pageContent {
                 margin: 50px;
             }
@@ -368,16 +486,16 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
         }
     }
 
-    .page-container {
-        margin-top: 35rem;
-        margin: $base-max-margin-container;
 
-        .pageBig-headtitle {
+    .pageBig-headtitle {
+        max-width: $base-max-width;
+        margin: $base-max-margin;
+
+        .pageBig-item {
             border: var(--border-content);
-            max-width: $base-max-width;
-            margin: $base-max-margin;
-
+            border-radius: 30px;
         }
+
     }
 
     .partnerIncase-container {
@@ -387,13 +505,58 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
             max-width: $base-max-width;
         }
     }
+
+    .recentData-projects {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 800px;
+            transition: transform 1000ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .headerContent {
+        max-width: $base-max-width;
+        margin: $base-max-margin;
+    }
+
+    .labelRecent-x {
+        background-color: #0f1679;
+        color: #ffffff;
+
+    }
+
+    .contentItems-recents-i {
+
+        background-color: #0f1679;
+    }
+
+
+    .contentWr-image-x {
+        img {
+            width: 100%;
+            height: 800px;
+            transition: transform 1000ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
 }
+
+
 
 .partnerIncase-bg {
     background-color: $base-partnerIncase-bg;
 }
 
-.page-container {
+.recentContainer-projects {
 
     .pageBig-headtitle {
         border-radius: 20px;

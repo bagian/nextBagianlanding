@@ -9,6 +9,12 @@ import dataImage2 from "../public/img/dataImg2.jpg";
 import SoonGreen from "../public/img/soon-backdrop.jpg";
 import SoonBlue from "../public/img/soon-backdrop-blue.jpg";
 import Lentera from "../public/img/lentera-fajar-indonesia.jpg";
+import recentProjectImages from "../public/img/recentProjects.jpg";
+import bagianLogo from "../public/img/bagianLogo.png";
+
+import ComingSoonLogo from "../public/img/soon-two.png";
+import BagianBackground from "../public/img/bagian-bg.png";
+
 import {
   useMotionTemplate,
   useMotionValue,
@@ -119,38 +125,15 @@ const Home = () => {
     display: "none",
   };
 
-  const dataContent = [
-    {
-      title: "Wise Commerce",
-      labelOne: "UI/UX Design",
-      labelTwo: "UI Concept",
-      image: [
-        {
-          src: {
-            dataImage: { dataImage1 },
-          },
-        },
-      ],
-    },
-    {
-      title: "Kinaya Interior Design",
-      labelOne: "UI/UX Design",
-      labelTwo: "Data Label",
-      image: <Image src={dataImage2} alt="Projects Two" />,
-    },
-    {
-      title: "Lorem Ipsum 1",
-      labelOne: "Desktop Application",
-      labelTwo: "Minimalist",
-      image: <Image src={dataImage1} alt="Projects Two" />,
-    },
-    {
-      title: "Lorem Ipsum 2",
-      labelOne: "Label Lorem 1",
-      labelTwo: "Label Lorem 2",
-      image: <Image src={dataImage2} alt="Projects Two" />,
-    },
-  ];
+  // const dataRecentProject = [
+
+  //   {
+  //     title: "Kinaya Interior Design",
+  //     labelOne: "UI/UX Design",
+  //     labelTwo: "Data Label",
+  //     image: ,
+  //   },
+  // ];
 
   const COLORS_TOP = ["#13FFAA", "#3D1EC6", "#CE84CF", "#63DD33"];
   const color = useMotionValue(COLORS_TOP[0]);
@@ -226,7 +209,7 @@ const Home = () => {
                 {/* <span className="getStarted">Get Started</span> */}
               </div>
             </motion.section>
-            <div className="page-container">
+            <div className="page-container mt-[25rem]">
               <div className="pageBig-headtitle lg:m-28 xl:mt-[28em] relative">
                 <Image
                   src="/logo/circle-about-bagian_.png"
@@ -237,22 +220,27 @@ const Home = () => {
                   quality={100}
                   className="w-[150px] h-[150px] absolute -top-[3em] z-[3] -right-[3em] logosCircle-bagian"
                 />
-                <div className="relative p-8 mt-32 overflow-hidden pageBig-item">
-                  <p className="text-[9rem] text-start pageBig-intro">Intro.</p>
-                  <p className="my-5 pageBig-about">
-                    <strong>Bagian.net</strong> bergerak dalam pembuatan website
-                    memiliki peran penting dalam memfasilitasi kebutuhan digital
-                    perusahaan dan individu, mulai dari solusi perangkat lunak
-                    kustom hingga representasi online melalui website dan
-                    aplikasi. Kami berusaha untuk memberikan solusi yang
-                    inovatif, efisien, dan sesuai dengan kebutuhan klien kami.
-                    Dalam pembuatan website memiliki peran yang krusial dalam
-                    mendukung transformasi digital perusahaan dan organisasi di
-                    era digital ini. Dengan fokus pada pengembangan perangkat
-                    lunak berkualitas tinggi dan pembuatan website yang menarik,
-                    kami membantu klien mencapai tujuan mereka dan tetap
-                    bersaing di pasar yang semakin kompetitif.
-                  </p>
+                <div className="relative p-8 pt-20 overflow-hidden pageBig-item">
+                  <div className="pageBig-headling">
+                    <p className="text-[9rem] text-start pageBig-intro">
+                      Intro.
+                    </p>
+                    <p className="my-5 pageBig-about">
+                      <strong>Bagian.net</strong> bergerak dalam pembuatan
+                      website memiliki peran penting dalam memfasilitasi
+                      kebutuhan digital perusahaan dan individu, mulai dari
+                      solusi perangkat lunak kustom hingga representasi online
+                      melalui website dan aplikasi. Kami berusaha untuk
+                      memberikan solusi yang inovatif, efisien, dan sesuai
+                      dengan kebutuhan klien kami. Dalam pembuatan website
+                      memiliki peran yang krusial dalam mendukung transformasi
+                      digital perusahaan dan organisasi di era digital ini.
+                      Dengan fokus pada pengembangan perangkat lunak berkualitas
+                      tinggi dan pembuatan website yang menarik, kami membantu
+                      klien mencapai tujuan mereka dan tetap bersaing di pasar
+                      yang semakin kompetitif.
+                    </p>
+                  </div>
                 </div>
               </div>
               {/* <div className="marqueeContainer">
@@ -260,134 +248,206 @@ const Home = () => {
                   <MarqueeText />
                 </div>
               </div> */}
-              <div className="workRecents">
-                <div className="flex items-end justify-between workShowoff mt-80">
-                  <div className="flex workShowoff-title">
-                    <span className="block workShowoff-titleChild">Work</span>
-                    <StarsWhite style={svgPathStyle} className="hidden" />
-                  </div>
-                  <div className="justify-end flex text-end w-[20em] gap-6">
-                    <span className="text-gray-500 w-52 workShowoff-end">
-                      Kami membuat sesuai dengan keinginan anda.
-                    </span>
-                    {/* <StarsWhite /> */}
-                  </div>
-                </div>
-                <div className="page-container">
-                  <div className="mt-24 pageContent">
-                    <div className="grid grid-cols-1 page-wrapper md:grid-cols-2 md:gap-8 lg:grid-cols-2 lg:gap-8 xl:gap-8 xl:grid-cols-2">
-                      <div className="page-items">
-                        <div className="content-items">
-                          <Link
-                            href="https://www.lenterafajarindonesia.sch.id"
-                            target="_blank"
-                          >
-                            <Image
-                              src={Lentera}
-                              alt="logo"
-                              width={2000}
-                              height={2000}
-                              objectFit="cover"
-                              quality={100}
-                              className="object-cover pointer-events-none rounded-3xl imageData"
-                            />
-                            <div className="flex items-center justify-between my-8 pageLink">
-                              <span className="relative block">
-                                Lentera Fajar Indonesia
-                              </span>
-                              <div className="flex flex-row gap-3 labelLink">
-                                <span className="p-3 labelSide-border whitespace-nowrap">
-                                  SLB
-                                </span>
-                                <span className="p-3 labelSide-border whitespace-nowrap">
-                                  Company Profile
+              <div className="workRecents my-52">
+                <div className="m-10 recentContainer-recent">
+                  <div className="mt-24 pageContent-recent">
+                    <div className="headerContent rounded-2xl h-[50rem] relative">
+                      <div className="mb-8 xl:mb-0 lg:mb-0 md:mb-0 recentWorks-body-x">
+                        <div className="relative col-span-2 overflow-hidden contentWr-body rounded-2xl">
+                          <div className="relative overflow-hidden contentItems-x ">
+                            <div className="absolute z-10 hidden lg:block lg:top-10 lg:left-10 contentItems-x-label">
+                              <div className="px-5 py-2 font-semibold rounded-full labelRecent-x xl:px-8 xl:py-4 lg:px-8 lg:py-4">
+                                <span className="flex gap-4">
+                                  <StarsWhite />
+                                  Recent
                                 </span>
                               </div>
                             </div>
-                          </Link>
+                            <div className="overflow-hidden cursor-pointer contentWr-image-x rounded-2xl">
+                              <Image
+                                src={Lentera}
+                                alt="Recent Projects"
+                                height={1200}
+                                width={1200}
+                                quality={100}
+                                objectFit="cover"
+                                style={{
+                                  objectFit: "cover",
+                                  overflow: "hidden",
+                                }}
+                              />
+                            </div>
+                            <div className="relative mt-8 contentItems-recents-i rounded-2xl lg:absolute lg:bottom-10 lg:w-[40rem] lg:right-10">
+                              <div className="p-5 contentItems-body-i">
+                                <div className="flex flex-col justify-between gap-4 xs:flex-row xl:flex-row md:flex-row lg:flex-row contentItems-label-i">
+                                  <span className="px-8 py-2 text-center border rounded-full contentItems-label-in">
+                                    Lentera Fajar Indonesia
+                                  </span>
+                                  <span className="px-8 py-2 text-center border rounded-full contentItems-label-in">
+                                    2022
+                                  </span>
+                                </div>
+                                <div className="flex flex-col mt-10 contentItems-about-i xl:flex-row xl:p-6 lg:flex-row lg:items-end lg:justify-between">
+                                  <span className="font-semibold lg:w-3/6 xl:text-2xl">
+                                    Sekolah Lentera Fajar Indonesia adalah
+                                    lembaga pendidikan yang khusus menangani
+                                    anak-anak berkebutuhan khusus.
+                                  </span>
+                                  <span className="mt-10 ">
+                                    <Link
+                                      href="https://www.lenterafajarindonesia.sch.id/"
+                                      target="_blank"
+                                    >
+                                      <motion.button
+                                        whileHover={{
+                                          scale: 1.035,
+                                          ease: "easeInOut",
+                                        }}
+                                        whileTap={{
+                                          scale: 0.985,
+                                          ease: "easeInOut",
+                                        }}
+                                        className="relative flex items-center gap-2 transition-colors rounded-full pointer-events-auto group w-fit "
+                                      >
+                                        Lihat Project
+                                        <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
+                                      </motion.button>
+                                    </Link>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div className="xl:mt-16 lg:mt-16 md:mt-16 page-items">
-                        <div className="overflow-hidden content-items">
-                          <Link
-                            href="https://www.kinayainterior.com"
-                            target="_blank"
-                          >
-                            <Image
-                              src={dataImage2}
-                              alt="logo"
-                              width={2000}
-                              height={2000}
-                              objectFit="cover"
-                              quality={100}
-                              className="object-cover pointer-events-none rounded-3xl imageData"
-                            />
-                            <div className="flex items-center justify-between my-8 pageLink">
-                              <span>Kinaya Interior Design</span>
-                              <div className="flex flex-row gap-3 labelLink">
-                                <span className="p-3 labelSide-border whitespace-nowrap">
-                                  Company Profile
-                                </span>
-                                <span className="p-3 labelSide-border whitespace-nowrap">
-                                  Interior
-                                </span>
+
+                      <div className="pb-32 md:pt-8 lg:pt-8 xl:pt-8 page-wrapper">
+                        <div className="flex flex-col gap-8 xl:flex-row page-items">
+                          <div className="relative flex overflow-hidden contentWr-body rounded-2xl xl:basis-[170rem]">
+                            <div className="contentWr-f">
+                              <div className="relative overflow-hidden contentItems-x">
+                                <div className="absolute z-10 hidden lg:block lg:top-10 lg:left-10 contentItems-x-label">
+                                  <div className="px-5 py-2 font-semibold rounded-full bg-neutral-700 label-x xl:px-8 xl:py-4 lg:px-8 lg:py-4">
+                                    <span className="flex gap-4">
+                                      <StarsWhite />
+                                      Projects
+                                    </span>
+                                  </div>
+                                </div>
+                                <div className="overflow-hidden cursor-pointer contentWr-image-x rounded-2xl">
+                                  <Image
+                                    src={dataImage2}
+                                    alt="Recent Projects"
+                                    height={1200}
+                                    width={1200}
+                                    quality={100}
+                                    objectFit="cover"
+                                    style={{
+                                      objectFit: "cover",
+                                      overflow: "hidden",
+                                    }}
+                                  />
+                                </div>
+                              </div>
+                              <div className="relative mt-8 contentItems-i bg-neutral-700 rounded-2xl lg:absolute lg:bottom-10 lg:w-[40rem] lg:left-10">
+                                <div className="p-5 contentItems-body-i">
+                                  <div className="flex flex-col justify-between gap-4 xs:flex-row xl:flex-row md:flex-row lg:flex-row contentItems-label-i">
+                                    <span className="px-8 py-2 text-center border rounded-full contentItems-label-in">
+                                      Kinaya
+                                    </span>
+                                    <span className="px-8 py-2 text-center border rounded-full contentItems-label-in">
+                                      2019
+                                    </span>
+                                  </div>
+                                  <div className="flex flex-col mt-10 contentItems-about-i xl:flex-row xl:p-6 lg:flex-row lg:items-end lg:justify-between">
+                                    <span className="font-semibold lg:w-3/6 xl:text-2xl">
+                                      Kinaya Interior Design adalah perusahaan
+                                      profesional yang bergerak di bidang desain
+                                      interior, konstruksi, dan sipil.
+                                    </span>
+                                    <span className="mt-10 ">
+                                      <Link
+                                        href="https://wwww.kinayainterior.com/"
+                                        target="_blank"
+                                        alt="Kinaya"
+                                      >
+                                        <motion.button
+                                          whileHover={{
+                                            scale: 1.035,
+                                            ease: "easeInOut",
+                                          }}
+                                          whileTap={{
+                                            scale: 0.985,
+                                            ease: "easeInOut",
+                                          }}
+                                          className="relative flex items-center gap-2 transition-colors rounded-full pointer-events-auto group w-fit "
+                                        >
+                                          Lihat Project
+                                          <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
+                                        </motion.button>
+                                      </Link>
+                                    </span>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="page-items">
-                        <div className="content-items">
-                          <Link href="#" target="_blank">
-                            <Image
-                              src={SoonBlue}
-                              alt="logo"
-                              width={2000}
-                              height={2000}
-                              objectFit="cover"
-                              quality={100}
-                              className="object-cover pointer-events-none rounded-3xl imageData"
-                            />
-                            <div className="flex items-center justify-between my-8 pageLink">
-                              <span className="relative block">
-                                Coming Soon
-                              </span>
-                              <div className="flex flex-row gap-3 labelLink">
-                                <span className="p-3 labelSide-border whitespace-nowrap">
-                                  Tbd
-                                </span>
-                                <span className="p-3 labelSide-border whitespace-nowrap">
-                                  Tbd
-                                </span>
+                          </div>
+                          <div className=" contentWr-body rounded-2xl">
+                            <div className="relative overflow-hidden contentItems-x">
+                              {/* <div className="absolute z-10 justify-center hidden lg:block lg:top-10 lg:left-5 contentItems-x-label ">
+                                <div className="flex justify-between w-full">
+                                  <div className="px-8 py-4 font-semibold border rounded-full label-x xl:px-8 xl:py-4 lg:px-8 lg:py-4 xl:flex">
+                                    <span className="flex items-center gap-4 align-middle">
+                                      <StarsWhite />
+                                      Projects
+                                    </span>
+                                  </div>
+                                </div>
+                              </div> */}
+                              <div className="overflow-hidden contentWr-image-x rounded-2xl">
+                                <Image
+                                  className="pointer-events-none"
+                                  src={BagianBackground}
+                                  alt="Coming Soon"
+                                  height={1200}
+                                  width={1200}
+                                  quality={100}
+                                  objectFit="cover"
+                                  style={{
+                                    objectFit: "cover",
+                                    overflow: "hidden",
+                                    // filter: "blur(6px)",
+                                    // transform: "scale(190%)",
+                                  }}
+                                />
+                              </div>
+                              <div className="absolute w-full bottom-[8rem] lg:bottom-[22rem] contentItems-i xl:bg-transparent rounded-2xl lg:absolute lg:left-0">
+                                <div className="p-5 contentItems-body-i">
+                                  <div className="flex flex-col justify-between gap-4 xs:flex-row xl:flex-col md:flex-col lg:flex-col contentItems-label-i">
+                                    {/* <span className="px-8 py-4 text-center border rounded-full contentItems-label-in">
+                                      Coming Soon
+                                    </span> */}
+                                  </div>
+                                </div>
+                                <div className="flex flex-col justify-center w-full gap-3 m-auto align-middle comingProject-i ">
+                                  <span className="px-8 py-4 m-auto text-center rounded-full contentItems-label-in">
+                                    <Image
+                                      src={ComingSoonLogo}
+                                      alt="logo"
+                                      width={600}
+                                      height={600}
+                                      objectFit="cover"
+                                      quality={100}
+                                      className="w-[150px] h-[150px] logosCircle-bagian pointer-events-none drop-shadow-md"
+                                    />
+                                  </span>
+                                  <span className="px-8 py-4 m-auto text-sm text-center bg-black rounded-full contentItems-label-in lg:w-52">
+                                    Coming Soon
+                                  </span>
+                                </div>
                               </div>
                             </div>
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="xl:mt-16 lg:mt-16 md:mt-16 page-items">
-                        <div className="overflow-hidden content-items">
-                          <Link href="#" target="_blank">
-                            <Image
-                              src={SoonGreen}
-                              alt="logo"
-                              width={2000}
-                              height={2000}
-                              objectFit="cover"
-                              quality={100}
-                              className="object-cover pointer-events-none rounded-3xl imageData"
-                            />
-                            <div className="flex items-center justify-between my-8 pageLink">
-                              <span>Coming Soon</span>
-                              <div className="flex flex-row gap-3 labelLink">
-                                <span className="p-3 labelSide-border whitespace-nowrap">
-                                  Tbd
-                                </span>
-                                <span className="p-3 labelSide-border whitespace-nowrap">
-                                  Tbd
-                                </span>
-                              </div>
-                            </div>
-                          </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
