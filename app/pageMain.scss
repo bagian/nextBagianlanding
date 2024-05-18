@@ -324,7 +324,7 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
 
 @media (960px <=width <=1203px) {
     .title-x {
-        font-size: 190px;
+        font-size: 134px;
         display: flex;
         flex: 4;
         flex-direction: row;
@@ -418,7 +418,7 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
     }
 
     .pageBig-headtitle {
-        max-width: $base-max-width;
+        max-width: 859px;
         margin: $base-max-margin;
 
         .pageBig-item {
@@ -431,7 +431,7 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
 
 @media (width >=1204px) {
     .title-x {
-        font-size: 186px;
+        font-size: 158px;
         display: flex;
         flex: 4;
         flex-direction: row;
@@ -488,7 +488,7 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
 
 
     .pageBig-headtitle {
-        max-width: $base-max-width;
+        max-width: 967px;
         margin: $base-max-margin;
 
         .pageBig-item {
