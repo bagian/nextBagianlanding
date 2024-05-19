@@ -23,7 +23,7 @@ const ServicesData = [
 export default function ServicesComponent() {
   return (
     <>
-      <div className={`${styles.servicesHeadline_x} my-32 rounded-2xl`}>
+      <div className={`${styles.servicesHeadline_x} my-32 rounded-[3rem]`}>
         <div className={`${styles.servicesWrapper_x} py-32 lg:px-10 p-6`}>
           <div className="flex flex-col justify-between servicesTitle-x lg:flex-row md:flex-row md:items-end lg:items-end md:m-10 xl:m-0 ">
             <div className="text-4xl md:text-8xl font-[900] uppercase lg:text-8xl servicesHeading-x">
