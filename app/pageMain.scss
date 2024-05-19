@@ -520,7 +520,7 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
         }
     }
 
-    .projectsInner-wrappwe-x {
+    .projectsInner-wrapper-x {
         max-width: $base-max-width;
         margin: $base-max-margin;
     }
@@ -642,6 +642,10 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
     }
 }
 
+.projectsInner-wrapper-x {
+    padding: 0 28px;
+}
+
 .pageLink {
     .labelLink {
         font-size: 0.8em;
@@ -667,13 +671,3 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
         }
     }
 }
-
-// body{
-//     background-color: #13FFAA;
-//     background-color: #3d1ec6;
-//     background-color: #CE84CF;
-//     background-color: #63dd33;
-// }
-
-
-//OUR TEAM

@@ -252,10 +252,10 @@ const Home = () => {
                 </div>
               </div> */}
             <div className="workRecents my-52">
-              <div className="m-10 recentContainer-recent">
+              <div className="recentContainer-recent">
                 <div className="mt-24 pageContent-recent">
                   <div className="headerContent rounded-2xl h-[50rem] relative">
-                    <div className="projectsInner-wrappwe-x">
+                    <div className="projectsInner-wrapper-x">
                       <div className="my-16 workHeadline-x">
                         <div className="flex flex-col justify-between headlineTitle-x lg:flex-row md:flex-row md:items-end lg:items-end">
                           <div className="text-6xl font-[900] uppercase lg:text-8xl headlingHeading-x">
