@@ -77,18 +77,20 @@ const Menu = () => {
 
   return (
     <div className="menu-container" ref={container}>
-      <div className="menu-bar items-center ">
-        <div className="menu-logo">
-          <Link href="/" className="path-logo">
-            bagian.
-          </Link>
-        </div>
-        <div className="menu-open" onClick={toggleMenu}>
-          <p>Menu</p>
+      <div className="items-center menu-bar ">
+        <div className="flex items-center justify-between w-full p-8 bg-black menu-wrap backdrop-blur-md">
+          <div className="menu-logo">
+            <Link href="/" className="path-logo">
+              bagian.
+            </Link>
+          </div>
+          <div className="menu-open" onClick={toggleMenu}>
+            <p>Menu</p>
+          </div>
         </div>
       </div>
       <div className="menu-overlay">
-        <div className="menu-overlay-bar">
+        <div className="items-center p-8 menu-overlay-bar">
           <div className="menu-logo">
             <Link href="/" className="path-logo">
               bagian.

@@ -1,9 +1,4 @@
-// @font-face {
-//     font-family: LeMurmure;
-//     src: url('./fonts/LeMurmure-Regular.woff2'), url('./fonts/LeMurmure-Regular.eot'), url('./fonts/LeMurmure-Regular.woff') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-// }
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
 @font-face {
     font-family: LeMurmure;
@@ -23,9 +18,6 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
 
     --border-content: 1px solid #313131;
 }
-
-
-
 
 .page-header {
     .page-content {
@@ -324,7 +316,7 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
 
 @media (960px <=width <=1203px) {
     .title-x {
-        font-size: 190px;
+        font-size: 134px;
         display: flex;
         flex: 4;
         flex-direction: row;
@@ -418,7 +410,7 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
     }
 
     .pageBig-headtitle {
-        max-width: $base-max-width;
+        max-width: 859px;
         margin: $base-max-margin;
 
         .pageBig-item {
@@ -431,7 +423,7 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
 
 @media (width >=1204px) {
     .title-x {
-        font-size: 290px;
+        font-size: 158px;
         display: flex;
         flex: 4;
         flex-direction: row;
@@ -488,7 +480,7 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
 
 
     .pageBig-headtitle {
-        max-width: $base-max-width;
+        max-width: 967px;
         margin: $base-max-margin;
 
         .pageBig-item {
@@ -520,10 +512,11 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
         }
     }
 
-    .headerContent {
+    .projectsInner-wrapper-x {
         max-width: $base-max-width;
         margin: $base-max-margin;
     }
+
 
     .labelRecent-x {
         background-color: #0f1679;
@@ -641,6 +634,10 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
     }
 }
 
+.projectsInner-wrapper-x {
+    padding: 0 28px;
+}
+
 .pageLink {
     .labelLink {
         font-size: 0.8em;
@@ -666,13 +663,3 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
         }
     }
 }
-
-// body{
-//     background-color: #13FFAA;
-//     background-color: #3d1ec6;
-//     background-color: #CE84CF;
-//     background-color: #63dd33;
-// }
-
-
-//OUR TEAM

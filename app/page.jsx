@@ -12,6 +12,8 @@ import Lentera from "../public/img/lentera-fajar-indonesia.jpg";
 import recentProjectImages from "../public/img/recentProjects.jpg";
 import bagianLogo from "../public/img/bagianLogo.png";
 
+import ServicesComponent from "./components/servicesContent/servicesComponent";
+
 import ComingSoonLogo from "../public/img/soon-two.png";
 import BagianBackground from "../public/img/bagian-bg.png";
 
@@ -155,103 +157,115 @@ const Home = () => {
   return (
     <>
       <div className="relative page-header">
-        <div className="">
-          <div className="page-content" ref={pageHeader}>
-            <motion.section
-              className="pointer-events-none flex flex-[4] text-center page-wrapper overflow-hidden xl:h-screen md:h-[50rem] lg:h-screen h-[60rem] rounded-b-[1.5rem] xl:rounded-b-[3rem] md:rounded-b-[3rem] lg:rounded-b-[3rem] relative"
-              style={{
-                backgroundImage,
-              }}
-            >
-              <div className="absolute bottom-0 marqueeContainer">
-                <div className="marqueeWrapper">
-                  <MarqueeText />
-                </div>
-              </div>
-              <div className="absolute inset-0">
-                <Canvas>
-                  <Stars radius={50} count={400} factor={4} fade speed={3} />
-                </Canvas>
-              </div>
-              <div className="absolute flex flex-col items-center justify-center align-middle mt-36 flex-nowrap page-stag">
-                <div className="flex flex-col items-center text-center gradientScale">
-                  <div className="flex gap-5 whitespace-nowrap title-x title-top">
-                    Get your
-                    <span style={pathStyles}>dream</span>
+        <div>
+          <div className="overflow-hidden page-content" ref={pageHeader}>
+            <div className="overflow-hidden pageContent-wrapper">
+              <motion.section
+                className="pointer-events-none flex flex-[4] text-center page-wrapper overflow-hidden xl:h-screen lg:h-screen md:h-screen h-screen rounded-b-[1.5rem] xl:rounded-b-[3rem] md:rounded-b-[3rem] lg:rounded-b-[3rem] relative"
+                style={{
+                  backgroundImage,
+                  overflow: "hidden",
+                }}
+              >
+                <div className="absolute bottom-0 overflow-hidden marqueeContainer">
+                  <div className="overflow-hidden marqueeWrapper">
+                    <MarqueeText />
                   </div>
-                  <span className="flex flex-row gap-3 text-center title-x title-base">
-                    Idea<span style={pathStyles}>to life.</span>
-                  </span>
-                  <p className="flex gap-3 mt-10 text-gray-500 path-p-side">
-                    We create <StarsBw /> We Deploy <StarsBw /> We Maintenance
+                </div>
+                <div className="absolute inset-0">
+                  <Canvas>
+                    <Stars radius={50} count={400} factor={4} fade speed={3} />
+                  </Canvas>
+                </div>
+                <div className="absolute flex flex-col items-center justify-center align-middle mt-36 flex-nowrap page-stag">
+                  <div className="flex flex-col items-center text-center gradientScale">
+                    <div className="flex gap-5 whitespace-nowrap title-x title-top">
+                      Get your
+                      <span style={pathStyles}>dream</span>
+                    </div>
+                    <span className="flex flex-row gap-3 text-center title-x title-base">
+                      Idea<span style={pathStyles}>to life.</span>
+                    </span>
+                    <p className="flex gap-3 mt-10 text-gray-500 path-p-side">
+                      We create <StarsBw /> We Deploy <StarsBw /> We Maintenance
+                    </p>
+                  </div>
+                  <Link href="#" target="_blank">
+                    <motion.button
+                      style={{
+                        border,
+                        boxShadow,
+                      }}
+                      whileHover={{
+                        scale: 1.035,
+                        ease: "easeInOut",
+                      }}
+                      whileTap={{
+                        scale: 0.985,
+                        ease: "easeInOut",
+                      }}
+                      className="relative flex items-center gap-2 px-8 py-4 mt-24 transition-colors rounded-full pointer-events-auto group w-fit bg-gray-950/10 text-gray-50 hover:bg-gray-950/50"
+                    >
+                      Hubungi Kami
+                      <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
+                    </motion.button>
+                  </Link>
+                  {/* <span className="getStarted">Get Started</span> */}
+                </div>
+              </motion.section>
+            </div>
+          </div>
+          <div className="page-container mt-[25rem] text-white">
+            <div className="pageBig-headtitle lg:m-28 xl:mt-[28em] relative">
+              <Image
+                src="/logo/circle-about-bagian_.png"
+                alt="logo"
+                width={600}
+                height={600}
+                objectFit="cover"
+                quality={100}
+                className="w-[150px] h-[150px] absolute -top-[3em] z-[3] -right-[3em] logosCircle-bagian"
+              />
+              <div className="relative p-8 overflow-hidden pageBig-item">
+                <div className="pageBig-headling">
+                  <p className="text-[9rem] text-start pageBig-intro">Intro.</p>
+                  <p className="my-5 pageBig-about">
+                    <strong>Bagian.net</strong> bergerak dalam pembuatan website
+                    memiliki peran penting dalam memfasilitasi kebutuhan digital
+                    perusahaan dan individu, mulai dari solusi perangkat lunak
+                    kustom hingga representasi online melalui website dan
+                    aplikasi. Kami berusaha untuk memberikan solusi yang
+                    inovatif, efisien, dan sesuai dengan kebutuhan klien kami.
+                    Dalam pembuatan website memiliki peran yang krusial dalam
+                    mendukung transformasi digital perusahaan dan organisasi di
+                    era digital ini. Dengan fokus pada pengembangan perangkat
+                    lunak berkualitas tinggi dan pembuatan website yang menarik,
+                    kami membantu klien mencapai tujuan mereka dan tetap
+                    bersaing di pasar yang semakin kompetitif.
                   </p>
                 </div>
-                <Link href="#" target="_blank">
-                  <motion.button
-                    style={{
-                      border,
-                      boxShadow,
-                    }}
-                    whileHover={{
-                      scale: 1.035,
-                      ease: "easeInOut",
-                    }}
-                    whileTap={{
-                      scale: 0.985,
-                      ease: "easeInOut",
-                    }}
-                    className="relative flex items-center gap-2 px-8 py-4 mt-24 transition-colors rounded-full pointer-events-auto group w-fit bg-gray-950/10 text-gray-50 hover:bg-gray-950/50"
-                  >
-                    Hubungi Kami
-                    <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
-                  </motion.button>
-                </Link>
-                {/* <span className="getStarted">Get Started</span> */}
               </div>
-            </motion.section>
-            <div className="page-container mt-[25rem]">
-              <div className="pageBig-headtitle lg:m-28 xl:mt-[28em] relative">
-                <Image
-                  src="/logo/circle-about-bagian_.png"
-                  alt="logo"
-                  width={600}
-                  height={600}
-                  objectFit="cover"
-                  quality={100}
-                  className="w-[150px] h-[150px] absolute -top-[3em] z-[3] -right-[3em] logosCircle-bagian"
-                />
-                <div className="relative p-8 pt-20 overflow-hidden pageBig-item">
-                  <div className="pageBig-headling">
-                    <p className="text-[9rem] text-start pageBig-intro">
-                      Intro.
-                    </p>
-                    <p className="my-5 pageBig-about">
-                      <strong>Bagian.net</strong> bergerak dalam pembuatan
-                      website memiliki peran penting dalam memfasilitasi
-                      kebutuhan digital perusahaan dan individu, mulai dari
-                      solusi perangkat lunak kustom hingga representasi online
-                      melalui website dan aplikasi. Kami berusaha untuk
-                      memberikan solusi yang inovatif, efisien, dan sesuai
-                      dengan kebutuhan klien kami. Dalam pembuatan website
-                      memiliki peran yang krusial dalam mendukung transformasi
-                      digital perusahaan dan organisasi di era digital ini.
-                      Dengan fokus pada pengembangan perangkat lunak berkualitas
-                      tinggi dan pembuatan website yang menarik, kami membantu
-                      klien mencapai tujuan mereka dan tetap bersaing di pasar
-                      yang semakin kompetitif.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* <div className="marqueeContainer">
+            </div>
+            {/* <div className="marqueeContainer">
                 <div className="marqueeWrapper md:mt-52 lg:mt-52 xl:mt-52">
                   <MarqueeText />
                 </div>
               </div> */}
-              <div className="workRecents my-52">
-                <div className="m-10 recentContainer-recent">
-                  <div className="mt-24 pageContent-recent">
-                    <div className="headerContent rounded-2xl h-[50rem] relative">
+            <div className="workRecents my-52">
+              <div className="recentContainer-recent">
+                <div className="mt-24 pageContent-recent">
+                  <div className="headerContent rounded-2xl h-[50rem] relative">
+                    <div className="projectsInner-wrapper-x">
+                      <div className="my-16 workHeadline-x">
+                        <div className="flex flex-col justify-between headlineTitle-x lg:flex-row md:flex-row md:items-end lg:items-end">
+                          <div className="text-6xl font-[900] uppercase lg:text-8xl headlingHeading-x">
+                            Project
+                          </div>
+                          <div className="text-sm headlingHeading-x">
+                            kami membuat sesuai dengan keinginan anda.
+                          </div>
+                        </div>
+                      </div>
                       <div className="mb-8 xl:mb-0 lg:mb-0 md:mb-0 recentWorks-body-x">
                         <div className="relative col-span-2 overflow-hidden contentWr-body rounded-2xl">
                           <div className="relative overflow-hidden contentItems-x ">
@@ -320,7 +334,6 @@ const Home = () => {
                           </div>
                         </div>
                       </div>
-
                       <div className="pb-32 md:pt-8 lg:pt-8 xl:pt-8 page-wrapper">
                         <div className="flex flex-col gap-8 xl:flex-row page-items">
                           <div className="relative flex overflow-hidden contentWr-body rounded-2xl xl:basis-[170rem]">
@@ -451,130 +464,14 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
+                    {/* Services Component */}
+                    <div className="w-full servicesContainer">
+                      <ServicesComponent />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            {/* <div className="my-20 partnerIncase-container partnerIncase-bg">
-              <div className="m-auto partnerIncase-wrapper">
-                <div className="flex partnerIncase-content">
-                  <div className="p-8 parnetIncase-items">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Totam incidunt id quam possimus natus itaque iusto,
-                    doloremque voluptate ab, sequi iste. Non vero consequatur
-                    illo, maxime quisquam doloribus soluta ex totam perspiciatis
-                    cupiditate tempore harum iste repellat quo beatae. Autem
-                    impedit quod ipsum veritatis ex accusamus consectetur sequi,
-                    at quidem a sunt, suscipit accusantium fugit, nostrum
-                    asperiores inventore. Fugiat similique nam reiciendis
-                    perferendis soluta quisquam, ipsam unde quasi esse magnam
-                    voluptas, fuga qui ipsa? Quo quibusdam unde illo eveniet
-                    odio voluptates ullam repellendus aperiam necessitatibus
-                    animi velit repudiandae a iure, harum soluta quasi cumque
-                    rerum blanditiis consequuntur! Quisquam aliquid odio ipsum
-                    ea deserunt porro vel eum fugit odit fuga? A corporis
-                    numquam iusto repellat veniam unde animi itaque nemo, qui
-                    ipsam excepturi et maxime blanditiis id, odit, sunt
-                    similique sequi eveniet sed asperiores! Dignissimos incidunt
-                    pariatur eveniet debitis laborum quasi labore,
-                    necessitatibus laudantium at nam reprehenderit error
-                    recusandae consequuntur blanditiis ab molestiae,
-                    voluptatibus cumque asperiores nulla. Expedita beatae
-                    quaerat cupiditate eveniet quae voluptatem. Quasi labore
-                    suscipit exercitationem, laborum dolorum facere, ratione
-                    repudiandae atque veritatis, culpa ea recusandae tempore
-                    architecto quas voluptatem blanditiis et possimus. Dolore
-                    tenetur assumenda fugiat modi sequi quas, veniam quae
-                    suscipit quam. Delectus, qui? Quasi modi neque
-                    reprehenderit. Debitis dolorem aliquam voluptas esse cumque
-                    deserunt aut minima? Velit possimus dolorum est magnam, rem
-                    repellat sit aut numquam praesentium inventore, tenetur
-                    dicta ipsa magni nulla esse quasi nesciunt repudiandae
-                    tempore? Quo, incidunt repellendus esse, assumenda ipsa
-                    consequatur deleniti id optio quis suscipit, atque et
-                    maiores. Ipsa enim, voluptate distinctio magnam autem harum
-                    excepturi similique optio nulla facilis quia, sapiente, qui
-                    quidem aspernatur blanditiis vero. Consequatur, cumque
-                    aperiam tenetur quaerat dicta voluptas architecto nostrum
-                    iste in consequuntur deleniti sunt esse repudiandae? Ut
-                    placeat dignissimos consectetur, fuga nulla explicabo
-                    laboriosam architecto, natus dolorum accusantium nobis ea
-                    distinctio corrupti sequi, odit atque aliquam! Perferendis
-                    incidunt ea maiores sit similique magni cumque eius officiis
-                    animi distinctio? Aspernatur labore doloribus nesciunt,
-                    eligendi quam explicabo tempora, soluta consectetur earum
-                    beatae provident est odio delectus ad. Praesentium
-                    dignissimos dolore obcaecati et enim blanditiis, eveniet
-                    unde iusto aliquid consequatur error similique rerum dolores
-                    voluptatum velit. Iste, delectus maxime rerum excepturi vel
-                    ducimus aspernatur quasi, alias odio provident magni quos?
-                    Voluptas explicabo hic dolore quidem, necessitatibus
-                    officia? Excepturi tempore voluptates quaerat architecto,
-                    hic quae rem saepe mollitia facere deserunt maxime odit
-                    velit ipsum, iste corrupti fugit voluptate, facilis
-                    voluptatem itaque accusantium quam ea alias? Consectetur,
-                    dolore asperiores?
-                  </div>
-                  <div className="p-8 parnetIncase-items">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Totam incidunt id quam possimus natus itaque iusto,
-                    doloremque voluptate ab, sequi iste. Non vero consequatur
-                    illo, maxime quisquam doloribus soluta ex totam perspiciatis
-                    cupiditate tempore harum iste repellat quo beatae. Autem
-                    impedit quod ipsum veritatis ex accusamus consectetur sequi,
-                    at quidem a sunt, suscipit accusantium fugit, nostrum
-                    asperiores inventore. Fugiat similique nam reiciendis
-                    perferendis soluta quisquam, ipsam unde quasi esse magnam
-                    voluptas, fuga qui ipsa? Quo quibusdam unde illo eveniet
-                    odio voluptates ullam repellendus aperiam necessitatibus
-                    animi velit repudiandae a iure, harum soluta quasi cumque
-                    rerum blanditiis consequuntur! Quisquam aliquid odio ipsum
-                    ea deserunt porro vel eum fugit odit fuga? A corporis
-                    numquam iusto repellat veniam unde animi itaque nemo, qui
-                    ipsam excepturi et maxime blanditiis id, odit, sunt
-                    similique sequi eveniet sed asperiores! Dignissimos incidunt
-                    pariatur eveniet debitis laborum quasi labore,
-                    necessitatibus laudantium at nam reprehenderit error
-                    recusandae consequuntur blanditiis ab molestiae,
-                    voluptatibus cumque asperiores nulla. Expedita beatae
-                    quaerat cupiditate eveniet quae voluptatem. Quasi labore
-                    suscipit exercitationem, laborum dolorum facere, ratione
-                    repudiandae atque veritatis, culpa ea recusandae tempore
-                    architecto quas voluptatem blanditiis et possimus. Dolore
-                    tenetur assumenda fugiat modi sequi quas, veniam quae
-                    suscipit quam. Delectus, qui? Quasi modi neque
-                    reprehenderit. Debitis dolorem aliquam voluptas esse cumque
-                    deserunt aut minima? Velit possimus dolorum est magnam, rem
-                    repellat sit aut numquam praesentium inventore, tenetur
-                    dicta ipsa magni nulla esse quasi nesciunt repudiandae
-                    tempore? Quo, incidunt repellendus esse, assumenda ipsa
-                    consequatur deleniti id optio quis suscipit, atque et
-                    maiores. Ipsa enim, voluptate distinctio magnam autem harum
-                    excepturi similique optio nulla facilis quia, sapiente, qui
-                    quidem aspernatur blanditiis vero. Consequatur, cumque
-                    aperiam tenetur quaerat dicta voluptas architecto nostrum
-                    iste in consequuntur deleniti sunt esse repudiandae? Ut
-                    placeat dignissimos consectetur, fuga nulla explicabo
-                    laboriosam architecto, natus dolorum accusantium nobis ea
-                    distinctio corrupti sequi, odit atque aliquam! Perferendis
-                    incidunt ea maiores sit similique magni cumque eius officiis
-                    animi distinctio? Aspernatur labore doloribus nesciunt,
-                    eligendi quam explicabo tempora, soluta consectetur earum
-                    beatae provident est odio delectus ad. Praesentium
-                    dignissimos dolore obcaecati et enim blanditiis, eveniet
-                    unde iusto aliquid consequatur error similique rerum dolores
-                    voluptatum velit. Iste, delectus maxime rerum excepturi vel
-                    ducimus aspernatur quasi, alias odio provident magni quos?
-                    Voluptas explicabo hic dolore quidem, necessitatibus
-                    officia? Excepturi tempore voluptates quaerat architecto,
-                    hic quae rem saepe mollitia facere deserunt maxime odit
-                    velit ipsum, iste corrupti fugit voluptate, facilis
-                    voluptatem itaque accusantium quam ea alias? Consectetur,
-                    dolore asperiores?
-                  </div>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

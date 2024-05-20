@@ -1,0 +1,104 @@
+$max-container: 1440px;
+$max-margin: auto;
+
+
+.servicesHeadline_x {
+    background-color: rgb(221, 221, 221);
+    color: rgb(10, 13, 32);
+
+    .servicesContent {
+        padding-top: 3rem;
+    }
+
+    .servicesItem {
+        background-color: rgb(10, 13, 32);
+        padding: 30px;
+        color: rgb(225, 225, 225);
+
+
+        &:nth-of-type(2) {
+            background-color: rgb(255, 255, 255);
+            color: rgb(10, 13, 32);
+        }
+
+        &:nth-of-type(3) {
+            background-color: rgb(18, 119, 18);
+        }
+
+        .servicesName {
+            font-weight: 800;
+            margin-bottom: 1.4em;
+            font-family: "Sora", sans-serif;
+        }
+
+        .servicesNumber {
+            font-family: "Sora", sans-serif;
+        }
+
+
+    }
+}
+
+
+@media (300px <=width <=767px) {
+    .servicesWrapper_x {
+        max-width: $max-container;
+        margin: $max-margin;
+    }
+
+    .servicesName {
+        font-size: 20px;
+    }
+
+    .servicesNumber {
+        font-size: 38px;
+        text-align: end;
+        margin-bottom: 1.5em;
+    }
+
+    .servicesInfo {
+        font-size: 14px;
+    }
+}
+
+@media (768px <=width <=1203px) {
+    .servicesWrapper_x {
+        max-width: $max-container;
+        margin: $max-margin;
+    }
+
+    .servicesName {
+        font-size: 20px;
+    }
+
+    .servicesNumber {
+        font-size: 38px;
+        text-align: end;
+        margin-bottom: 2.5em;
+    }
+
+    .servicesInfo {
+        font-size: 14px;
+    }
+}
+
+@media (width >=1204px) {
+    .servicesWrapper_x {
+        max-width: $max-container;
+        margin: $max-margin;
+    }
+
+    .servicesName {
+        font-size: 25px;
+    }
+
+    .servicesNumber {
+        font-size: 60px;
+        text-align: end;
+        margin-bottom: 3em;
+    }
+
+    .servicesInfo {
+        font-size: 14px;
+    }
+}
