@@ -46,8 +46,8 @@ const dataImage = [
 ];
 
 export default function LenteraProjects() {
-  const containerRef = useRef(null);
-  const imageRef = useRef(null);
+  const containerRef = useRef();
+  const imageRef = useRef();
 
   useLayoutEffect(() => {
     const tl = gsap.timeline({
@@ -94,7 +94,6 @@ export default function LenteraProjects() {
                     <Image
                       src={data.projectImageTop}
                       ref={imageRef}
-                      objectFit="Cover"
                       alt="Project"
                       className="relative h-screen"
                     />
@@ -117,7 +116,7 @@ export default function LenteraProjects() {
                           className={`${styles.detailInfo_item} flex flex-col`}
                         >
                           {data.projectDetail}
-                          <span>
+                          <span className="pointer-events-none">
                             <Link
                               href="https://www.kinayainterior.com"
                               target="_blank"

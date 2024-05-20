@@ -8,7 +8,7 @@ import teamImageOne from "./dataImage/dataImage-1.jpg";
 import teamImageTwo from "./dataImage/dataImage-2.jpg";
 import teamImageThree from "./dataImage/dataImage-3.jpg";
 import teamImageFour from "./dataImage/dataImage-4.jpg";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 // Team Data
 const teamMembers = [
@@ -67,11 +67,8 @@ function page() {
                         alt={member.name}
                         height={900}
                         width={900}
-                        objectFit="Cover"
-                        className="xl:h-[30rem] md:h-[25rem] h-[15rem] w-[25rem] text-center align-bottom rounded-lg xl:w-[40rem] teamImage hover:scale-125 ease-in-out duration-1000"
+                        className="xl:h-[30rem] md:h-[25rem] h-[15rem] w-[25rem] text-center align-bottom rounded-lg xl:w-[40rem] teamImage hover:scale-125 ease-in-out duration-1000 object-cover"
                         style={{
-                          objectFit: "cover",
-                          width: "max-content",
                           width: "100%",
                         }}
                       />

@@ -221,9 +221,8 @@ const Home = () => {
               alt="logo"
               width={600}
               height={600}
-              objectFit="cover"
               quality={100}
-              className="w-[150px] h-[150px] absolute -top-[3em] z-[3] -right-[3em] logosCircle-bagian"
+              className="w-[150px] h-[150px] absolute -top-[3em] z-[3] -right-[3em] logosCircle-bagian object-cover"
             />
             <div className="relative p-8 overflow-hidden pageBig-item">
               <div className="pageBig-headling">
@@ -283,11 +282,10 @@ const Home = () => {
                               height={1200}
                               width={1200}
                               quality={100}
-                              objectFit="cover"
                               style={{
-                                objectFit: "cover",
                                 overflow: "hidden",
                               }}
+                              className="object-cover"
                             />
                           </div>
                           <div className="relative mt-8 contentItems-recents-i rounded-2xl lg:absolute lg:bottom-10 lg:w-[40rem] lg:right-10">
@@ -343,16 +341,14 @@ const Home = () => {
                                   </span>
                                 </div>
                               </div>
-                              <div className="overflow-hidden cursor-pointer contentWr-image-x rounded-2xl">
+                              <div className="object-cover overflow-hidden cursor-pointer contentWr-image-x rounded-2xl">
                                 <Image
                                   src={dataImage2}
                                   alt="Recent Projects"
                                   height={1200}
                                   width={1200}
                                   quality={100}
-                                  objectFit="cover"
                                   style={{
-                                    objectFit: "cover",
                                     overflow: "hidden",
                                   }}
                                 />
@@ -411,18 +407,15 @@ const Home = () => {
                               </div> */}
                             <div className="overflow-hidden contentWr-image-x rounded-2xl">
                               <Image
-                                className="pointer-events-none"
+                                className="object-cover pointer-events-none"
                                 src={BagianBackground}
                                 alt="Coming Soon"
                                 height={1200}
                                 width={1200}
                                 quality={100}
-                                objectFit="cover"
                                 style={{
                                   objectFit: "cover",
                                   overflow: "hidden",
-                                  // filter: "blur(6px)",
-                                  // transform: "scale(190%)",
                                 }}
                               />
                             </div>
@@ -441,9 +434,8 @@ const Home = () => {
                                     alt="logo"
                                     width={600}
                                     height={600}
-                                    objectFit="cover"
                                     quality={100}
-                                    className="w-[150px] h-[150px] logosCircle-bagian pointer-events-none drop-shadow-md"
+                                    className="w-[150px] h-[150px] logosCircle-bagian pointer-events-none drop-shadow-md object-cover"
                                   />
                                 </span>
                                 <span className="px-8 py-4 m-auto text-sm text-center bg-black rounded-full contentItems-label-in lg:w-52">

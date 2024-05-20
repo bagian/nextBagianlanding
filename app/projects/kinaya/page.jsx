@@ -99,7 +99,6 @@ export default function KinayaProjects() {
                     <Image
                       src={data.projectImageTop}
                       ref={imageRef}
-                      objectFit="Cover"
                       // priority={false}
                       alt="Project"
                       className="relative h-screen"
@@ -123,7 +122,7 @@ export default function KinayaProjects() {
                           className={`${styles.detailInfo_item} flex flex-col`}
                         >
                           {data.projectDetail}
-                          <span>
+                          <span className="pointer-events-none">
                             <Link
                               href="https://www.kinayainterior.com"
                               target="_blank"
