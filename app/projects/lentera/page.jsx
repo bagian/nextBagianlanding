@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import styles from "../Projects.module.scss";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import LenteraMockup from "../../../public/img/LenteraMockup.jpg";
 import blankImage from "../../../public/img/blank.jpg";
@@ -10,6 +10,11 @@ import blankImage from "../../../public/img/blank.jpg";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
+
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 const dataProject = [
   {
     projectName: "Lentera",
@@ -41,32 +46,62 @@ const dataImage = [
 ];
 
 export default function LenteraProjects() {
+  const containerRef = useRef(null);
+  const imageRef = useRef(null);
+
+  useLayoutEffect(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top bottom", // ketika bagian atas trigger berada di bawah viewport
+        end: "bottom top", // ketika bagian bawah trigger berada di atas viewport
+        scrub: 1.5, // membuat animasi bergerak seiring scroll
+      },
+    });
+
+    // Mengatur efek parallax pada gambar
+    tl.to(imageRef.current, {
+      yPercent: -30, // menggeser gambar ke atas sebesar 20% dari ukuran aslinya
+      ease: "power4.inOut",
+    });
+  }, []);
   return (
     <>
-      <div className={`${styles.projectContainer} text-white pt-16`}>
+      <div
+        ref={containerRef}
+        className={`${styles.projectContainer} text-white pt-16`}
+      >
         <div className={`${styles.projectWrapper}`}>
           {dataProject.map((data) => (
             <div className={`${styles.projectContent}`} key={data.projectName}>
-              <div className={`${styles.projectHeading} pb-32 relative`}>
-                <span className={`${styles.projectName} block font-light p-8`}>
-                  {data.projectName}
-                </span>
-                <div
-                  className={`${styles.headingTitle} font-SwitzerRegular italic p-8 font-bold`}
-                >
-                  {data.projectHeading}
+              <div className={`${styles.projectHeading} bg-black`}>
+                <div className={`${styles.projectHeading_top} relative`}>
+                  <span className={`${styles.projectName} font-light p-8`}>
+                    {data.projectName}
+                  </span>
+                  <div
+                    className={`${styles.headingTitle} font-SwitzerRegular italic p-8 font-bold`}
+                  >
+                    {data.projectHeading}
+                  </div>
                 </div>
               </div>
               <div className={`${styles.projectContent_item}`}>
-                <div className={`${styles.projectContent_background}`}>
-                  <Image
-                    src={data.projectImageTop}
-                    objectFit="Cover"
-                    alt="Project"
-                  />
+                <div
+                  className={`${styles.projectContent_background} overflow-hidden`}
+                >
+                  <div className="relative h-screen overflow-hidden">
+                    <Image
+                      src={data.projectImageTop}
+                      ref={imageRef}
+                      objectFit="Cover"
+                      alt="Project"
+                      className="relative h-screen"
+                    />
+                  </div>
                 </div>
                 <div
-                  className={`${styles.detailInfoWrapper} relative lg:mt-32`}
+                  className={`${styles.detailInfoWrapper} relative -mt-[10rem]`}
                 >
                   <div className={`${styles.detailInfo}`}>
                     <div className={`${styles.projectContent_intro}`}>
@@ -84,7 +119,7 @@ export default function LenteraProjects() {
                           {data.projectDetail}
                           <span>
                             <Link
-                              href="https://www.lenterafajarindonesia.sch.id"
+                              href="https://www.kinayainterior.com"
                               target="_blank"
                             >
                               <motion.button
@@ -112,8 +147,8 @@ export default function LenteraProjects() {
                         >
                           {dataImage.map((viewImage, i) => (
                             <div
+                              className={`${styles.overView_grid_ov} overflow-hidden`}
                               key={i}
-                              className={`${styles.overView_grid_ov}`}
                             >
                               <Image
                                 src={viewImage.image}

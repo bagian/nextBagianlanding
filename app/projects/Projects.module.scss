@@ -11,8 +11,9 @@
             position: relative;
 
             .projectHeading {
-                max-width: 1440px;
-                margin: auto;
+                background-color: #000;
+                z-index: 20;
+                position: relative;
 
                 .headingTitle {
                     // background-color: #000;
@@ -20,6 +21,7 @@
                 }
 
             }
+
 
             .projectName {
                 // font-size: 28px;
@@ -42,7 +44,6 @@
             }
 
             .detailInfoWrapper {
-
                 .detailInfo {
                     .projectContent_intro {
                         .detailInfo_item {}
@@ -76,15 +77,11 @@
 
         }
 
+        // .detailInfoWrapper {
+        //     background-color: tomato;
+        // }
     }
-
-
 }
-
-
-
-
-
 
 
 @media (100px <=width <=479px) {
@@ -337,12 +334,13 @@
 }
 
 @media (1204px <=width) {
+    .headingTitle {
+        font-size: 36px;
+        max-width: 60%;
+    }
+
     .projectContainer {
         .projectWrapper {
-            .headingTitle {
-                font-size: 46px;
-                max-width: 80%;
-            }
 
             .projectName {
                 font-size: 28px;
@@ -351,7 +349,6 @@
             .projectContent {
 
                 .projectContent_intro {
-                    // font-size: 25px;
                     margin: 2em;
                 }
             }
@@ -375,6 +372,12 @@
                         }
                     }
                 }
+            }
+
+            .projectHeading_top {
+                max-width: 1440px;
+                margin: auto;
+
             }
 
             .projectContent_background {
@@ -413,7 +416,6 @@
 
                 img {
                     border-radius: 20px;
-                    margin: 0;
                     object-fit: cover;
                     width: 100%;
                     height: 775px;
@@ -470,11 +472,11 @@
 
             .projectContent_background {
                 img {
-                    height: 100vh;
+                    // top: 30vh;
+                    height: 110vh;
                     object-fit: cover;
                     display: block;
                     background-repeat: no-repeat;
-                    top: 0;
                 }
             }
         }

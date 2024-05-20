@@ -44,8 +44,8 @@ import Spline from "@splinetool/react-spline";
 // let chars = splitTextAnm.chars;
 
 const Home = () => {
-  const pageHeader = useRef();
-  const tl = useRef();
+  // const pageHeader = useRef();
+  // const tl = useRef();
 
   // useGSAP(
   //   () => {
@@ -157,7 +157,7 @@ const Home = () => {
   return (
     <>
       <div className={`relative page-header`}>
-        <div className="overflow-hidden page-content" ref={pageHeader}>
+        <div className="overflow-hidden page-content">
           <div className="overflow-hidden pageContent-wrapper">
             <motion.section
               className="pointer-events-none flex flex-[4] text-center page-wrapper overflow-hidden xl:h-screen lg:h-screen md:h-screen h-screen rounded-b-[1.5rem] xl:rounded-b-[3rem] md:rounded-b-[3rem] lg:rounded-b-[3rem] relative"

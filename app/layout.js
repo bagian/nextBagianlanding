@@ -54,6 +54,7 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`${LeMurmure.variable} ${MangoMedium.variable} ${SwitzerRegular.variable}`}
+      suppressHydrationWarning
     >
       <body className={inter.className}>
         <Menu />
