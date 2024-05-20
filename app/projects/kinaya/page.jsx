@@ -3,9 +3,6 @@
 import React, { useLayoutEffect, useRef } from "react";
 import styles from "../Projects.module.scss";
 import Image from "next/image";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
 import KinayaConcept from "../../../public/img/KinayaMockup.jpg";
 // import KinayaOverview from "../../../public/img/secondConcept.png";
