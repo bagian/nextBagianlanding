@@ -1,11 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
-@font-face {
-    font-family: LeMurmure;
-    src: url('./fonts/LeMurmure-Regular.woff2'), url('./fonts/LeMurmure-Regular.woff2'), url('./fonts/LeMurmure-Regular.eot');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap');
+
+
 
 $base-max-width: 1440px;
 $base-max-margin: auto;
@@ -19,9 +16,12 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
     --border-content: 1px solid #313131;
 }
 
+
+
 .page-header {
+    overflow-x: clip;
+
     .page-content {
-        // overflow: hidden;
 
         .recentContainer-projects {
             // opacity: 0;
@@ -57,9 +57,8 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
 @media (100px <=width <=479px) {
 
     .title-x {
-        font-size: 80px;
+        font-size: 78px;
         line-height: 20%;
-        font-family: 'LeMurmure';
         display: flex;
         flex: 2;
         flex-direction: row;
@@ -178,9 +177,6 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
         }
     }
 
-    .contentItems-recents-i {
-        background-color: #0f1679;
-    }
 
     .pageBig-headtitle {
         max-width: $base-max-width;
@@ -201,9 +197,8 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
 
 
     .title-x {
-        font-size: 8em;
+        font-size: 90px;
         line-height: 90%;
-        font-family: 'LeMurmure';
         display: flex;
         flex: 4;
         flex-direction: row;
@@ -298,9 +293,6 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
         }
     }
 
-    .contentItems-recents-i {
-        background-color: #0f1679;
-    }
 
     .pageBig-headtitle {
         max-width: $base-max-width;
@@ -316,7 +308,7 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
 
 @media (960px <=width <=1203px) {
     .title-x {
-        font-size: 134px;
+        font-size: 123px;
         display: flex;
         flex: 4;
         flex-direction: row;
@@ -387,14 +379,11 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
     }
 
     .labelRecent-x {
-        background-color: #0f1679;
+        // background-color: #0f1679;
         color: #ffffff;
 
     }
 
-    .contentItems-recents-i {
-        background-color: #0f1679;
-    }
 
 
     .contentWr-image-x {
@@ -421,9 +410,9 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
     }
 }
 
-@media (width >=1204px) {
+@media (1204px <=width) {
     .title-x {
-        font-size: 158px;
+        font-size: 128px;
         display: flex;
         flex: 4;
         flex-direction: row;
@@ -519,14 +508,14 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
 
 
     .labelRecent-x {
-        background-color: #0f1679;
+        // background-color: #0f1679;
         color: #ffffff;
 
     }
 
     .contentItems-recents-i {
 
-        background-color: #0f1679;
+        // background-color: #0f1679;
     }
 
 
@@ -543,6 +532,121 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
     }
 }
 
+@media (1680px <=width) {
+    .title-x {
+        font-size: 228px;
+        display: flex;
+        flex: 4;
+        flex-direction: row;
+    }
+
+    .path-p-side {
+        font-size: 20px;
+    }
+
+    .workRecents {
+        .workShowoff {
+            max-width: $base-max-width;
+            margin: $base-max-margin;
+        }
+
+        .recentContainer-projects {
+            margin: $base-max-margin;
+
+            .page-wrapper {
+                max-width: $base-max-width;
+
+            }
+        }
+    }
+
+    .workShowoff {
+        .workShowoff-titleChild {
+            line-height: 120px;
+        }
+
+        .workShowoff-title {
+            font-weight: 800;
+            font-size: 10em;
+            text-transform: uppercase;
+        }
+
+    }
+
+    .workRecents {
+        margin-top: 20em;
+
+        .recentContainer-projects {
+            .pageContent {
+                margin: 50px;
+            }
+        }
+
+        .workShowoff {
+            height: 122px;
+            line-height: 20px;
+            margin-bottom: 125px;
+        }
+    }
+
+
+    .pageBig-headtitle {
+        max-width: 967px;
+        margin: $base-max-margin;
+
+        .pageBig-item {
+            border: var(--border-content);
+            border-radius: 30px;
+        }
+
+    }
+
+    .partnerIncase-container {
+        border-radius: 60px;
+
+        .partnerIncase-wrapper {
+            max-width: $base-max-width;
+        }
+    }
+
+    .recentData-projects {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 800px;
+            transition: transform 1000ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .projectsInner-wrapper-x {
+        max-width: $base-max-width;
+        margin: $base-max-margin;
+    }
+
+
+    .labelRecent-x {
+        // background-color: #0f1679;
+        color: #ffffff;
+
+    }
+
+    .contentWr-image-x {
+        img {
+            width: 100%;
+            height: 800px;
+            transition: transform 1000ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
 
 
 .partnerIncase-bg {
@@ -657,9 +761,35 @@ $base-partnerIncase-bg: rgb(15, 15, 18);
         .page-stag {
 
             .title-x {
-                font-family: 'LeMurmure';
+                font-weight: 800;
                 line-height: 1em;
             }
         }
+    }
+}
+
+.contentItems-body-i {
+    position: relative;
+    overflow: hidden;
+
+    .contentItems-label-i {
+        position: relative;
+    }
+
+    .contentItems-about-i {
+        position: relative;
+    }
+
+    &::before {
+        display: block;
+        position: absolute;
+        content: "";
+        background-color: rgb(36, 28, 116);
+        height: 300px;
+        width: 333px;
+        bottom: -80px;
+        left: -45px;
+        filter: blur(150px);
+        border-radius: 50%;
     }
 }

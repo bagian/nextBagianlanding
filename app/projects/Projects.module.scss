@@ -1,0 +1,522 @@
+.projectContainer {
+    position: relative;
+
+    background-color: #000;
+
+    .projectWrapper {
+        .projectContent {
+            .projectContent_item {}
+
+            padding-top: 4rem;
+            position: relative;
+
+            .projectHeading {
+                max-width: 1440px;
+                margin: auto;
+
+                .headingTitle {
+                    // background-color: #000;
+                    max-width: 80%;
+                }
+
+            }
+
+            .projectName {
+                // font-size: 28px;
+                padding-bottom: 20px;
+            }
+
+            .projectContent_background {
+                img {
+                    width: 100vw;
+                    object-fit: cover;
+                    display: block;
+                    background-repeat: no-repeat;
+                    top: 0;
+                }
+            }
+
+            .projectContent_intro {
+
+                // min-height: 100vh;
+            }
+
+            .detailInfoWrapper {
+
+                .detailInfo {
+                    .projectContent_intro {
+                        .detailInfo_item {}
+
+                        .overView_gr {
+                            .overView_grid {
+                                // padding-top: 13rem;
+
+                                .overView_grid_ov {
+                                    &:nth-child(2) {
+                                        // padding-top: 10rem;
+                                    }
+
+                                    &:nth-child(4) {
+                                        // padding-top: 10rem;
+                                    }
+
+                                    img {
+                                        border-radius: 20px;
+                                        margin: 0;
+                                        object-fit: cover;
+                                        width: 100%;
+                                        // height: 800px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+
+@media (100px <=width <=479px) {
+    .projectContainer .projectWrapper {
+        .headingTitle {
+            font-size: 22px;
+        }
+
+        .projectName {
+            font-size: 28px;
+        }
+
+        .projectContent {
+
+            .projectContent_intro {
+                // font-size: 25px;
+            }
+
+        }
+
+        .projectContent_background {
+            img {
+                height: 50vh;
+                object-fit: cover;
+                display: block;
+                background-repeat: no-repeat;
+                top: 0;
+            }
+        }
+    }
+
+    .projectContent_item {
+        overflow: hidden;
+
+        .detailInfoWrapper {
+            width: 100%;
+            overflow: hidden;
+
+            .detailInfo {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+
+                .projectContent_intro {
+                    // max-width: 1440px;
+                    margin: 2em;
+                }
+            }
+        }
+    }
+
+    .overView_gr {
+        padding-top: 13rem;
+
+        span {
+            font-size: 30px;
+            display: block;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .overView_grid {
+            padding-top: 4rem;
+
+
+            .overView_grid_ov {
+                &:nth-child(2) {
+                    // padding-top: 10rem;
+                }
+
+                &:nth-child(4) {
+                    // padding-top: 10rem;
+                }
+
+                img {
+                    border-radius: 20px;
+                    margin: 0;
+                    object-fit: cover;
+                    width: 100%;
+                    height: 480px;
+                }
+            }
+        }
+    }
+}
+
+@media (480px <=width <=767px) {
+    .projectContainer .projectWrapper {
+        .headingTitle {
+            font-size: 22px;
+        }
+
+        .projectName {
+            font-size: 28px;
+        }
+
+        .projectContent {
+
+            .projectContent_intro {
+                // font-size: 25px;
+            }
+
+        }
+
+        .projectContent_background {
+            img {
+                height: 50vh;
+                object-fit: cover;
+                display: block;
+                background-repeat: no-repeat;
+                top: 0;
+            }
+        }
+    }
+
+    .projectContent_item {
+        overflow: hidden;
+
+        .detailInfoWrapper {
+            width: 100%;
+            overflow: hidden;
+            background-color: black;
+
+            .detailInfo {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+
+                .projectContent_intro {
+                    // max-width: 1440px;
+                    margin: 2em;
+                }
+            }
+        }
+    }
+
+    .overView_gr {
+        padding-top: 13rem;
+
+        span {
+            font-size: 35px;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .overView_grid {
+            padding-top: 6rem;
+
+            .overView_grid_ov {
+                &:nth-child(2) {
+                    // padding-top: 10rem;
+                }
+
+                &:nth-child(4) {
+                    // padding-top: 10rem;
+                }
+
+                img {
+                    border-radius: 20px;
+                    margin: 0;
+                    object-fit: cover;
+                    width: 100%;
+                    height: 480px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (768px <=width <=1203px) {
+    .projectContainer .projectWrapper {
+        .headingTitle {
+            font-size: 22px;
+        }
+
+        .projectName {
+            font-size: 28px;
+        }
+
+        .projectContent {
+
+            .projectContent_intro {
+                // font-size: 25px;
+                margin: 2em;
+            }
+
+        }
+
+        .projectContent_background {
+            img {
+                height: 50vh;
+                object-fit: cover;
+                display: block;
+                background-repeat: no-repeat;
+                top: 0;
+            }
+        }
+    }
+
+    .projectContent_item {
+        overflow: hidden;
+
+        .detailInfoWrapper {
+            width: 100%;
+            overflow: hidden;
+            background-color: black;
+
+            .detailInfo {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+
+                .projectContent_intro {
+                    // max-width: 1440px;
+                    margin: 2em;
+                }
+            }
+        }
+    }
+
+    .overView_gr {
+        padding-top: 13rem;
+
+        span {
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .overView_grid {
+            padding-top: 6rem;
+
+            .overView_grid_ov {
+                &:nth-child(2) {
+                    padding-top: 6rem;
+                }
+
+                &:nth-child(4) {
+                    padding-top: 6rem;
+                }
+
+                img {
+                    border-radius: 20px;
+                    margin: 0;
+                    object-fit: cover;
+                    width: 100%;
+                    height: 630px;
+                }
+            }
+        }
+    }
+}
+
+@media (1204px <=width) {
+    .projectContainer {
+        .projectWrapper {
+            .headingTitle {
+                font-size: 46px;
+                max-width: 80%;
+            }
+
+            .projectName {
+                font-size: 28px;
+            }
+
+            .projectContent {
+
+                .projectContent_intro {
+                    // font-size: 25px;
+                    margin: 2em;
+                }
+            }
+
+            .projectContent_item {
+                overflow: hidden;
+
+                .detailInfoWrapper {
+                    width: 100%;
+                    overflow: hidden;
+                    background-color: black;
+                    padding: 0 2em;
+
+                    .detailInfo {
+                        padding-top: 3rem;
+                        padding-bottom: 3rem;
+
+                        .projectContent_intro {
+                            max-width: 1440px;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+
+            .projectContent_background {
+                img {
+                    height: 100vh;
+                    object-fit: cover;
+                    display: block;
+                    background-repeat: no-repeat;
+                    top: 0;
+                }
+            }
+        }
+    }
+
+    .overView_gr {
+
+        padding-top: 13rem;
+
+        span {
+            font-size: 50px;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .overView_grid {
+            padding-top: 6rem;
+
+            .overView_grid_ov {
+                &:nth-child(2) {
+                    padding-top: 6rem;
+                }
+
+                &:nth-child(4) {
+                    padding-top: 6rem;
+                }
+
+                img {
+                    border-radius: 20px;
+                    margin: 0;
+                    object-fit: cover;
+                    width: 100%;
+                    height: 775px;
+                }
+            }
+        }
+    }
+}
+
+@media (1680px <=width) {
+    .projectContainer {
+        .projectWrapper {
+            .headingTitle {
+                font-size: 46px;
+                max-width: 80%;
+            }
+
+            .projectName {
+                font-size: 28px;
+            }
+
+            .projectContent {
+
+                .projectContent_intro {
+                    // font-size: 25px;
+                    padding: 0 2em;
+                }
+            }
+
+            .projectContent_item {
+                overflow: hidden;
+
+                .detailInfoWrapper {
+                    width: 100%;
+                    overflow: hidden;
+                    background-color: black;
+
+                    .detailInfo {
+                        padding-top: 3rem;
+                        padding-bottom: 3rem;
+
+                        .projectContent_intro {
+                            max-width: 1440px;
+                            margin: auto;
+
+                            .challengeTitle {
+                                font-size: 24px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .projectContent_background {
+                img {
+                    height: 100vh;
+                    object-fit: cover;
+                    display: block;
+                    background-repeat: no-repeat;
+                    top: 0;
+                }
+            }
+        }
+    }
+
+    .overView_gr {
+        padding-top: 13rem;
+
+        // .challengeTitle {
+        //     font-size: 50px;
+        //     text-transform: uppercase;
+        //     font-weight: 800;
+        // }
+
+        .overView_grid {
+            padding-top: 8rem;
+
+            .overView_grid_ov {
+                &:nth-child(2) {
+                    padding-top: 6rem;
+                }
+
+                &:nth-child(4) {
+                    padding-top: 6rem;
+                }
+
+                img {
+                    border-radius: 20px;
+                    margin: 0;
+                    object-fit: cover;
+                    width: 100%;
+                    height: 800px;
+                }
+
+                .overView_grid_nm {
+                    padding: 30px 0;
+
+                    .overview_grid_tl {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

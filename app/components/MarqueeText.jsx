@@ -185,7 +185,7 @@ export default function MarqueeText() {
         scrub: 8,
         start: "1",
         end: window.innerHeight,
-        onUpdate: (e) => (direction = e.direction * -0.8),
+        onUpdate: (e) => (direction = e.direction * -1),
       },
       x: "-500px",
     });

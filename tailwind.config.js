@@ -12,6 +12,15 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        works: "rgb(10, 13, 32)",
+      },
+      fontFamily: {
+        LeMurmure: ["var(--font-LeMurmure)"],
+        MangoThin: ["var(--font-MangoThin)"],
+        SwitzerRegular: ["var(--font-SwitzerRegular)"],
+        ChillaxRegular: ["var(--font-ChillaxRegular)"],
+      },
     },
   },
   plugins: [],

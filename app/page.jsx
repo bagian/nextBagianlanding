@@ -156,162 +156,226 @@ const Home = () => {
 
   return (
     <>
-      <div className="relative page-header">
-        <div>
-          <div className="overflow-hidden page-content" ref={pageHeader}>
-            <div className="overflow-hidden pageContent-wrapper">
-              <motion.section
-                className="pointer-events-none flex flex-[4] text-center page-wrapper overflow-hidden xl:h-screen lg:h-screen md:h-screen h-screen rounded-b-[1.5rem] xl:rounded-b-[3rem] md:rounded-b-[3rem] lg:rounded-b-[3rem] relative"
-                style={{
-                  backgroundImage,
-                  overflow: "hidden",
-                }}
-              >
-                <div className="absolute bottom-0 overflow-hidden marqueeContainer">
-                  <div className="overflow-hidden marqueeWrapper">
-                    <MarqueeText />
-                  </div>
-                </div>
-                <div className="absolute inset-0">
-                  <Canvas>
-                    <Stars radius={50} count={400} factor={4} fade speed={3} />
-                  </Canvas>
-                </div>
-                <div className="absolute flex flex-col items-center justify-center align-middle mt-36 flex-nowrap page-stag">
-                  <div className="flex flex-col items-center text-center gradientScale">
-                    <div className="flex gap-5 whitespace-nowrap title-x title-top">
-                      Get your
-                      <span style={pathStyles}>dream</span>
-                    </div>
-                    <span className="flex flex-row gap-3 text-center title-x title-base">
-                      Idea<span style={pathStyles}>to life.</span>
-                    </span>
-                    <p className="flex gap-3 mt-10 text-gray-500 path-p-side">
-                      We create <StarsBw /> We Deploy <StarsBw /> We Maintenance
-                    </p>
-                  </div>
-                  <Link href="#" target="_blank">
-                    <motion.button
-                      style={{
-                        border,
-                        boxShadow,
-                      }}
-                      whileHover={{
-                        scale: 1.035,
-                        ease: "easeInOut",
-                      }}
-                      whileTap={{
-                        scale: 0.985,
-                        ease: "easeInOut",
-                      }}
-                      className="relative flex items-center gap-2 px-8 py-4 mt-24 transition-colors rounded-full pointer-events-auto group w-fit bg-gray-950/10 text-gray-50 hover:bg-gray-950/50"
-                    >
-                      Hubungi Kami
-                      <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
-                    </motion.button>
-                  </Link>
-                  {/* <span className="getStarted">Get Started</span> */}
-                </div>
-              </motion.section>
-            </div>
-          </div>
-          <div className="page-container mt-[25rem] text-white">
-            <div className="pageBig-headtitle lg:m-28 xl:mt-[28em] relative">
-              <Image
-                src="/logo/circle-about-bagian_.png"
-                alt="logo"
-                width={600}
-                height={600}
-                objectFit="cover"
-                quality={100}
-                className="w-[150px] h-[150px] absolute -top-[3em] z-[3] -right-[3em] logosCircle-bagian"
-              />
-              <div className="relative p-8 overflow-hidden pageBig-item">
-                <div className="pageBig-headling">
-                  <p className="text-[9rem] text-start pageBig-intro">Intro.</p>
-                  <p className="my-5 pageBig-about">
-                    <strong>Bagian.net</strong> bergerak dalam pembuatan website
-                    memiliki peran penting dalam memfasilitasi kebutuhan digital
-                    perusahaan dan individu, mulai dari solusi perangkat lunak
-                    kustom hingga representasi online melalui website dan
-                    aplikasi. Kami berusaha untuk memberikan solusi yang
-                    inovatif, efisien, dan sesuai dengan kebutuhan klien kami.
-                    Dalam pembuatan website memiliki peran yang krusial dalam
-                    mendukung transformasi digital perusahaan dan organisasi di
-                    era digital ini. Dengan fokus pada pengembangan perangkat
-                    lunak berkualitas tinggi dan pembuatan website yang menarik,
-                    kami membantu klien mencapai tujuan mereka dan tetap
-                    bersaing di pasar yang semakin kompetitif.
-                  </p>
+      <div className={`relative page-header`}>
+        <div className="overflow-hidden page-content" ref={pageHeader}>
+          <div className="overflow-hidden pageContent-wrapper">
+            <motion.section
+              className="pointer-events-none flex flex-[4] text-center page-wrapper overflow-hidden xl:h-screen lg:h-screen md:h-screen h-screen rounded-b-[1.5rem] xl:rounded-b-[3rem] md:rounded-b-[3rem] lg:rounded-b-[3rem] relative"
+              style={{
+                backgroundImage,
+                overflow: "hidden",
+              }}
+            >
+              <div className="absolute bottom-0 overflow-hidden marqueeContainer">
+                <div className="overflow-hidden marqueeWrapper">
+                  <MarqueeText />
                 </div>
               </div>
+              <div className="absolute inset-0">
+                <Canvas>
+                  <Stars radius={50} count={400} factor={4} fade speed={3} />
+                </Canvas>
+              </div>
+              <div className="absolute flex flex-col items-center justify-center align-middle mt-28 flex-nowrap page-stag">
+                <div className="flex flex-col items-center text-center gradientScale">
+                  <div className="flex gap-5 whitespace-nowrap title-x title-top font-LeMurmure">
+                    Get your
+                    <span style={pathStyles}>dream</span>
+                  </div>
+                  <span className="flex flex-row gap-3 text-center title-x title-base font-LeMurmure">
+                    Idea<span style={pathStyles}>to life.</span>
+                  </span>
+                  <p className="flex gap-3 mt-10 text-gray-500 path-p-side">
+                    We create <StarsBw /> We Deploy <StarsBw /> We Maintenance
+                  </p>
+                </div>
+                <Link href="#" target="_blank">
+                  <motion.button
+                    style={{
+                      border,
+                      boxShadow,
+                    }}
+                    whileHover={{
+                      scale: 1.035,
+                      ease: "easeInOut",
+                    }}
+                    whileTap={{
+                      scale: 0.985,
+                      ease: "easeInOut",
+                    }}
+                    className="relative flex items-center gap-2 px-8 py-4 mt-24 transition-colors rounded-full pointer-events-auto group w-fit bg-gray-950/10 text-gray-50 hover:bg-gray-950/50"
+                  >
+                    Hubungi Kami
+                    <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
+                  </motion.button>
+                </Link>
+                {/* <span className="getStarted">Get Started</span> */}
+              </div>
+            </motion.section>
+          </div>
+        </div>
+        <div className="page-container mt-[25rem] text-white">
+          <div className="pageBig-headtitle lg:m-28 xl:mt-[28em] relative">
+            <Image
+              src="/logo/circle-about-bagian_.png"
+              alt="logo"
+              width={600}
+              height={600}
+              objectFit="cover"
+              quality={100}
+              className="w-[150px] h-[150px] absolute -top-[3em] z-[3] -right-[3em] logosCircle-bagian"
+            />
+            <div className="relative p-8 overflow-hidden pageBig-item">
+              <div className="pageBig-headling">
+                <p className="text-[9rem] text-start pageBig-intro">Intro.</p>
+                <p className="my-5 pageBig-about">
+                  <strong>Bagian.net</strong> bergerak dalam pembuatan website
+                  memiliki peran penting dalam memfasilitasi kebutuhan digital
+                  perusahaan dan individu, mulai dari solusi perangkat lunak
+                  kustom hingga representasi online melalui website dan
+                  aplikasi. Kami berusaha untuk memberikan solusi yang inovatif,
+                  efisien, dan sesuai dengan kebutuhan klien kami. Dalam
+                  pembuatan website memiliki peran yang krusial dalam mendukung
+                  transformasi digital perusahaan dan organisasi di era digital
+                  ini. Dengan fokus pada pengembangan perangkat lunak
+                  berkualitas tinggi dan pembuatan website yang menarik, kami
+                  membantu klien mencapai tujuan mereka dan tetap bersaing di
+                  pasar yang semakin kompetitif.
+                </p>
+              </div>
             </div>
-            {/* <div className="marqueeContainer">
+          </div>
+          {/* <div className="marqueeContainer">
                 <div className="marqueeWrapper md:mt-52 lg:mt-52 xl:mt-52">
                   <MarqueeText />
                 </div>
               </div> */}
-            <div className="workRecents my-52">
-              <div className="recentContainer-recent">
-                <div className="mt-24 pageContent-recent">
-                  <div className="headerContent rounded-2xl h-[50rem] relative">
-                    <div className="projectsInner-wrapper-x">
-                      <div className="my-16 workHeadline-x">
-                        <div className="flex flex-col justify-between headlineTitle-x lg:flex-row md:flex-row md:items-end lg:items-end">
-                          <div className="text-6xl font-[900] uppercase lg:text-8xl headlingHeading-x">
-                            Project
-                          </div>
-                          <div className="text-sm headlingHeading-x">
-                            kami membuat sesuai dengan keinginan anda.
-                          </div>
+          <div className="workRecents my-52">
+            <div className="recentContainer-recent">
+              <div className="mt-24 pageContent-recent">
+                <div className="headerContent rounded-2xl h-[50rem] relative">
+                  <div className="projectsInner-wrapper-x">
+                    <div className="my-16 workHeadline-x">
+                      <div className="flex flex-col justify-between headlineTitle-x lg:flex-row md:flex-row md:items-end lg:items-end">
+                        <div className="text-6xl font-[900] uppercase lg:text-8xl headlingHeading-x">
+                          Project
+                        </div>
+                        <div className="text-sm headlingHeading-x">
+                          kami membuat sesuai dengan keinginan anda.
                         </div>
                       </div>
-                      <div className="mb-8 xl:mb-0 lg:mb-0 md:mb-0 recentWorks-body-x">
-                        <div className="relative col-span-2 overflow-hidden contentWr-body rounded-2xl">
-                          <div className="relative overflow-hidden contentItems-x ">
-                            <div className="absolute z-10 hidden lg:block lg:top-10 lg:left-10 contentItems-x-label">
-                              <div className="px-5 py-2 font-semibold rounded-full labelRecent-x xl:px-8 xl:py-4 lg:px-8 lg:py-4">
-                                <span className="flex gap-4">
-                                  <StarsWhite />
-                                  Recent
+                    </div>
+                    <div className="mb-8 xl:mb-0 lg:mb-0 md:mb-0 recentWorks-body-x">
+                      <div className="relative col-span-2 overflow-hidden contentWr-body rounded-2xl">
+                        <div className="relative overflow-hidden contentItems-x ">
+                          <div className="absolute z-10 hidden lg:block lg:top-10 lg:left-10 contentItems-x-label ">
+                            <div className="px-5 py-2 font-semibold rounded-full labelRecent-x xl:px-8 xl:py-4 lg:px-8 lg:py-4 bg-works">
+                              <span className="flex gap-4">
+                                <StarsWhite />
+                                Recent
+                              </span>
+                            </div>
+                          </div>
+                          <div className="overflow-hidden cursor-pointer contentWr-image-x rounded-2xl">
+                            <Image
+                              src={Lentera}
+                              alt="Recent Projects"
+                              height={1200}
+                              width={1200}
+                              quality={100}
+                              objectFit="cover"
+                              style={{
+                                objectFit: "cover",
+                                overflow: "hidden",
+                              }}
+                            />
+                          </div>
+                          <div className="relative mt-8 contentItems-recents-i rounded-2xl lg:absolute lg:bottom-10 lg:w-[40rem] lg:right-10">
+                            <div className="p-5 contentItems-body-i bg-works rounded-2xl">
+                              <div className="flex flex-col justify-between gap-4 xs:flex-row xl:flex-row md:flex-row lg:flex-row contentItems-label-i">
+                                <span className="px-8 py-2 text-center border rounded-full contentItems-label-in">
+                                  Lentera Fajar Indonesia
+                                </span>
+                                <span className="px-8 py-2 text-center border rounded-full contentItems-label-in">
+                                  2022
+                                </span>
+                              </div>
+                              <div className="flex flex-col mt-10 contentItems-about-i xl:flex-row xl:p-6 lg:flex-row lg:items-end lg:justify-between ">
+                                <span className="font-semibold lg:w-3/6 xl:text-2xl">
+                                  Sekolah Lentera Fajar Indonesia adalah lembaga
+                                  pendidikan yang khusus menangani anak-anak
+                                  berkebutuhan khusus.
+                                </span>
+                                <span className="mt-10 ">
+                                  <Link href="/projects/lentera">
+                                    <motion.button
+                                      whileHover={{
+                                        scale: 1.035,
+                                        ease: "easeInOut",
+                                      }}
+                                      whileTap={{
+                                        scale: 0.985,
+                                        ease: "easeInOut",
+                                      }}
+                                      className="relative flex items-center gap-2 transition-colors rounded-full pointer-events-auto group w-fit "
+                                    >
+                                      Lihat Project
+                                      <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
+                                    </motion.button>
+                                  </Link>
                                 </span>
                               </div>
                             </div>
-                            <div className="overflow-hidden cursor-pointer contentWr-image-x rounded-2xl">
-                              <Image
-                                src={Lentera}
-                                alt="Recent Projects"
-                                height={1200}
-                                width={1200}
-                                quality={100}
-                                objectFit="cover"
-                                style={{
-                                  objectFit: "cover",
-                                  overflow: "hidden",
-                                }}
-                              />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pb-32 md:pt-8 lg:pt-8 xl:pt-8 page-wrapper">
+                      <div className="flex flex-col gap-8 xl:flex-row page-items">
+                        <div className="relative flex overflow-hidden contentWr-body rounded-2xl xl:basis-[170rem]">
+                          <div className="contentWr-f">
+                            <div className="relative overflow-hidden contentItems-x">
+                              <div className="absolute z-10 hidden lg:block lg:top-10 lg:left-10 contentItems-x-label">
+                                <div className="px-5 py-2 font-semibold rounded-full bg-works label-x xl:px-8 xl:py-4 lg:px-8 lg:py-4">
+                                  <span className="flex gap-4">
+                                    <StarsWhite />
+                                    Projects
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="overflow-hidden cursor-pointer contentWr-image-x rounded-2xl">
+                                <Image
+                                  src={dataImage2}
+                                  alt="Recent Projects"
+                                  height={1200}
+                                  width={1200}
+                                  quality={100}
+                                  objectFit="cover"
+                                  style={{
+                                    objectFit: "cover",
+                                    overflow: "hidden",
+                                  }}
+                                />
+                              </div>
                             </div>
-                            <div className="relative mt-8 contentItems-recents-i rounded-2xl lg:absolute lg:bottom-10 lg:w-[40rem] lg:right-10">
+                            <div className="relative mt-8 contentItems-i bg-works rounded-2xl lg:absolute lg:bottom-10 lg:w-[40rem] lg:left-10 overflow-hidden">
                               <div className="p-5 contentItems-body-i">
                                 <div className="flex flex-col justify-between gap-4 xs:flex-row xl:flex-row md:flex-row lg:flex-row contentItems-label-i">
                                   <span className="px-8 py-2 text-center border rounded-full contentItems-label-in">
-                                    Lentera Fajar Indonesia
+                                    Kinaya
                                   </span>
                                   <span className="px-8 py-2 text-center border rounded-full contentItems-label-in">
-                                    2022
+                                    2019
                                   </span>
                                 </div>
                                 <div className="flex flex-col mt-10 contentItems-about-i xl:flex-row xl:p-6 lg:flex-row lg:items-end lg:justify-between">
                                   <span className="font-semibold lg:w-3/6 xl:text-2xl">
-                                    Sekolah Lentera Fajar Indonesia adalah
-                                    lembaga pendidikan yang khusus menangani
-                                    anak-anak berkebutuhan khusus.
+                                    Kinaya Interior Design adalah perusahaan
+                                    profesional yang bergerak di bidang desain
+                                    interior, konstruksi, dan sipil.
                                   </span>
                                   <span className="mt-10 ">
-                                    <Link
-                                      href="https://www.lenterafajarindonesia.sch.id/"
-                                      target="_blank"
-                                    >
+                                    <Link href="/projects/kinaya" alt="Kinaya">
                                       <motion.button
                                         whileHover={{
                                           scale: 1.035,
@@ -333,81 +397,9 @@ const Home = () => {
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="pb-32 md:pt-8 lg:pt-8 xl:pt-8 page-wrapper">
-                        <div className="flex flex-col gap-8 xl:flex-row page-items">
-                          <div className="relative flex overflow-hidden contentWr-body rounded-2xl xl:basis-[170rem]">
-                            <div className="contentWr-f">
-                              <div className="relative overflow-hidden contentItems-x">
-                                <div className="absolute z-10 hidden lg:block lg:top-10 lg:left-10 contentItems-x-label">
-                                  <div className="px-5 py-2 font-semibold rounded-full bg-neutral-700 label-x xl:px-8 xl:py-4 lg:px-8 lg:py-4">
-                                    <span className="flex gap-4">
-                                      <StarsWhite />
-                                      Projects
-                                    </span>
-                                  </div>
-                                </div>
-                                <div className="overflow-hidden cursor-pointer contentWr-image-x rounded-2xl">
-                                  <Image
-                                    src={dataImage2}
-                                    alt="Recent Projects"
-                                    height={1200}
-                                    width={1200}
-                                    quality={100}
-                                    objectFit="cover"
-                                    style={{
-                                      objectFit: "cover",
-                                      overflow: "hidden",
-                                    }}
-                                  />
-                                </div>
-                              </div>
-                              <div className="relative mt-8 contentItems-i bg-neutral-700 rounded-2xl lg:absolute lg:bottom-10 lg:w-[40rem] lg:left-10 ">
-                                <div className="p-5 contentItems-body-i">
-                                  <div className="flex flex-col justify-between gap-4 xs:flex-row xl:flex-row md:flex-row lg:flex-row contentItems-label-i">
-                                    <span className="px-8 py-2 text-center border rounded-full contentItems-label-in">
-                                      Kinaya
-                                    </span>
-                                    <span className="px-8 py-2 text-center border rounded-full contentItems-label-in">
-                                      2019
-                                    </span>
-                                  </div>
-                                  <div className="flex flex-col mt-10 contentItems-about-i xl:flex-row xl:p-6 lg:flex-row lg:items-end lg:justify-between">
-                                    <span className="font-semibold lg:w-3/6 xl:text-2xl">
-                                      Kinaya Interior Design adalah perusahaan
-                                      profesional yang bergerak di bidang desain
-                                      interior, konstruksi, dan sipil.
-                                    </span>
-                                    <span className="mt-10 ">
-                                      <Link
-                                        href="https://wwww.kinayainterior.com/"
-                                        target="_blank"
-                                        alt="Kinaya"
-                                      >
-                                        <motion.button
-                                          whileHover={{
-                                            scale: 1.035,
-                                            ease: "easeInOut",
-                                          }}
-                                          whileTap={{
-                                            scale: 0.985,
-                                            ease: "easeInOut",
-                                          }}
-                                          className="relative flex items-center gap-2 transition-colors rounded-full pointer-events-auto group w-fit "
-                                        >
-                                          Lihat Project
-                                          <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
-                                        </motion.button>
-                                      </Link>
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className=" contentWr-body rounded-2xl">
-                            <div className="relative overflow-hidden contentItems-x">
-                              {/* <div className="absolute z-10 justify-center hidden lg:block lg:top-10 lg:left-5 contentItems-x-label ">
+                        <div className=" contentWr-body rounded-2xl">
+                          <div className="relative overflow-hidden contentItems-x">
+                            {/* <div className="absolute z-10 justify-center hidden lg:block lg:top-10 lg:left-5 contentItems-x-label ">
                                 <div className="flex justify-between w-full">
                                   <div className="px-8 py-4 font-semibold border rounded-full label-x xl:px-8 xl:py-4 lg:px-8 lg:py-4 xl:flex">
                                     <span className="flex items-center gap-4 align-middle">
@@ -417,57 +409,56 @@ const Home = () => {
                                   </div>
                                 </div>
                               </div> */}
-                              <div className="overflow-hidden contentWr-image-x rounded-2xl">
-                                <Image
-                                  className="pointer-events-none"
-                                  src={BagianBackground}
-                                  alt="Coming Soon"
-                                  height={1200}
-                                  width={1200}
-                                  quality={100}
-                                  objectFit="cover"
-                                  style={{
-                                    objectFit: "cover",
-                                    overflow: "hidden",
-                                    // filter: "blur(6px)",
-                                    // transform: "scale(190%)",
-                                  }}
-                                />
-                              </div>
-                              <div className="absolute w-full bottom-[8rem] lg:bottom-[22rem] contentItems-i xl:bg-transparent rounded-2xl lg:absolute lg:left-0">
-                                <div className="p-5 contentItems-body-i">
-                                  <div className="flex flex-col justify-between gap-4 xs:flex-row xl:flex-col md:flex-col lg:flex-col contentItems-label-i">
-                                    {/* <span className="px-8 py-4 text-center border rounded-full contentItems-label-in">
+                            <div className="overflow-hidden contentWr-image-x rounded-2xl">
+                              <Image
+                                className="pointer-events-none"
+                                src={BagianBackground}
+                                alt="Coming Soon"
+                                height={1200}
+                                width={1200}
+                                quality={100}
+                                objectFit="cover"
+                                style={{
+                                  objectFit: "cover",
+                                  overflow: "hidden",
+                                  // filter: "blur(6px)",
+                                  // transform: "scale(190%)",
+                                }}
+                              />
+                            </div>
+                            <div className="absolute w-full bottom-[8rem] lg:bottom-[22rem] contentItems-i xl:bg-transparent rounded-2xl lg:absolute lg:left-0">
+                              <div className="p-5 contentItems-body-l">
+                                <div className="flex flex-col justify-between gap-4 xs:flex-row xl:flex-col md:flex-col lg:flex-col contentItems-label-i">
+                                  {/* <span className="px-8 py-4 text-center border rounded-full contentItems-label-in">
                                       Coming Soon
                                     </span> */}
-                                  </div>
                                 </div>
-                                <div className="flex flex-col justify-center w-full gap-3 m-auto align-middle comingProject-i ">
-                                  <span className="px-8 py-4 m-auto text-center rounded-full contentItems-label-in">
-                                    <Image
-                                      src={ComingSoonLogo}
-                                      alt="logo"
-                                      width={600}
-                                      height={600}
-                                      objectFit="cover"
-                                      quality={100}
-                                      className="w-[150px] h-[150px] logosCircle-bagian pointer-events-none drop-shadow-md"
-                                    />
-                                  </span>
-                                  <span className="px-8 py-4 m-auto text-sm text-center bg-black rounded-full contentItems-label-in lg:w-52">
-                                    Coming Soon
-                                  </span>
-                                </div>
+                              </div>
+                              <div className="flex flex-col justify-center w-full gap-3 m-auto align-middle comingProject-i ">
+                                <span className="px-8 py-4 m-auto text-center rounded-full contentItems-label-in">
+                                  <Image
+                                    src={ComingSoonLogo}
+                                    alt="logo"
+                                    width={600}
+                                    height={600}
+                                    objectFit="cover"
+                                    quality={100}
+                                    className="w-[150px] h-[150px] logosCircle-bagian pointer-events-none drop-shadow-md"
+                                  />
+                                </span>
+                                <span className="px-8 py-4 m-auto text-sm text-center bg-black rounded-full contentItems-label-in lg:w-52">
+                                  Coming Soon
+                                </span>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    {/* Services Component */}
-                    <div className="w-full servicesContainer">
-                      <ServicesComponent />
-                    </div>
+                  </div>
+                  {/* Services Component */}
+                  <div className="w-full servicesContainer">
+                    <ServicesComponent />
                   </div>
                 </div>
               </div>

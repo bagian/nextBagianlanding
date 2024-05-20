@@ -31,7 +31,7 @@ export default function ServicesComponent() {
             </div>
           </div>
           <div
-            className={`${styles.servicesContent} grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 lg:m-6 md:m-10 xl:m-0`}
+            className={`${styles.servicesContent} grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:grid- gap-4 lg:m-6 md:m-10 xl:m-0`}
           >
             {ServicesData.map((service, index) => (
               <div
@@ -46,7 +46,7 @@ export default function ServicesComponent() {
                 >
                   {service.name}
                 </span>
-                <span className={`${styles.servicesInfo} block white`}>
+                <span className={`${styles.servicesInfo} white`}>
                   {service.infoService}
                 </span>
               </div>
