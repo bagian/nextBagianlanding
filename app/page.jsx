@@ -349,7 +349,7 @@ const Home = () => {
                                   />
                                 </div>
                               </div>
-                              <div className="relative mt-8 contentItems-i bg-neutral-700 rounded-2xl lg:absolute lg:bottom-10 lg:w-[40rem] lg:left-10">
+                              <div className="relative mt-8 contentItems-i bg-neutral-700 rounded-2xl lg:absolute lg:bottom-10 lg:w-[40rem] lg:left-10 ">
                                 <div className="p-5 contentItems-body-i">
                                   <div className="flex flex-col justify-between gap-4 xs:flex-row xl:flex-row md:flex-row lg:flex-row contentItems-label-i">
                                     <span className="px-8 py-2 text-center border rounded-full contentItems-label-in">
