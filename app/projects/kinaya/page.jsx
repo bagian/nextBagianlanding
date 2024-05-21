@@ -1,12 +1,10 @@
 "use client";
 
-import { useLayoutEffect, useRef } from "react";
+import { useRef, useLayoutEffect, useEffect } from "react";
 import styles from "../Projects.module.scss";
-// import Image from "next/legacy/image";
 import Image from "next/image";
 
 import KinayaConcept from "../../../public/img/KinayaMockup.jpg";
-// import KinayaOverview from "../../../public/img/secondConcept.png";
 import KinayaLoading from "../../../public/img/Kinaya.jpg";
 import KinayaSlider from "../../../public/img/dataImg2.jpg";
 import KinayaGallery from "../../../public/img/KinayaGallery.png";
@@ -14,8 +12,6 @@ import KinayaTeam from "../../../public/img/KinayaTeam.jpg";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
-
-// import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -39,6 +35,7 @@ const dataImage = [
   },
   {
     image: KinayaLoading,
+    title: "Default Logo",
   },
   {
     image: KinayaSlider,
@@ -55,21 +52,44 @@ export default function KinayaProjects() {
   const imageRef = useRef();
 
   useLayoutEffect(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top bottom", // ketika bagian atas trigger berada di bawah viewport
-        end: "bottom top", // ketika bagian bawah trigger berada di atas viewport
-        scrub: 1.5, // membuat animasi bergerak seiring scroll
-      },
-    });
+    if (containerRef.current && imageRef.current) {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 0.05,
+        },
+      });
 
-    // Mengatur efek parallax pada gambar
-    tl.to(imageRef.current, {
-      yPercent: -30, // menggeser gambar ke atas sebesar 20% dari ukuran aslinya
-      ease: "power4.inOut",
+      tl.to(imageRef.current, {
+        yPercent: -20,
+        ease: "power4.inOut",
+      });
+    }
+  }, []);
+
+  const imageRefs = useRef([]);
+  imageRefs.current = [];
+
+  useEffect(() => {
+    const refs = imageRefs.current.filter((ref) => ref != null);
+    refs.forEach((ref, index) => {
+      if (ref) {
+        gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: ref,
+              start: "top bottom",
+              end: "bottom top",
+              scrub: 0.8,
+            },
+          })
+          .fromTo(ref, { y: -130 }, { y: 0, ease: "power1.inOut" });
+      }
     });
   }, []);
+
   return (
     <>
       <div
@@ -92,25 +112,28 @@ export default function KinayaProjects() {
                 </div>
               </div>
               <div className={`${styles.projectContent_item}`}>
-                <div
-                  className={`${styles.projectContent_background} overflow-hidden`}
-                >
-                  <div className="relative h-screen overflow-hidden">
-                    <Image
-                      src={data.projectImageTop}
-                      ref={imageRef}
-                      // priority={false}
-                      alt="Project"
-                      className="relative h-screen"
-                    />
+                <div className={`${styles.projectContent_background}`}>
+                  <div
+                    className={`${styles.projectContent_img_ss}`}
+                    ref={imageRef}
+                  >
+                    <picture>
+                      <Image
+                        loading="lazy"
+                        priority={false}
+                        src={data.projectImageTop}
+                        alt="Project"
+                        className="relative h-[100%]"
+                      />
+                    </picture>
                   </div>
                 </div>
-                <div
-                  className={`${styles.detailInfoWrapper} relative -mt-[10rem]`}
-                >
+                <div className={`${styles.detailInfoWrapper}`}>
                   <div className={`${styles.detailInfo}`}>
                     <div className={`${styles.projectContent_intro}`}>
-                      <div className="flex flex-col gap-10 lg:flex-row">
+                      <div
+                        className={`${styles.projectContent_intro_item} flex flex-col gap-10 lg:flex-row`}
+                      >
                         <div className="col-span-2">
                           <div
                             className={`${styles.challengeTitle} flex-1 uppercase lg:w-[30rem]`}
@@ -150,19 +173,34 @@ export default function KinayaProjects() {
                         <div
                           className={`${styles.overView_grid} grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8`}
                         >
-                          {dataImage.map((viewImage, i) => (
+                          {dataImage.map((viewImage, index) => (
                             <div
                               className={`${styles.overView_grid_ov} overflow-hidden`}
-                              key={i}
+                              key={index}
                             >
-                              <Image
-                                src={viewImage.image}
-                                objectFit="Cover"
-                                alt="Project"
-                              />
+                              <div className="overflow-hidden rounded-2xl h-[500px] lg:h-[650px] md:h-[550px]">
+                                <div
+                                  ref={(el) => (imageRefs.current[index] = el)}
+                                >
+                                  <picture>
+                                    <Image
+                                      loading="lazy"
+                                      width={1900}
+                                      height={900}
+                                      quality={100}
+                                      priority={false}
+                                      src={viewImage.image.src}
+                                      alt={viewImage.title || "Project Preview"}
+                                      style={{
+                                        objectFit: "cover",
+                                      }}
+                                    />
+                                  </picture>
+                                </div>
+                              </div>
                               <div className={`${styles.overView_grid_nm}`}>
                                 <div
-                                  className={`${styles.overview_grid_tl} font-ChillaxRegular`}
+                                  className={`${styles.overview_grid_tl} font-ChillaxRegular py-4`}
                                 >
                                   {viewImage.title}
                                 </div>

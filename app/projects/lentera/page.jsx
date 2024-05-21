@@ -29,19 +29,19 @@ const dataProject = [
 const dataImage = [
   {
     image: blankImage,
-    title: "",
+    // title: "",
   },
   {
     image: blankImage,
-    title: "",
+    // title: "",
   },
   {
     image: blankImage,
-    title: "",
+    // title: "",
   },
   {
     image: blankImage,
-    title: "",
+    // title: "",
   },
 ];
 
@@ -50,20 +50,21 @@ export default function LenteraProjects() {
   const imageRef = useRef();
 
   useLayoutEffect(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top bottom", // ketika bagian atas trigger berada di bawah viewport
-        end: "bottom top", // ketika bagian bawah trigger berada di atas viewport
-        scrub: 1.5, // membuat animasi bergerak seiring scroll
-      },
-    });
+    if (containerRef.current && imageRef.current) {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 1.5,
+        },
+      });
 
-    // Mengatur efek parallax pada gambar
-    tl.to(imageRef.current, {
-      yPercent: -30, // menggeser gambar ke atas sebesar 20% dari ukuran aslinya
-      ease: "power4.inOut",
-    });
+      tl.to(imageRef.current, {
+        yPercent: -30,
+        ease: "power4.inOut",
+      });
+    }
   }, []);
   return (
     <>

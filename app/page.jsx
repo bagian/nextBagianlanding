@@ -10,6 +10,7 @@ import SoonGreen from "../public/img/soon-backdrop.jpg";
 import SoonBlue from "../public/img/soon-backdrop-blue.jpg";
 import Lentera from "../public/img/lentera-fajar-indonesia.jpg";
 import recentProjectImages from "../public/img/recentProjects.jpg";
+import kinayaMockupsImg from "../public/img/KinayaMockup.jpg";
 import bagianLogo from "../public/img/bagianLogo.png";
 
 import ServicesComponent from "./components/servicesContent/servicesComponent";
@@ -106,7 +107,7 @@ const Home = () => {
       "linear-gradient(52deg, rgba(197,251,69,1) 0%, rgba(115,207,35,1) 51%)",
     backgroundClip: "text",
     color: "transparent",
-    "-webkit-background-clip": "text",
+    WebkitBackgroundClip: "text",
     // backgroundColor: "#4548fb",
   };
 
@@ -343,14 +344,16 @@ const Home = () => {
                               </div>
                               <div className="object-cover overflow-hidden cursor-pointer contentWr-image-x rounded-2xl">
                                 <Image
-                                  src={dataImage2}
+                                  src={kinayaMockupsImg}
                                   alt="Recent Projects"
                                   height={1200}
                                   width={1200}
                                   quality={100}
+                                  priority={false}
                                   style={{
                                     overflow: "hidden",
                                   }}
+                                  className="object-cover"
                                 />
                               </div>
                             </div>
