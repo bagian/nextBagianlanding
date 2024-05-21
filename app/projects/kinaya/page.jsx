@@ -48,8 +48,8 @@ const dataImage = [
 ];
 
 export default function KinayaProjects() {
-  const containerRef = useRef();
-  const imageRef = useRef();
+  const containerRef = useRef(null);
+  const imageRef = useRef(null);
 
   useLayoutEffect(() => {
     if (containerRef.current && imageRef.current) {
@@ -73,6 +73,7 @@ export default function KinayaProjects() {
   imageRefs.current = [];
 
   useEffect(() => {
+    // console.log(imageRefs.current);
     const refs = imageRefs.current.filter((ref) => ref != null);
     refs.forEach((ref, index) => {
       if (ref) {
