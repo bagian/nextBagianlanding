@@ -143,8 +143,7 @@
                 }
 
                 img {
-                    border-radius: 20px;
-                    margin: 0;
+                    // margin: 0;
                     object-fit: cover;
                     width: 100%;
                     height: 680px;
@@ -225,7 +224,7 @@
                     object-fit: cover;
                     width: 100%;
                     height: 680px;
-                    transform: translateZ(0);
+                    // transform: translateZ(0);
                 }
             }
         }
@@ -376,11 +375,12 @@
             }
 
             .projectContent_background {
+                transform: translateZ(0);
+
                 img {
                     height: 140vh;
                     object-fit: cover;
                     background-repeat: no-repeat;
-                    transform: translateZ(0);
                 }
             }
         }
@@ -505,7 +505,6 @@
                 img {
                     object-fit: cover;
                     height: 880px;
-                    transform: translateZ(0);
                 }
 
                 .overView_grid_nm {

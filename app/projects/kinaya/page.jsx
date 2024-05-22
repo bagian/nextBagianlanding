@@ -48,6 +48,17 @@ const dataImage = [
 ];
 
 export default function KinayaProjects() {
+  const Component = () => {
+    const [styles, setStyles] = useState({});
+
+    useEffect(() => {
+      if (typeof window !== "undefined") {
+        const dynamicStyle = calculateStyleBasedOnWindowSize();
+        setStyles(dynamicStyle);
+      }
+    }, []);
+  };
+
   const containerRef = useRef(null);
   const imageRef = useRef(null);
 
@@ -58,13 +69,13 @@ export default function KinayaProjects() {
           trigger: containerRef.current,
           start: "top bottom",
           end: "bottom top",
-          scrub: 0.05,
+          scrub: 2,
         },
       });
 
       tl.to(imageRef.current, {
         yPercent: -20,
-        ease: "power4.inOut",
+        ease: "power3.Out",
       });
     }
   }, []);
@@ -73,22 +84,24 @@ export default function KinayaProjects() {
   imageRefs.current = [];
 
   useEffect(() => {
-    // console.log(imageRefs.current);
     const refs = imageRefs.current.filter((ref) => ref != null);
-    refs.forEach((ref, index) => {
-      if (ref) {
+    if (refs.length > 0) {
+      // console.log("Refs are available:", refs);
+      refs.forEach((ref, index) => {
         gsap
           .timeline({
             scrollTrigger: {
               trigger: ref,
               start: "top bottom",
               end: "bottom top",
-              scrub: 0.8,
+              scrub: 1.5,
             },
           })
-          .fromTo(ref, { y: -130 }, { y: 0, ease: "power1.inOut" });
-      }
-    });
+          .fromTo(ref, { y: -130 }, { y: 0, ease: "power3.Out" });
+      }, []);
+    } else {
+      // console.log(refs);
+    }
   }, []);
 
   return (
@@ -121,7 +134,9 @@ export default function KinayaProjects() {
                     <picture>
                       <Image
                         loading="lazy"
-                        priority={false}
+                        // priority={true}
+                        placeholder="blur"
+                        blurDataURL={data.projectImageTop.src}
                         src={data.projectImageTop}
                         alt="Project"
                         className="relative h-[100%]"
