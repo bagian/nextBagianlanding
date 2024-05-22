@@ -77,8 +77,8 @@ export default function LenteraProjects() {
     }
   }, []);
 
-  const imageRefs = useRef([]);
-  imageRefs.current = [];
+  const imageRefs = useRef(null);
+  // imageRefs.current = [];
 
   useEffect(() => {
     const refs = imageRefs.current.filter((ref) => ref != null);

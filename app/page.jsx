@@ -37,7 +37,7 @@ import Image from "next/image";
 
 // import gsap from "gsap";
 // import { useGSAP } from "@gsap/react";
-import Spline from "@splinetool/react-spline";
+// import Spline from "@splinetool/react-spline";
 
 // gsap.registerPlugin(splitText);
 

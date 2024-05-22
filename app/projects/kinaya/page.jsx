@@ -48,21 +48,28 @@ const dataImage = [
 ];
 
 export default function KinayaProjects() {
-  const Component = () => {
-    const [styles, setStyles] = useState({});
-
-    useEffect(() => {
-      if (typeof window !== "undefined") {
-        const dynamicStyle = calculateStyleBasedOnWindowSize();
-        setStyles(dynamicStyle);
-      }
-    }, []);
-  };
-
   const containerRef = useRef(null);
   const imageRef = useRef(null);
+  const imageRefs = useRef([]);
 
-  useLayoutEffect(() => {
+  gsap.config({
+    nullTargetWarn: false,
+    trialWarn: false,
+  });
+
+  // Memastikan elemen dengan kelas 'null' ada sebelum animasi dijalankan
+  useEffect(() => {
+    const nullElement = document.querySelector(".null");
+    if (nullElement) {
+      gsap.to(nullElement, {
+        opacity: 0,
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
     if (containerRef.current && imageRef.current) {
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -77,32 +84,30 @@ export default function KinayaProjects() {
         yPercent: -20,
         ease: "power3.Out",
       });
-    }
-  }, []);
-
-  const imageRefs = useRef([]);
-  imageRefs.current = [];
-
-  useEffect(() => {
-    const refs = imageRefs.current.filter((ref) => ref != null);
-    if (refs.length > 0) {
-      // console.log("Refs are available:", refs);
-      refs.forEach((ref, index) => {
-        gsap
-          .timeline({
-            scrollTrigger: {
-              trigger: ref,
-              start: "top bottom",
-              end: "bottom top",
-              scrub: 1.5,
-            },
-          })
-          .fromTo(ref, { y: -130 }, { y: 0, ease: "power3.Out" });
-      }, []);
     } else {
-      // console.log(refs);
+      console.error("Referensi containerRef atau imageRef tidak ditemukan.");
     }
-  }, []);
+
+    // Pastikan imageRefs.current sudah terisi dan bukan array kosong
+    if (imageRefs.current && imageRefs.current.length > 0) {
+      imageRefs.current.forEach((ref, index) => {
+        if (ref) {
+          gsap
+            .timeline({
+              scrollTrigger: {
+                trigger: ref,
+                start: "top bottom",
+                end: "bottom top",
+                scrub: 1.5,
+              },
+            })
+            .fromTo(ref, { y: -130 }, { y: 0, ease: "power3.Out" });
+        }
+      });
+    } else {
+      console.error("Array imageRefs.current kosong atau tidak ditemukan.");
+    }
+  }, []); // Tambahkan dependensi jika diperlukan
 
   return (
     <>
