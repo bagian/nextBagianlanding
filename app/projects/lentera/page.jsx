@@ -5,7 +5,7 @@ import styles from "../Projects.module.scss";
 import Image from "next/image";
 
 import LenteraConcept from "../../../public/img/LenteraMockup.jpg";
-import BlankImage from "../../../public/img/Blank.jpg";
+import BlankImage from "../../../public/img/blank.jpg";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
