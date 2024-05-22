@@ -28,19 +28,19 @@ const dataProject = [
 const dataImage = [
   {
     image: BlankImage,
-    title: "Team layout",
+    title: "Sekolah Lentera Fajar Indonesia",
   },
   {
     image: BlankImage,
-    title: "Default Logo",
+    title: "Sekolah Lentera Fajar Indonesia",
   },
   {
     image: BlankImage,
-    title: "Background image slider layout",
+    title: "Sekolah Lentera Fajar Indonesia",
   },
   {
     image: BlankImage,
-    title: "Grid gallery project Kinaya",
+    title: "Sekolah Lentera Fajar Indonesia",
   },
 ];
 
