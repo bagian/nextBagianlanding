@@ -35,8 +35,8 @@ import MarqueeText from "./components/MarqueeText";
 
 import Image from "next/image";
 
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
+// import gsap from "gsap";
+// import { useGSAP } from "@gsap/react";
 import Spline from "@splinetool/react-spline";
 
 // gsap.registerPlugin(splitText);
