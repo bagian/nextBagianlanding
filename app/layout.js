@@ -9,23 +9,31 @@ const LeMurmure = localFont({
   src: "../public/fonts/LeMurmure.woff",
   display: "swap",
   variable: "--font-LeMurmure",
+  rel: "preload",
+  as: "font",
 });
 
 const MangoMedium = localFont({
   src: "../public/fonts/MangoGrotesque-Thin.woff2",
   display: "swap",
   variable: "--font-MangoThin",
+  rel: "preload",
+  as: "font",
 });
 
 const SwitzerRegular = localFont({
   src: "../public/fonts/Switzer-Regular.woff2",
   display: "swap",
   variable: "--font-SwitzerRegular",
+  rel: "preload",
+  as: "font",
 });
 const ChillaxRegular = localFont({
   src: "../public/fonts/Chillax-Variable.woff2",
   display: "swap",
   variable: "--font-ChillaxRegular",
+  rel: "preload",
+  as: "font",
 });
 
 const inter = Inter({ subsets: ["latin"] });
