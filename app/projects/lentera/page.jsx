@@ -1,5 +1,5 @@
 "use client";
-
+import { Metadata } from "next";
 import { useRef, useEffect } from "react";
 import styles from "../Projects.module.scss";
 import Image from "next/image";
@@ -11,7 +11,6 @@ import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 gsap.registerPlugin(ScrollTrigger);
 
 const dataProject = [
@@ -45,6 +44,14 @@ const dataImage = [
 ];
 
 export default function LenteraProjects() {
+  useEffect(() => {
+    document.title = "Lentera - Sekolah Lentera Fajar Indonesia";
+    document.description =
+      "Sekolah Lentera Fajar Indonesia adalah lembaga pendidikan yang khusus menangani anak-anak berkebutuhan khusus.";
+    document.keywords =
+      "Sekolah, Pendidikan Khusus, Lentera Fajar Indonesia, Anak Berkebutuhan Khusus";
+  }, []);
+
   const containerRef = useRef(null);
   const imageRef = useRef(null);
   const imageRefs = useRef([]);

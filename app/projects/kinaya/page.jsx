@@ -48,6 +48,13 @@ const dataImage = [
 ];
 
 export default function KinayaProjects() {
+  useEffect(() => {
+    document.title = "Kinaya - Kinaya Interior Design";
+    document.description =
+      "Kinaya Interior Design adalah perusahaan profesional yang bergerak di bidang desain interior, konstruksi, dan sipil.";
+    document.keywords =
+      "Desain Interior, Konstruksi, Sipil, Kinaya, Kinaya Interior Design";
+  }, []);
   const containerRef = useRef(null);
   const imageRef = useRef(null);
   const imageRefs = useRef([]);

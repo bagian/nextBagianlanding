@@ -49,13 +49,44 @@ const inter = Inter({ subsets: ["latin"] });
 <link rel="icon" href="/favicon.ico?<generated>" sizes="32x32" />;
 
 export const metadata = {
-  title: "Bagian - Software House",
+  title: {
+    default: "Bagian - Software House",
+    tempalte: "%s - Software House",
+  },
   description: [
-    "Bagian adalah salah satu softwarehouse yang memiliki kredible dalam proses pembuatan website, aplikasi berbasis website, UI/UX website. Kami berlokasi di Kota Sidoarjo.",
+    "Bagian adalah salah satu Software House yang memiliki kredible dalam proses pembuatan website, aplikasi berbasis website, UI/UX website. Kami berlokasi di Kota Sidoarjo.",
   ],
   keywords: [
-    "Softwarehouse, Pembuatan Website, Website, UI, UI/UX, Aplikasi Berbasis Website, Bagian Softwarehouse, Bagian.net Bagian.",
+    "Softwarehouse, Pembuatan Website, Website, UI, UI/UX, Aplikasi Berbasis Website, Bagian Softwarehouse, Bagian.net, Bagian, Bagian Corp, software house, Software House, Aplikasi Website, Pembuatan Website, Website Sekolah, Custom Website, Kustom Website,  Maintenance Website",
   ],
+  twitter: {
+    card: "summary_large_image",
+    title: "Bagian - Software House",
+    description:
+      "Bagian adalah salah satu Software House yang memiliki kredible dalam proses pembuatan website, aplikasi berbasis website, UI/UX website. Kami berlokasi di Kota Sidoarjo.",
+    images: ["../public/img/bagianLogo.png"],
+  },
+  facebook: {
+    card: "summary_large_image",
+    title: "Bagian - Software House",
+    description:
+      "Bagian adalah salah satu Software House yang memiliki kredible dalam proses pembuatan website, aplikasi berbasis website, UI/UX website. Kami berlokasi di Kota Sidoarjo.",
+    images: ["../public/img/bagianLogo.png"],
+  },
+  linkedin: {
+    card: "summary_large_image",
+    title: "Bagian - Software House",
+    description:
+      "Bagian adalah salah satu Software House yang memiliki kredible dalam proses pembuatan website, aplikasi berbasis website, UI/UX website. Kami berlokasi di Kota Sidoarjo.",
+    images: ["../public/img/bagianLogo.png"],
+  },
+  pinterest: {
+    card: "summary_large_image",
+    title: "Bagian - Software House",
+    description:
+      "Bagian adalah salah satu Software House yang memiliki kredible dalam proses pembuatan website, aplikasi berbasis website, UI/UX website. Kami berlokasi di Kota Sidoarjo.",
+    images: ["../public/img/bagianLogo.png"],
+  },
   authors: [
     {
       name: "Bagian.net",
