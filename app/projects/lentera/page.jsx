@@ -1,11 +1,11 @@
 "use client";
 
-import { useRef, useLayoutEffect, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import styles from "../Projects.module.scss";
 import Image from "next/image";
 
-import LenteraMockup from "../../../public/img/LenteraMockup.jpg";
-import BlankImage from "../../../public/img/blank.jpg";
+import LenteraConcept from "../../../public/img/LenteraMockup.jpg";
+import BlankImage from "../../../public/img/Blank.jpg";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
@@ -19,7 +19,7 @@ const dataProject = [
     projectName: "Lentera",
     projectHeading:
       "Sekolah Lentera Fajar Indonesia adalah lembaga pendidikan yang khusus menangani anak-anak berkebutuhan khusus.",
-    projectImageTop: LenteraMockup,
+    projectImageTop: LenteraConcept,
     projectDetail:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolor adipisci rem magnam officiis harum similique sit? Distinctio ipsa ullam et in alias esse ducimus. Excepturi pariatur neque optio. Obcaecati enim iure exercitationem quibusdam sed illum, accusantium minus, delectus ex animi adipisci, sequi eos beatae! Esse saepe provident quo sequi quam! Aliquid officiis quidem vel enim dolor sapiente unde nam cupiditate eius commodi, rem pariatur nisi voluptates rerum corporis. Culpa, tempora asperiores? Repellat, assumenda nam minima asperiores maxime eos vitae distinctio magnam. Id excepturi a ratione maxime! Optio deserunt sequi dolorum ad saepe reprehenderit eaque similique, assumenda cupiditate ut impedit?",
   },
@@ -45,21 +45,28 @@ const dataImage = [
 ];
 
 export default function LenteraProjects() {
-  const Component = () => {
-    const [styles, setStyles] = useState({});
-
-    useEffect(() => {
-      if (typeof window !== "undefined") {
-        const dynamicStyle = calculateStyleBasedOnWindowSize();
-        setStyles(dynamicStyle);
-      }
-    }, []);
-  };
-
   const containerRef = useRef(null);
   const imageRef = useRef(null);
+  const imageRefs = useRef([]);
 
-  useLayoutEffect(() => {
+  gsap.config({
+    nullTargetWarn: false,
+    trialWarn: false,
+  });
+
+  // Memastikan elemen dengan kelas 'null' ada sebelum animasi dijalankan
+  useEffect(() => {
+    const nullElement = document.querySelector(".null");
+    if (nullElement) {
+      gsap.to(nullElement, {
+        opacity: 0,
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
     if (containerRef.current && imageRef.current) {
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -75,30 +82,110 @@ export default function LenteraProjects() {
         ease: "power3.Out",
       });
     }
-  }, []);
 
-  const imageRefs = useRef(null);
-  // imageRefs.current = [];
+    // Pastikan imageRefs.current sudah terisi dan bukan array kosong
+    if (imageRefs.current && imageRefs.current.length > 0) {
+      imageRefs.current.forEach((ref, index) => {
+        if (ref) {
+          gsap
+            .timeline({
+              scrollTrigger: {
+                trigger: ref,
+                start: "top bottom",
+                end: "bottom top",
+                scrub: 1.5,
+              },
+            })
+            .fromTo(ref, { y: -130 }, { y: 0, ease: "power3.Out" });
+        }
+      });
+    }
+  }, []); // Tambahkan dependensi jika diperlukan
 
   useEffect(() => {
-    const refs = imageRefs.current.filter((ref) => ref != null);
-    if (refs.length > 0) {
-      // console.log("Refs are available:", refs);
-      refs.forEach((ref, index) => {
-        gsap
-          .timeline({
-            scrollTrigger: {
-              trigger: ref,
-              start: "top bottom",
-              end: "bottom top",
-              scrub: 1.5,
-            },
-          })
-          .fromTo(ref, { y: -130 }, { y: 0, ease: "power3.Out" });
-      }, []);
-    } else {
-      // console.log(refs);
-    }
+    gsap.to("#projectName", {
+      ease: "power1.inOut",
+      opacity: 1,
+      y: -20,
+    });
+    gsap.fromTo(
+      "#headingTitle",
+      {
+        opacity: 0,
+        y: 30,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        delay: 1,
+        stagger: 0.1,
+      }
+    );
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".cl-d",
+          start: "top 80%",
+          end: "bottom 20%",
+          scrub: 1.5,
+          stagger: 0.1,
+          once: true, // Menambahkan opsi 'once' untuk menjalankan animasi hanya sekali
+        },
+      })
+      .fromTo(
+        ".cl-d",
+        {
+          opacity: 0,
+          y: 30,
+        },
+        {
+          opacity: 1,
+          delay: 1,
+          stagger: 0.1,
+          y: 0,
+        }
+      );
+  }, []);
+
+  useEffect(() => {
+    gsap.to("#projectImage", {
+      ease: "power1.inOut",
+      opacity: 1,
+      y: -30,
+      delay: 1,
+    });
+
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: "#projectPreview",
+          start: "top 80%",
+          end: "bottom 100%",
+          scrub: true,
+          once: true, // Animasi hanya akan dijalankan sekali
+        },
+      })
+      .fromTo(
+        "#projectPreview",
+        {
+          opacity: 0,
+          y: -50,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          delay: 2,
+          ease: "power3.out", // Menambahkan easing untuk animasi yang lebih halus
+          duration: 1.5, // Menentukan durasi animasi
+        }
+      );
+
+    gsap.to("#imagePreview", {
+      ease: "power3.out",
+      opacity: 1,
+      y: -30,
+      delay: 3,
+    });
   }, []);
 
   return (
@@ -112,10 +199,14 @@ export default function LenteraProjects() {
             <div className={`${styles.projectContent}`} key={data.projectName}>
               <div className={`${styles.projectHeading} bg-black`}>
                 <div className={`${styles.projectHeading_top} relative`}>
-                  <span className={`${styles.projectName} font-light p-8`}>
+                  <span
+                    id="projectName"
+                    className={`${styles.projectName} font-light p-8 opacity-0 block`}
+                  >
                     {data.projectName}
                   </span>
                   <div
+                    id="headingTitle"
                     className={`${styles.headingTitle} font-SwitzerRegular italic p-8 font-bold`}
                   >
                     {data.projectHeading}
@@ -123,7 +214,10 @@ export default function LenteraProjects() {
                 </div>
               </div>
               <div className={`${styles.projectContent_item}`}>
-                <div className={`${styles.projectContent_background}`}>
+                <div
+                  className={`${styles.projectContent_background} opacity-0`}
+                  id="projectImage"
+                >
                   <div
                     className={`${styles.projectContent_img_ss}`}
                     ref={imageRef}
@@ -145,22 +239,24 @@ export default function LenteraProjects() {
                   <div className={`${styles.detailInfo}`}>
                     <div className={`${styles.projectContent_intro}`}>
                       <div
-                        className={`${styles.projectContent_intro_item} flex flex-col gap-10 lg:flex-row`}
+                        className={`${styles.projectContent_intro_item} flex flex-col gap-10 lg:flex-row pt-32`}
                       >
                         <div className="col-span-2">
                           <div
-                            className={`${styles.challengeTitle} flex-1 uppercase lg:w-[30rem]`}
+                            className={`${styles.challengeTitle} flex-1 xl:text-4xl uppercase font-bold lg:w-[30rem] cl-d opacity-0`}
                           >
                             The Challenge
                           </div>
                         </div>
                         <div
-                          className={`${styles.detailInfo_item} flex flex-col`}
+                          className={`${styles.detailInfo_item} flex flex-col cl-d opacity-0`}
                         >
-                          {data.projectDetail}
+                          <p className="lg:text-1xl xl:text-2xl xl:leading-[2.5rem] font-light leading-[2rem] md:leading-[2rem] lg:leading-[2rem] font-SwitzerLight">
+                            {data.projectDetail}
+                          </p>
                           <span className="pointer-events-none">
                             <Link
-                              href="https://www.lenterafajarindonesia.sch.id/"
+                              href="https://www.kinayainterior.com"
                               target="_blank"
                             >
                               <motion.button
@@ -181,7 +277,10 @@ export default function LenteraProjects() {
                           </span>
                         </div>
                       </div>
-                      <div className={`${styles.overView_gr}`}>
+                      <div
+                        id="projectPreview"
+                        className={`${styles.overView_gr} opacity-0`}
+                      >
                         <span>Project Preview</span>
                         <div
                           className={`${styles.overView_grid} grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8`}
@@ -191,8 +290,12 @@ export default function LenteraProjects() {
                               className={`${styles.overView_grid_ov} overflow-hidden`}
                               key={index}
                             >
-                              <div className="overflow-hidden rounded-2xl h-[500px] lg:h-[650px] md:h-[550px]">
+                              <div
+                                id="projectPreview"
+                                className="overflow-hidden rounded-2xl h-[500px] lg:h-[650px] md:h-[550px]"
+                              >
                                 <div
+                                  id="imagePreview"
                                   ref={(el) => (imageRefs.current[index] = el)}
                                 >
                                   <picture>

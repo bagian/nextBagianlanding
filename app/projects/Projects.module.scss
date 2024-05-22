@@ -173,7 +173,7 @@
 
         .projectContent_background {
             img {
-                height: 90vh;
+                height: 100vh;
                 object-fit: cover;
                 background-repeat: no-repeat;
             }
@@ -252,7 +252,7 @@
 
         .projectContent_background {
             img {
-                height: 80vh;
+                height: 100vh;
                 object-fit: cover;
                 background-repeat: no-repeat;
             }
@@ -313,7 +313,8 @@
 @media (1204px <=width) {
     .headingTitle {
         font-size: 36px;
-        max-width: 60%;
+        max-width: 80%;
+        margin-bottom: 3rem;
     }
 
     .projectContainer {
@@ -327,7 +328,7 @@
                     margin: 2em;
 
                     .projectContent_intro_item {
-                        max-width: 1240px;
+                        max-width: 1280px;
                         margin: auto;
                     }
                 }
@@ -361,7 +362,7 @@
                         padding-bottom: 3rem;
 
                         .projectContent_intro {
-                            max-width: 1440px;
+                            max-width: 1280px;
                             margin: auto;
                         }
                     }
@@ -369,7 +370,7 @@
             }
 
             .projectHeading_top {
-                max-width: 1440px;
+                max-width: 1280px;
                 margin: auto;
 
             }
@@ -387,7 +388,7 @@
     }
 
     .overView_gr {
-        max-width: 1240px;
+        max-width: 1280px;
         margin: auto;
         padding-top: 13rem;
 
@@ -418,103 +419,103 @@
     }
 }
 
-@media (1680px <=width) {
-    .projectContainer {
-        .projectWrapper {
-            .headingTitle {
-                font-size: 46px;
-                max-width: 80%;
-            }
+// @media (1300px <=width) {
+//     .projectContainer {
+//         .projectWrapper {
+//             .headingTitle {
+//                 margin-bottom: 3rem;
+//                 font-size: 36px;
+//                 max-width: 70%;
+//             }
 
-            .projectName {
-                font-size: 28px;
-            }
+//             .projectName {
+//                 font-size: 28px;
+//             }
 
-            .projectContent {
+//             .projectContent {
 
-                .projectContent_intro {
-                    // font-size: 25px;
-                    padding: 0 2em;
-                }
-            }
+//                 .projectContent_intro {
+//                     // font-size: 25px;
+//                     padding: 0 2em;
+//                 }
+//             }
 
-            .projectContent_item {
-                overflow: hidden;
+//             .projectContent_item {
+//                 overflow: hidden;
 
-                .projectContent_intro_item {
-                    max-width: 1440px;
-                    margin: auto;
-                }
+//                 .projectContent_intro_item {
+//                     max-width: 1440px;
+//                     margin: auto;
+//                 }
 
-                .detailInfoWrapper {
-                    width: 100%;
-                    overflow: hidden;
-                    background-color: black;
+//                 .detailInfoWrapper {
+//                     width: 100%;
+//                     overflow: hidden;
+//                     background-color: black;
 
-                    .detailInfo {
-                        padding-top: 3rem;
-                        padding-bottom: 3rem;
+//                     .detailInfo {
+//                         padding-top: 3rem;
+//                         padding-bottom: 3rem;
 
-                        .projectContent_intro {
-                            max-width: 1440px;
-                            margin: auto;
+//                         .projectContent_intro {
+//                             max-width: 1440px;
+//                             margin: auto;
 
-                            .challengeTitle {
-                                font-size: 24px;
-                                font-weight: 400;
-                            }
-                        }
-                    }
-                }
-            }
+//                             .challengeTitle {
+//                                 font-size: 24px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
 
-            .projectContent_background {
-                img {
-                    width: 100%;
-                    height: 110vh;
-                    object-fit: cover;
-                    background-repeat: no-repeat;
-                }
-            }
-        }
-    }
+//             .projectContent_background {
+//                 img {
+//                     width: 100%;
+//                     height: 110vh;
+//                     object-fit: cover;
+//                     background-repeat: no-repeat;
+//                 }
+//             }
+//         }
+//     }
 
-    .overView_gr {
-        padding-top: 13rem;
+//     .overView_gr {
+//         padding-top: 13rem;
 
-        // .challengeTitle {
-        //     font-size: 50px;
-        //     text-transform: uppercase;
-        //     font-weight: 800;
-        // }
+//         // .challengeTitle {
+//         //     font-size: 50px;
+//         //     text-transform: uppercase;
+//         //     font-weight: 800;
+//         // }
 
-        .overView_grid {
-            padding-top: 8rem;
+//         .overView_grid {
+//             padding-top: 8rem;
 
-            .overView_grid_ov {
-                // border-radius: 20px;
+//             .overView_grid_ov {
+//                 // border-radius: 20px;
 
-                &:nth-child(2) {
-                    padding-top: 3rem;
-                }
+//                 &:nth-child(2) {
+//                     padding-top: 3rem;
+//                 }
 
-                &:nth-child(4) {
-                    padding-top: 3rem;
-                }
+//                 &:nth-child(4) {
+//                     padding-top: 3rem;
+//                 }
 
-                img {
-                    object-fit: cover;
-                    height: 880px;
-                }
+//                 img {
+//                     object-fit: cover;
+//                     height: 880px;
+//                 }
 
-                .overView_grid_nm {
-                    padding: 30px 0;
+//                 .overView_grid_nm {
+//                     padding: 30px 0;
 
-                    .overview_grid_tl {
-                        font-size: 24px;
-                    }
-                }
-            }
-        }
-    }
-}
+//                     .overview_grid_tl {
+//                         font-size: 24px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

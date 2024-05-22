@@ -28,6 +28,14 @@ const SwitzerRegular = localFont({
   rel: "preload",
   as: "font",
 });
+const SwitzerLight = localFont({
+  src: "../public/fonts/Switzer-Extralight.woff2",
+  display: "swap",
+  variable: "--font-SwitzerLight",
+  rel: "preload",
+  as: "font",
+});
+
 const ChillaxRegular = localFont({
   src: "../public/fonts/Chillax-Variable.woff2",
   display: "swap",
@@ -61,7 +69,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${LeMurmure.variable} ${MangoMedium.variable} ${SwitzerRegular.variable}`}
+      className={`${LeMurmure.variable} ${MangoMedium.variable} ${SwitzerRegular.variable} ${SwitzerLight.variable}`}
       suppressHydrationWarning
     >
       <body className={inter.className}>
