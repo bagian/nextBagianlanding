@@ -154,7 +154,7 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
     >
       <body className={inter.className}>
-        <Menu />
+        {/* <Menu /> */}
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
