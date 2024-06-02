@@ -19,6 +19,7 @@ module.exports = {
         LeMurmure: ["var(--font-LeMurmure)"],
         MangoThin: ["var(--font-MangoThin)"],
         SwitzerRegular: ["var(--font-SwitzerRegular)"],
+        SwitzerLight: ["var(--font-SwitzerLight)"],
         ChillaxRegular: ["var(--font-ChillaxRegular)"],
       },
     },

@@ -1,0 +1,85 @@
+.maintenancePage {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+
+    .maintenanceContent_mtcs {
+        background-color: #c5fb45;
+        color: #000;
+
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        max-width: 1080px;
+        margin: auto;
+        transform: translateY(50%);
+        border-radius: 30px;
+
+    }
+
+    .maintenanceContent_item {
+        overflow: hidden;
+        // background-color: tomato;
+        padding: 20px;
+        text-align: center;
+
+        h1 {
+            line-height: 1;
+            font-weight: 800;
+            // font-size: 5rem;
+        }
+    }
+
+    .marqueeText_mtcs {
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        overflow: hidden;
+    }
+}
+
+@media (300px <=width <=767px) {
+    .maintenancePage {
+        .maintenanceContent_item {
+
+            h1 {
+                line-height: 1;
+                font-weight: 800;
+                font-size: 2rem;
+            }
+        }
+    }
+
+}
+
+@media (768px <=width <=1203px) {
+    .maintenancePage {
+        .maintenanceContent_item {
+
+            h1 {
+                line-height: 1;
+                font-weight: 800;
+                font-size: 4rem;
+            }
+        }
+    }
+
+}
+
+@media (1204px <=width) {
+    .maintenancePage {
+        .maintenanceContent_item {
+
+            h1 {
+                line-height: 1;
+                font-weight: 800;
+                font-size: 5rem;
+            }
+        }
+    }
+
+}
