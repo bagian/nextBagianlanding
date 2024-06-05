@@ -20,13 +20,13 @@ export default function MarqueeText() {
   }, []);
 
   const animate = () => {
-    if (xPercent < -100) {
+    if (xPercent > 100) {
       xPercent = 0;
-    } else if (xPercent > 0) {
-      xPercent = -100;
+    } else if (xPercent < 0) {
+      xPercent = 100;
     }
-    gsap.set(motionTextOne.current, { xPercent: xPercent });
-    gsap.set(motionTextSecond.current, { xPercent: xPercent });
+    gsap.set(motionTextOne.current, { xPercent: -xPercent });
+    gsap.set(motionTextSecond.current, { xPercent: -xPercent });
     requestAnimationFrame(animate);
     xPercent += 0.002;
   };
