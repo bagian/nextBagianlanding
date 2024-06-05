@@ -5,7 +5,8 @@ import Menu from "@/app/components/menu/Menu";
 import SmoothScroll from "@/app/components/smoothscroll/SmoothScroll";
 import localFont from "next/font/local";
 import bagianOg from "../public/img/Og-render.png";
-
+import NavbarNew from "./components/Headers";
+import TopSlides from "./components/TopSlides";
 export const contentType = "img/png";
 
 export const openGraphImage = {
@@ -154,7 +155,8 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
     >
       <body className={inter.className}>
-        {/* <Menu /> */}
+        <TopSlides />
+        <NavbarNew />
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>

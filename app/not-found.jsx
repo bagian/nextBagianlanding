@@ -41,9 +41,9 @@ export default function NotFound404() {
               halaman utama
             </p>
           </span>
-          <Link ref={buttonRef} className={styles.homeButton} href="/">
+          {/* <Link ref={buttonRef} className={styles.homeButton} href="/">
             Kembali ke halaman utama
-          </Link>
+          </Link> */}
         </div>
       </div>
     </>

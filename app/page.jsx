@@ -1,14 +1,14 @@
 import React from "react";
-import LandingPage from "./LandingPage";
-import MaintenancePage from "./components/maintenancePage/page";
 import styles from "./global.module.scss";
+import Header from "./components/Headers/Header";
 
 function pageContainer() {
   return (
     <>
-      <div className={`${styles.pageContainer} relative`}>
-        {/* <LandingPage /> */}
-        <MaintenancePage />
+      <div className={`${styles.pageContainer} relative `}>
+        <div className={`${styles.headerContent}`}>
+          <Header />
+        </div>
       </div>
     </>
   );
