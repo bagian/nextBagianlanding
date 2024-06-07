@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { slide, scale } from "../../animated";
 
 export default function Index({ data, isActive, setSelectedIndicator }) {
+  if (!data) return null;
+
   const { title, href, index } = data;
 
   return (
