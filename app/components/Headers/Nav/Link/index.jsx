@@ -5,7 +5,7 @@ import { slide, scale } from "../../animated";
 
 export default function Index({ data, isActive, setSelectedIndicator }) {
   const { title, href, index } = data;
-
+  if (!data) return null;
   return (
     <motion.div
       className={styles.link}

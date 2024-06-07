@@ -78,9 +78,9 @@ export default function Navindex() {
           })}
         </div>
         <div className={styles.footer}>
-          <a>Instagram</a>
-          <a>Dribble</a>
-          <a>LinkedIn</a>
+          <Link href="https://www.instagram.com">Instagram</Link>
+          <Link href="https://dribbble.com">Dribble</Link>
+          <Link href="https://www.linkedin.com">LinkedIn</Link>
         </div>
       </div>
     </motion.div>
