@@ -1,0 +1,317 @@
+.roadMap {
+    background-color: #141414;
+    color: #fff;
+    position: relative;
+    padding: 20px;
+    height: 100vh;
+
+    .roadMap_content {
+        max-width: 1440px;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .roadMap_item {
+        position: relative;
+
+        .roadMap_data {
+            width: 100%;
+
+            .roadMap_title {
+                .roadMap_title_text {
+                    display: flex;
+                    flex-direction: column;
+                    // font-size: 3em;
+                    line-height: 1em;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+
+    .roadMap_desc {
+        position: relative;
+        left: 0;
+        max-width: 600px;
+        // padding-top: 8em;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .roadMap_slidewrapper {
+
+        border-radius: 20px;
+        position: relative;
+
+        .roadMap {
+            position: relative;
+            overflow: hidden;
+            /* Sembunyikan konten yang keluar dari batas */
+        }
+
+        .roadMap_slideContainer {
+            display: flex;
+            /* Gunakan flexbox untuk menyusun slide secara horizontal */
+            width: 100%;
+            /* Lebar kontainer */
+            transition: transform 0.2s ease-out;
+            /* Transisi untuk animasi slide */
+        }
+
+
+        .roadMapSlide_inner {
+            overflow: hidden;
+        }
+
+        .roadMap_slide {
+            display: flex;
+            flex: 0 0 100%;
+            width: 100%;
+
+            .roadMap_slide_item {
+                padding: 20px;
+                margin-left: 5px;
+                margin-right: 5px;
+                background-color: #CAFD00;
+                border-radius: 20px;
+                color: #141414;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .roadMap_slide_item {
+                padding: 2em;
+            }
+
+            .roadMap_title_slide {
+                // font-size: 1.5em;
+                line-height: 1.5em;
+                font-weight: 800;
+
+                svg {
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+
+            .roadMap_desc_slide {
+                padding: 25px 0;
+
+                .roadMap_desc_slide_item {
+                    padding-bottom: 10px;
+
+                    // &:nth-last-of-type(4) {
+                    //     display: none;
+                    // }
+
+
+                    .roadMap_title_desc_slide {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .roadMap_slide_button {
+            position: absolute;
+            width: 100%;
+            z-index: 9;
+            // top: 40%;
+
+            .roadMap_btn_wrapper {
+                position: relative;
+                display: flex;
+                margin: auto;
+                justify-content: space-between;
+                align-items: center;
+
+                .roadMap_slide_button_prev {
+                    position: relative;
+                    left: -80px;
+
+                    button {
+                        background-color: #CAFD00;
+                        padding: 25px;
+                        border-radius: 50%;
+                        color: #141414;
+                        transition: all 0.5s ease-in-out;
+
+                        &:hover {
+                            background-color: rgb(123, 168, 0);
+                            color: #fff;
+                        }
+                    }
+
+                    button.disabled {
+                        background-color: #2c2c2c;
+                        color: #8f8f8f;
+                        padding: 25px;
+                        border-radius: 50%;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+
+                .roadMap_slide_button_next {
+                    position: relative;
+                    right: -80px;
+
+                    button {
+                        background-color: #CAFD00;
+                        padding: 25px;
+                        border-radius: 50%;
+                        color: #141414;
+                        transition: all 0.5s ease-in-out;
+
+                        &:hover {
+                            background-color: rgb(123, 168, 0);
+                            color: #fff;
+                        }
+                    }
+
+                    button.disabled {
+                        background-color: #2c2c2c;
+                        color: #8f8f8f;
+                        padding: 25px;
+                        border-radius: 50%;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 479px) {
+
+    .roadMap_slide_button_prev,
+    .roadMap_slide_button_next {
+        button {
+            padding: 15px;
+            left: 0;
+            right: 0;
+        }
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+
+
+    .roadMap_slide_button_prev,
+    .roadMap_slide_button_next {
+        button {
+            padding: 20px;
+            left: -40px;
+            right: -40px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .roadMap_slidewrapper {
+        padding-top: 6rem;
+        max-width: 600px;
+    }
+
+    .roadMap_title {
+        .roadMap_title_text {
+            display: flex;
+            flex-direction: column;
+            font-size: 2em;
+            line-height: 1em;
+            font-weight: 800;
+        }
+    }
+
+    .roadMap_title_slide {
+        font-size: 1em;
+        line-height: 1.5em;
+        font-weight: 800;
+
+        svg {
+            object-fit: cover;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .roadMap_desc {
+        max-width: 600px;
+        padding-top: 3em;
+        font-size: 1em;
+    }
+
+    .roadMap_slide_button {
+        top: 50%;
+
+        .roadMap_slide_button_prev,
+        .roadMap_slide_button_next {
+            button {
+                // padding: 25px;
+                left: -80px;
+                right: -80px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .roadMap_title {
+        .roadMap_title_text {
+            display: flex;
+            flex-direction: column;
+            font-size: 3em;
+            line-height: 1em;
+            font-weight: 800;
+        }
+    }
+
+    .roadMap_title_slide {
+        font-size: 1.4em;
+        line-height: 1.5em;
+        font-weight: 800;
+
+        svg {
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    .roadMap_desc {
+        max-width: 600px;
+        padding-top: 8em;
+        font-size: 1em;
+    }
+
+    .roadMap_slide_button {
+        top: 40%;
+
+        .roadMap_slide_button_prev,
+        .roadMap_slide_button_next {
+            button {
+                // padding: 25px;
+                left: -80px;
+                right: -80px;
+            }
+        }
+    }
+
+    .roadMap_slide_item_number {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 30px;
+        border-bottom-left-radius: 50%;
+        background-color: #b6e204;
+        color: #141414;
+        font-weight: 800;
+        font-size: 18px;
+    }
+}

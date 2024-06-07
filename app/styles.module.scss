@@ -1,0 +1,336 @@
+.pageContainer {
+    // display: flex;
+    // margin: auto;
+    // justify-content: center;
+    color: #1b1b1b;
+    width: 100%;
+    position: absolute;
+    top: 7rem;
+    z-index: -5;
+
+    .headerContent {
+        position: relative;
+        height: 100%;
+
+        .headerContainer_hd {
+            padding: 20px;
+        }
+    }
+}
+
+
+//Header
+
+.headerContainer_hd {
+    transform: translateY(200px);
+    // height: 100vh;
+    position: relative;
+
+    .headerHead_hd {
+
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .headerButton_hd {
+        margin-top: 30px;
+        text-align: center;
+
+        .headerButton_cta {
+
+            border-radius: 50px;
+            background-color: #141293;
+            color: #fff;
+            justify-content: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+
+            &:hover {
+                background-color: #1613af;
+                transform: scale(1.05);
+
+                .headerButton_link svg {
+                    transform: rotate(-45deg);
+                }
+            }
+
+            .headerButton_link {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                svg {
+                    transition: transform 0.3s ease-in-out;
+                    transform: rotate(0deg);
+                }
+            }
+
+        }
+    }
+}
+
+.blurBg {
+    // transform: translateY(90px);
+    // position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: -45%;
+    z-index: -1;
+}
+
+
+
+@media (max-width: 767px) {
+    .pageContainer {
+        position: relative;
+
+        .headerContent {
+            max-width: 100%; // Sesuaikan lebar maksimal untuk mobile
+        }
+    }
+
+    .headerContainer_hd {
+        transform: translateY(20em);
+
+        .pathSvg_hd {
+            position: absolute;
+            top: 50%; // Posisi vertikal di tengah
+            // left: 50%; // Posisi horizontal di tengah
+            transform: translate(-50%, -50%); // Menggeser gambar ke tengah
+            // width: 100%; // Lebar penuh untuk responsif
+            // max-height: 100%; // Tinggi maksimal untuk menjaga proporsi
+            z-index: 100;
+        }
+
+        .headerHead_hd {
+            text-align: center;
+
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            h1 {
+                max-width: 680px; // Sesuaikan lebar maksimal untuk mobile
+                font-size: 1.5rem; // Ukuran font yang lebih kecil untuk mobile
+            }
+
+            span {
+                font-weight: 800;
+            }
+        }
+
+        .subHeadTitle_hd {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            max-width: 500px; // Sesuaikan lebar maksimal untuk mobile
+            margin-top: 40px; // Margin yang lebih kecil untuk mobile
+
+            p {
+                font-size: 14px; // Ukuran font yang lebih kecil untuk mobile
+            }
+        }
+    }
+
+    .headerButton_cta {
+        padding: 20px 40px;
+    }
+
+    .headerButton_link {
+        font-size: 12px;
+    }
+
+    .blurBg {
+        position: absolute;
+        width: 100%; // Menggunakan lebar penuh
+        display: flex;
+        justify-content: center;
+        align-items: center; // Menambahkan align-items untuk center secara vertikal
+        transform: translateY(10em);
+
+        .blurBg_bg {
+            position: relative; // Mengubah posisi menjadi relative
+            width: 100%;
+            height: 100%; // Menetapkan tinggi 100%
+            z-index: -223;
+
+            img {
+                position: absolute; // Mengaktifkan posisi absolute
+                top: 50%; // Menempatkan gambar di tengah-tengah secara vertikal
+                left: 50%; // Menempatkan gambar di tengah-tengah secara horizontal
+                transform: translate(-50%, -50%); // Menggeser gambar ke tengah
+                height: 468px;
+                width: 984px;
+                object-fit: cover; // Mengubah object-fit menjadi cover
+            }
+        }
+    }
+}
+
+@media (min-width: 1023px) {
+    .headerContainer_hd {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        max-width: 1440px;
+        padding-bottom: 148em;
+
+        .pathSvg_hd {
+            display: flex;
+            justify-content: center;
+
+            .svgStg_x_hd {
+                position: relative;
+                left: -100px;
+                animation: svg-chd-1 2s infinite alternate ease-in-out;
+            }
+
+            @keyframes svg-chd-1 {
+                0% {
+                    transform: translateY(0);
+                }
+
+                100% {
+                    transform: translateY(-20px);
+                }
+            }
+
+            .svgStg_xn_hd {
+                position: absolute;
+                // transform: translateX(150px);
+                top: -4%;
+                right: 30%;
+                z-index: 3;
+                animation: svg-chd-2 3s infinite alternate ease-in-out;
+            }
+
+            @keyframes svg-chd-2 {
+                0% {
+                    transform: translateY(0);
+                }
+
+                100% {
+                    transform: translateY(-20px);
+                }
+            }
+
+            .svgStg_ng_hd {
+                position: absolute;
+                bottom: 0;
+                left: 12em;
+                animation: svg-chd-3 2.8s infinite alternate ease-in-out;
+            }
+
+            @keyframes svg-chd-3 {
+                0% {
+                    transform: translateY(0);
+                }
+
+                100% {
+                    transform: translateY(-20px);
+                }
+            }
+
+            .svgStg_nh_hd {
+                position: absolute;
+                top: 50%;
+                right: 12em;
+                animation: svg-chd-4 4s infinite alternate ease-in-out;
+            }
+
+            @keyframes svg-chd-4 {
+                0% {
+                    transform: translateY(0) rotate(30deg);
+                }
+
+                100% {
+                    transform: translateY(-30px) rotate(360deg);
+                }
+            }
+
+            .svgStg_nd_hd {
+                position: absolute;
+                bottom: 10%;
+                right: 30%;
+                animation: svg-chd-5 3.2s infinite alternate ease-in-out;
+            }
+
+            @keyframes svg-chd-5 {
+                0% {
+                    transform: translateY(0);
+                }
+
+                100% {
+                    transform: translateY(-20px);
+                }
+            }
+        }
+
+        .headerHead_hd {
+            position: absolute;
+            text-align: center;
+            z-index: 100;
+            top: 45px;
+            text-align: center;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            h1 {
+                max-width: 900px;
+                font-size: 3.3rem;
+            }
+
+            span {
+                font-weight: 800;
+            }
+        }
+
+        .subHeadTitle_hd {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            min-width: 400px;
+            max-width: 700px;
+            margin-top: 80px;
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+
+    .headerButton_cta {
+        padding: 20px 40px;
+    }
+
+    .headerButton_link {
+        font-size: 14px;
+    }
+
+    .blurBg {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .blurBg_bg {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: -22;
+
+            img {
+                height: 868px;
+                width: 100%;
+            }
+        }
+    }
+}
