@@ -34,13 +34,58 @@ export default function MarqueeText() {
   return (
     <>
       <motion.main className={styles.main}>
-        <div className={`${styles.header} whitespace-nowrap`}>
-          <h1 className="font-bold">On Going :</h1>
+        <div className={`${styles.header} whitespace-nowrap flex flex-row`}>
+          <h1 className="font-bold">
+            On Going{" "}
+            <span style={{ rotate: "-10deg", display: "inline-block" }}>
+              📢
+            </span>
+          </h1>
         </div>
         <div className={styles.sliderContainer}>
           <motion.div ref={slider} className={styles.slider}>
             <div className={styles.motionContainer}>
               <div className={styles.motion} ref={motionTextOne}>
+                <span className="flex gap-8">
+                  Website Sekolah Darul Husada Surabaya
+                  <StarsWhite />
+                  Monitoring Dashboard Sekolah SMA
+                  <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
+                  <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
+                  <StarsWhite />
+                </span>
+                <span className="flex gap-8">
+                  Website Sekolah Darul Husada Surabaya
+                  <StarsWhite />
+                  Monitoring Dashboard Sekolah SMA
+                  <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
+                  <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
+                  <StarsWhite />
+                </span>
+                <span className="flex gap-8">
+                  Website Sekolah Darul Husada Surabaya
+                  <StarsWhite />
+                  Monitoring Dashboard Sekolah SMA
+                  <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
+                  <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
+                  <StarsWhite />
+                </span>
+                <span className="flex gap-8">
+                  Website Sekolah Darul Husada Surabaya
+                  <StarsWhite />
+                  Monitoring Dashboard Sekolah SMA
+                  <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
+                  <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
+                  <StarsWhite />
+                </span>
+                <span className="flex gap-8">
+                  Website Sekolah Darul Husada Surabaya
+                  <StarsWhite />
+                  Monitoring Dashboard Sekolah SMA
+                  <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
+                  <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
+                  <StarsWhite />
+                </span>
                 <span className="flex gap-8">
                   Website Sekolah Darul Husada Surabaya
                   <StarsWhite />
@@ -91,6 +136,46 @@ export default function MarqueeText() {
                 </span>
               </div>
               <div className={styles.motion} ref={motionTextSecond}>
+                <span className="flex gap-8">
+                  Website Sekolah Darul Husada Surabaya
+                  <StarsWhite />
+                  Monitoring Dashboard Sekolah SMA
+                  <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
+                  <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
+                  <StarsWhite />
+                </span>
+                <span className="flex gap-8">
+                  Website Sekolah Darul Husada Surabaya
+                  <StarsWhite />
+                  Monitoring Dashboard Sekolah SMA
+                  <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
+                  <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
+                  <StarsWhite />
+                </span>
+                <span className="flex gap-8">
+                  Website Sekolah Darul Husada Surabaya
+                  <StarsWhite />
+                  Monitoring Dashboard Sekolah SMA
+                  <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
+                  <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
+                  <StarsWhite />
+                </span>
+                <span className="flex gap-8">
+                  Website Sekolah Darul Husada Surabaya
+                  <StarsWhite />
+                  Monitoring Dashboard Sekolah SMA
+                  <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
+                  <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
+                  <StarsWhite />
+                </span>
+                <span className="flex gap-8">
+                  Website Sekolah Darul Husada Surabaya
+                  <StarsWhite />
+                  Monitoring Dashboard Sekolah SMA
+                  <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
+                  <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
+                  <StarsWhite />
+                </span>
                 <span className="flex gap-8">
                   Website Sekolah Darul Husada Surabaya
                   <StarsWhite />

@@ -1,0 +1,50 @@
+.introContent {
+    background-color: #1b1b1b;
+    color: #fff;
+
+    .introItems {
+        max-width: 1440px;
+        margin: auto;
+
+        .introItems_title {
+            h1 {
+                font-size: 2rem;
+                font-weight: 700;
+            }
+        }
+
+        .introItems_desc {
+            max-width: 900px;
+
+            p {
+                font-size: 14px;
+                line-height: 2em;
+            }
+        }
+    }
+
+    .introButton_cta {
+        position: relative;
+
+        .headerButton_cta {
+            .button_cta_link {
+                border-radius: 50px;
+                background-color: #b8e601;
+                padding: 15px 40px;
+                color: #1b1b1b;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+
+                &:hover {
+                    background-color: #CAFD00;
+                    transform: scale(1.05);
+
+                    svg {
+                        transition: transform 0.3s ease;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -14,19 +14,19 @@ const navItems = [
   },
   {
     title: "Tentang Kami",
-    href: "/wewer",
+    href: "/#",
   },
   {
     title: "Proyek",
-    href: "/wer32",
+    href: "/#",
   },
   {
     title: "Tim Bagian",
-    href: "/cae",
+    href: "/#",
   },
   {
     title: "Blog",
-    href: "/asdw",
+    href: "/#",
   },
 ];
 
@@ -78,7 +78,6 @@ export default function Navindex() {
           })}
         </div>
         <div className={styles.footer}>
-          <a>Awwwards</a>
           <a>Instagram</a>
           <a>Dribble</a>
           <a>LinkedIn</a>

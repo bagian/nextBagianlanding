@@ -1,6 +1,6 @@
 "use client";
 import styles from "./styles.module.scss";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Nav from "./Nav";
 import { AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
@@ -13,6 +13,22 @@ export default function Navigation(e) {
   const [isActive, setIsActive] = useState(false);
   const pathname = usePathname();
 
+  const [isScrolled, setIsScrolled] = useState(false);
+  const headerRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      setIsScrolled(offset > 60); // Pastikan ini hanya mengaktifkan 'fixed' ketika benar-benar perlu
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   useEffect(() => {
     if (isActive) setIsActive(false);
   }, [pathname]);
@@ -23,7 +39,10 @@ export default function Navigation(e) {
   return (
     <>
       <div className={styles.main}>
-        <div className={styles.navContainer}>
+        <div
+          ref={headerRef}
+          className={`${styles.navContainer} ${isScrolled ? styles.fixed : ""}`}
+        >
           <div className={styles.header}>
             <div className={styles.navItem}>
               <div className={styles.logo}>
@@ -47,7 +66,7 @@ export default function Navigation(e) {
                 </li>
               </ul>
               <div className="hidden md:flex lg:flex">
-                <Link href="#">
+                <Link href="https://wa.link/s9c4s2" target="_blank">
                   <span className={styles.buttonCta}>Hubungi Kami</span>
                 </Link>
               </div>

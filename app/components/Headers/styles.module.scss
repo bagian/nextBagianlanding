@@ -4,11 +4,46 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    z-index: 999;
-    position: fixed;
-    top: 4rem;
+    // z-index: 999;
+    // position: static;
     background-color: rgb(255, 255, 255);
+    transition: top 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: position 4s;
+    -ms-transition: position 4s;
+    -o-transition: position 4s;
+    transition: all 0.3s ease;
+    will-change: position top;
+    top: 0 !important;
+
+    .hidden {
+        transition: top 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: position 4s;
+        -ms-transition: position 4s;
+        -o-transition: position 4s;
+        transition: all 0.3s ease;
+    }
+}
+
+
+.navContainer.fixed {
+    position: fixed;
+    top: 0;
     left: 0;
+    right: 0;
+    animation: smoothScroll 1s forwards;
+    z-index: 999;
+}
+
+@keyframes smoothScroll {
+    0% {
+        transform: translateY(-40px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .header {
