@@ -4,8 +4,8 @@ import Header from "./components/mainLanding/Header";
 import OurProducts from "./components/mainLanding/ourProduct";
 import RoadMap from "./components/mainLanding/roadMap";
 import PriceList from "./components/mainLanding/priceList";
-import OurClient from "./components/mainLanding/OurClient";
-import Footer from "./components/mainLanding/Footer";
+// import OurClient from "./components/mainLanding/OurClient";
+// import Footer from "./components/mainLanding/Footer";
 import IntroAbout from "./components/mainLanding/inAbout";
 
 function pageContainer() {
