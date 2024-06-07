@@ -2,16 +2,17 @@ import styles from "./styles.module.scss";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { slide, scale } from "../../animated";
+import React from "react";
 
-export default function Index({ data, isActive, setSelectedIndicator }) {
+const Index = React.memo(({ data, isActive, setSelectedIndicator }) => {
+  if (!data) return null; // Menangani jika data undefined
+
   const { title, href, index } = data;
-  if (!data) return null;
+
   return (
     <motion.div
       className={styles.link}
-      onMouseEnter={() => {
-        setSelectedIndicator(href);
-      }}
+      onMouseEnter={() => setSelectedIndicator(href)}
       custom={index}
       variants={slide}
       initial="initial"
@@ -26,4 +27,8 @@ export default function Index({ data, isActive, setSelectedIndicator }) {
       <Link href={href}>{title}</Link>
     </motion.div>
   );
-}
+});
+
+Index.displayName = "Index"; // Menambahkan display name
+
+export default Index;
