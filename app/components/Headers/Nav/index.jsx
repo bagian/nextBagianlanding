@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { menuSlide } from "../animated";
-import Link from "./Link";
+import Link from "./link";
 
 const navItems = [
   {
