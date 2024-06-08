@@ -316,10 +316,10 @@
                 border-radius: 50px;
                 transition: all 0.3s ease;
 
-                &:hover {
-                    background-color: #daff48;
-                    // color: #fff;
-                }
+                // &:hover {
+                //     background-color: #daff48;
+                //     // color: #fff;
+                // }
             }
         }
     }
@@ -333,6 +333,25 @@
     &:nth-of-type(1) {
         background-color: #13166B;
         color: #fff;
+
+        .priceList_link_button {
+            display: flex;
+            margin: auto;
+
+            .priceList_link_item {
+                background-color: #CAFD00;
+                padding: 20px 80px;
+                color: #141414;
+                border-radius: 50px;
+                transition: all 0.4s cubic-bezier(.4, .01, .59, .99);
+
+                &:hover {
+                    background-color: #fcfcfc;
+                    color: #141414;
+                }
+            }
+
+        }
     }
 
     &:nth-of-type(2) {
@@ -348,13 +367,14 @@
                 padding: 20px 80px;
                 color: #fff;
                 border-radius: 50px;
-                transition: all 0.3s ease;
+                transition: all 0.4s cubic-bezier(.4, .01, .59, .99);
 
                 &:hover {
-                    background-color: #2e2e2e;
-                    // color: #fff;
+                    background-color: #fcfcfc;
+                    color: #141414;
                 }
             }
+
         }
     }
 
@@ -367,15 +387,15 @@
             margin: auto;
 
             .priceList_link_item {
-                background-color: #CAFD00;
+                // background-color: #CAFD00;
                 padding: 20px 80px;
                 color: #141414;
                 border-radius: 50px;
-                transition: all 0.3s ease;
+                transition: all 0.4s cubic-bezier(.4, .01, .59, .99);
 
                 &:hover {
-                    background-color: #daff48;
-                    // color: #fff;
+                    background-color: #ffffff;
+                    color: #141414;
                 }
             }
         }
