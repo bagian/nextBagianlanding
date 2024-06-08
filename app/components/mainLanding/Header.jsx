@@ -5,14 +5,11 @@ import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
 import BgSmooth from "../../../public/img/blur-bg-bagian-smooth.png";
 import Image from "next/image";
-import BgSmoothSvg from "../svg/BgSmooth";
 import SvgOne from "../svg/SvgOne";
 import SvgTwo from "../svg/SvgTwo";
 import SvgThree from "../svg/SvgThree";
 import SvgFour from "../svg/SvgFour";
 import SvgFive from "../svg/SvgFive";
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
 
 function Header() {
   return (
@@ -47,8 +44,7 @@ function Header() {
               <button
                 className={`${styles.headerButton_cta} flex items-center gap-5`}
               >
-                Hubungi Kami{" "}
-                <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
+                Hubungi Kami
               </button>
             </Link>
           </div>
