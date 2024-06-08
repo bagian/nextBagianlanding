@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import SvgOne from "../../svg/roadMapSvgs/svgsOne";
 import SvgTwo from "../../svg/roadMapSvgs/svgsTwo";
+import SpringSvgs from "../../svg/roadMapSvgs/SpringSvgs";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -44,7 +45,7 @@ const RoadmapData = [
     Icon: <SvgTwo />,
   },
   {
-    title: "Pengembangan Website",
+    title: "Proses Pengembangan Website",
     descriptionTitle1: "Pengembangan Front-end",
     description1:
       "Membuat tampilan website menggunakan teknologi seperti HTML, CSS, dan JavaScript atau menggunakan Framework seperti React, Next JS, Laravel dan library pendukung seperti Tailwind CSS dan Bootstrap.",
@@ -125,11 +126,13 @@ function RoadMap() {
       <div className={`${styles.roadMap}`}>
         <div className={`${styles.roadMap_content}`}>
           <div
-            className={`${styles.roadMap_item} grid grid-cols-1 xl:grid-cols-2`}
+            className={`${styles.roadMap_item} grid grid-cols-1 xl:grid-cols-2 xl:gap-20`}
           >
             <div className={`${styles.roadMap_data}`}>
               <div className={`${styles.roadMap_title}`}>
-                <span className={`${styles.roadMap_title_text}`}>
+                <span
+                  className={`${styles.roadMap_title_text} block xl:-mt-36`}
+                >
                   Lihat Alur Bagaimana <span>Kami Bekerja</span>
                 </span>
               </div>
@@ -155,10 +158,8 @@ function RoadMap() {
                         <span className={`${styles.roadMap_slide_item_number}`}>
                           {index + 1}
                         </span>
-                        <div
-                          className={`${styles.roadMap_title_slide} flex items-center gap-3`}
-                        >
-                          {item.Icon}
+                        <div className={`${styles.roadMap_title_slide}`}>
+                          {/* {item.Icon}  */}
                           {item.title}
                         </div>
                         <div className={`${styles.roadMap_desc_slide}`}>
@@ -218,6 +219,9 @@ function RoadMap() {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className={`${styles.springSvgs}`}>
+              <SpringSvgs />
             </div>
           </div>
         </div>

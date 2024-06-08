@@ -2,6 +2,9 @@ import React from "react";
 import styles from "./styles.module.scss";
 import { FaCheck } from "react-icons/fa";
 import Link from "next/link";
+import SvgPrcsIc from "../../svg/priceList/SvgPrcs";
+import RollSvgs from "../../svg/priceList/RollSvgs";
+import SpringPrc from "../../svg/priceList/SpringPrc";
 
 const priceListData = [
   {
@@ -55,6 +58,9 @@ function PriceList() {
   return (
     <>
       <div className={`${styles.priceList_container}`}>
+        <button className={`${styles.priceList_button_demo}`}>
+          <span>Upload</span>
+        </button>
         <div className={`${styles.priceListContent}`}>
           <div
             className={`${styles.priceList_title} flex flex-col text-center py-20`}
@@ -62,11 +68,15 @@ function PriceList() {
             <span className={`${styles.priceList_title_tag}`}>
               Pilih Kategori Harga
             </span>
+
             <span className={`${styles.priceList_title_description}`}>
               Kami menawarkan berbagai paket layanan pembuatan website yang
               dapat disesuaikan dengan kebutuhan dan anggaran Anda. Temukan
               paket yang tepat untuk Anda dan mulailah perjalanan digital Anda
               bersama kami!
+              <div className={`${styles.priceList_title_svg}`}>
+                <SvgPrcsIc />
+              </div>
             </span>
           </div>
           <div
@@ -108,7 +118,7 @@ function PriceList() {
                       </span>
                     ))}
                 </div>
-                <div className={`${styles.priceList_link} py-10`}>
+                <div className={`${styles.priceList_link_button} py-10`}>
                   {item.link && (
                     <span>
                       <Link
@@ -127,6 +137,12 @@ function PriceList() {
               </div>
             ))}
           </div>
+        </div>
+        <div className={`${styles.rollSvgs}`}>
+          <RollSvgs />
+        </div>
+        <div className={`${styles.springSvgs_prcs}`}>
+          <SpringPrc />
         </div>
       </div>
     </>
