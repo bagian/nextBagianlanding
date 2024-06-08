@@ -58,9 +58,6 @@ function PriceList() {
   return (
     <>
       <div className={`${styles.priceList_container}`}>
-        <button className={`${styles.priceList_button_demo}`}>
-          <span>Upload</span>
-        </button>
         <div className={`${styles.priceListContent}`}>
           <div
             className={`${styles.priceList_title} flex flex-col text-center py-20`}
