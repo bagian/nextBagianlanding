@@ -38,6 +38,7 @@ function Header() {
           </div>
           <div className={`${styles.headerButton_hd} flex m-auto`}>
             <Link
+              target="_blank"
               href="https://wa.link/s9c4s2"
               className={`${styles.headerButton_link}`}
             >
