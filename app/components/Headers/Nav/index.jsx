@@ -64,7 +64,7 @@ export default function Navindex() {
           className={styles.nav}
         >
           <div className={styles.header}>
-            <p>Navigation</p>
+            <p>Navigasi</p>
           </div>
           {navItems.map((data, index) => {
             return (

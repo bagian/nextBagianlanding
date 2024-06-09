@@ -29,7 +29,7 @@ const priceListData = [
       "Dirancang untuk yang membutuhkan website dengan fitur terupdate dan performa tinggi, Harga mulai Rp 2.800.000  tanpa harga desain.",
     list: [
       "Paket Desain",
-      "Implementasi Desain Ke Tahapan Koding",
+      "Implementasi Ke Tahapan Koding",
       "12 Kali Revisi ",
       "Deployment",
       "Hosting dan Domain",
@@ -77,7 +77,7 @@ function PriceList() {
             </span>
           </div>
           <div
-            className={`${styles.priceList_data} grid lg:grid-cols-2 gap-10 md:grid-cols-2 2xl:grid-cols-3`}
+            className={`${styles.priceList_data} grid lg:grid-cols-2 gap-10 md:grid-cols-2 grid-cols-1 2xl:grid-cols-3`}
           >
             {priceListData.map((item, index) => (
               <div

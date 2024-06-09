@@ -5,7 +5,7 @@ import OurProducts from "./components/mainLanding/ourProduct";
 import RoadMap from "./components/mainLanding/roadMap";
 import PriceList from "./components/mainLanding/priceList";
 // import OurClient from "./components/mainLanding/OurClient";
-// import Footer from "./components/mainLanding/Footer";
+import Footer from "./components/mainLanding/inFooter";
 import IntroAbout from "./components/mainLanding/inAbout";
 
 function pageContainer() {
@@ -20,7 +20,7 @@ function pageContainer() {
         <RoadMap />
         <PriceList />
         {/* <OurClient /> */}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );
