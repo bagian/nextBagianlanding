@@ -23,9 +23,9 @@ function Header() {
           <SvgFive className={`${styles.svgStg_nd_hd}`} />
         </div>
         <div className={`${styles.headerHead_hd}`}>
-          <div className="beta bg-[#CAFD00] max-w-[200px] m-auto text-center px-5 py-2 rounded-lg -rotate-6 ">
+          {/* <div className="beta bg-[#CAFD00] max-w-[200px] m-auto text-center px-5 py-2 rounded-lg -rotate-6 ">
             BETA
-          </div>
+          </div> */}
           <h1>
             <span>Solusi Tepat Pembuatan</span> dan Pemeliharaan{" "}
             <span>Website</span> yang Handal dan Profesional.
