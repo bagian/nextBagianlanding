@@ -1,13 +1,14 @@
 .pageContainer {
     color: #1b1b1b;
     width: 100%;
+    transition: padding-top 0.3s ease-in-out;
+    overflow: hidden;
+    padding-top: 60px;
     position: absolute;
     top: 7rem;
     z-index: -5;
-    overflow: hidden;
 
     .headerContent {
-        position: relative;
         height: 100%;
 
         .headerContainer_hd {
@@ -104,6 +105,7 @@
                 top: -6em;
                 left: -10em;
                 animation: svg-chd-1 2s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
 
@@ -123,6 +125,7 @@
                 right: -10em;
                 z-index: 3;
                 animation: svg-chd-2 3s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
             @keyframes svg-chd-2 {
@@ -140,6 +143,7 @@
                 top: 15em;
                 left: -10em;
                 animation: svg-chd-3 4s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
             @keyframes svg-chd-3 {
@@ -157,6 +161,7 @@
                 top: 3em;
                 right: -8em;
                 animation: svg-chd-4 4s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
             @keyframes svg-chd-4 {
@@ -174,6 +179,7 @@
                 bottom: -20em;
                 right: -5em;
                 animation: svg-chd-5 3.2s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
             @keyframes svg-chd-5 {
@@ -279,6 +285,7 @@
                 top: -6em;
                 left: -18em;
                 animation: svg-chd-1 2s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
 
@@ -298,6 +305,7 @@
                 right: -15em;
                 z-index: 3;
                 animation: svg-chd-2 3s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
             @keyframes svg-chd-2 {
@@ -315,6 +323,7 @@
                 top: 15em;
                 left: -18em;
                 animation: svg-chd-3 4s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
             @keyframes svg-chd-3 {
@@ -332,6 +341,7 @@
                 top: 14em;
                 right: -16em;
                 animation: svg-chd-4 4s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
             @keyframes svg-chd-4 {
@@ -349,6 +359,7 @@
                 bottom: -25em;
                 right: -5em;
                 animation: svg-chd-5 3.2s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
             @keyframes svg-chd-5 {
@@ -454,6 +465,7 @@
                 top: -2em;
                 left: -22em;
                 animation: svg-chd-1 2s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
 
@@ -473,6 +485,7 @@
                 right: -20em;
                 z-index: 3;
                 animation: svg-chd-2 3s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
             @keyframes svg-chd-2 {
@@ -490,6 +503,7 @@
                 top: 15em;
                 left: -18em;
                 animation: svg-chd-3 4s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
             @keyframes svg-chd-3 {
@@ -507,6 +521,7 @@
                 top: 14em;
                 right: -16em;
                 animation: svg-chd-4 4s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
             @keyframes svg-chd-4 {
@@ -524,6 +539,7 @@
                 bottom: -25em;
                 right: -5em;
                 animation: svg-chd-5 3.2s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
             @keyframes svg-chd-5 {
@@ -629,6 +645,7 @@
                 top: 2em;
                 left: -26em;
                 animation: svg-chd-1 2s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
 
@@ -648,6 +665,7 @@
                 right: -28em;
                 z-index: 3;
                 animation: svg-chd-2 3s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
             @keyframes svg-chd-2 {
@@ -665,6 +683,7 @@
                 top: 24em;
                 left: -28em;
                 animation: svg-chd-3 4s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
             @keyframes svg-chd-3 {
@@ -682,6 +701,7 @@
                 top: 19em;
                 right: -26em;
                 animation: svg-chd-4 4s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
             @keyframes svg-chd-4 {
@@ -699,6 +719,7 @@
                 bottom: -35em;
                 right: -5em;
                 animation: svg-chd-5 3.2s infinite alternate ease-in-out;
+                will-change: transform;
             }
 
             @keyframes svg-chd-5 {

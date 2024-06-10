@@ -7,6 +7,7 @@ import localFont from "next/font/local";
 import bagianOg from "../public/img/Og-render.png";
 import NavbarNew from "./components/Headers";
 import TopSlides from "./components/TopSlides";
+import Footer from "./components/mainLanding/inFooter";
 export const contentType = "img/png";
 
 export const openGraphImage = {
@@ -36,7 +37,25 @@ export const metadata = {
     },
   ],
   openGraph: {
+    title: "Bagian - Software House",
+    description:
+      "Bagian adalah salah satu Software House yang memiliki kredibilitas tinggi dalam proses pembuatan website, aplikasi berbasis web, dan UI/UX design.",
     image: openGraphImage.url,
+    url: "https://www.bagian.net",
+    type: "website",
+  },
+  metaTags: {
+    "og:title": "Bagian - Software House",
+    "og:description":
+      "Bagian adalah salah satu Software House yang memiliki kredibilitas tinggi dalam proses pembuatan website, aplikasi berbasis web, dan UI/UX design.",
+    "og:image": openGraphImage.url,
+    "og:url": "https://www.bagian.net",
+    "og:type": "website",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Bagian - Software House",
+    "twitter:description":
+      "Bagian adalah salah satu Software House yang memiliki kredibilitas tinggi dalam proses pembuatan website, aplikasi berbasis web, dan UI/UX design.",
+    "twitter:image": openGraphImage.url,
   },
 };
 

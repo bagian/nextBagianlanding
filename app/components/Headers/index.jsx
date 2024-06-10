@@ -19,10 +19,13 @@ export default function Navigation(e) {
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
-      setIsScrolled(offset > 60); // Pastikan ini hanya mengaktifkan 'fixed' ketika benar-benar perlu
+      if (Math.abs(offset - (headerRef.current?.lastScrollPosition || 0)) > 5) {
+        setIsScrolled(offset > 80);
+        headerRef.current.lastScrollPosition = offset;
+      }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -59,7 +62,7 @@ export default function Navigation(e) {
                   <Link href="/#">Proyek</Link>
                 </li>
                 <li>
-                  <Link href="/#">Tim Bagian</Link>
+                  <Link href="/#">Tim</Link>
                 </li>
                 <li>
                   <Link href="/#">Blog</Link>

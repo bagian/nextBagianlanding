@@ -21,7 +21,7 @@ const navItems = [
     href: "/#",
   },
   {
-    title: "Tim Bagian",
+    title: "Tim",
     href: "/#",
   },
   {
