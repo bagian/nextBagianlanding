@@ -20,7 +20,7 @@ const footerData = [
         href: "/#",
       },
       {
-        label: "Tim Bagian",
+        label: "Tim",
         href: "/#",
       },
       {
@@ -107,7 +107,7 @@ function Footer() {
                 100% Karya Anak Bangsa Indonesia.
               </span>
               <span className={`${styles.footerBottom_item_link}`}>
-                <Link href="/">Privacy Policy</Link>
+                <Link href="/pages/privacy-policy">Privacy Policy</Link>
               </span>
             </div>
           </div>

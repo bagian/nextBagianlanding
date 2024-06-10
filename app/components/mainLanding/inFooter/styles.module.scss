@@ -2,8 +2,15 @@
     background-color: #141414;
     color: #fff;
     margin-top: 6em;
-    position: relative;
     bottom: 0;
+    width: 100%;
+    transition: padding-top 0.3s ease-in-out;
+    padding-top: 60px;
+    position: sticky !important;
+    // top: 7rem;
+    // z-index: -5;
+    bottom: 0;
+    height: 100%;
 
     .footerContent {
         padding: 30px 30px;
