@@ -1,0 +1,38 @@
+    .pageContainer {
+        width: 100%;
+        transition: padding-top 0.3s ease-in-out;
+        overflow: hidden;
+        padding-top: 60px;
+        position: absolute;
+        top: 7rem;
+        z-index: -5;
+        left: 0;
+        right: 0;
+
+        .pageContent {
+            height: 100%;
+        }
+    }
+
+
+    @media (max-width: 480px) {
+        .pageContainer {
+            .pageContent {
+                max-width: 380px;
+                margin: auto;
+
+                .pageHeader {
+                    h1 {
+                        font-size: 25px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 481px) and (max-width: 768px) {}
+
+    @media (min-width: 769px) and (max-width: 1024px) {}
+
+    @media (min-width: 1025px) {}
