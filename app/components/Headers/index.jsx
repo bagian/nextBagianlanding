@@ -56,7 +56,7 @@ export default function Navigation(e) {
                   <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <Link href="/#">Tentang Kami</Link>
+                  <Link href="/tentang-kami">Tentang Kami</Link>
                 </li>
                 <li>
                   <Link href="/#">Proyek</Link>

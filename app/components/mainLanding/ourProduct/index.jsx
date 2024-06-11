@@ -39,7 +39,7 @@ const OurProducts = () => {
               <div
                 className={`${styles.productContent} flex flex-col justify-end`}
               >
-                <span className={`${styles.productIcon}`}>{item.Icon}</span>
+                {/* <span className={`${styles.productIcon}`}>{item.Icon}</span> */}
                 <span className={`${styles.productTitle} relative`}>
                   <h3>{item.title}</h3>
                 </span>

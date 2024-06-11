@@ -14,7 +14,7 @@ const navItems = [
   },
   {
     title: "Tentang Kami",
-    href: "/#",
+    href: "/tentang-kami",
   },
   {
     title: "Proyek",
