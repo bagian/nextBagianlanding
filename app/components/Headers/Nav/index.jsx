@@ -30,6 +30,15 @@ const navItems = [
   },
 ];
 
+const trackMenuItem = (itemName) => {
+  window.gtag &&
+    window.gtag("event", "click", {
+      event_category: "Menu",
+      event_label: itemName,
+      value: "User clicked on menu item",
+    });
+};
+
 export default function Navindex() {
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
@@ -73,6 +82,7 @@ export default function Navindex() {
                 data={{ ...data, index }}
                 isActive={selectedIndicator == data.href}
                 setSelectedIndicator={setSelectedIndicator}
+                onClick={() => trackMenuItem(data.title)}
               ></Link>
             );
           })}

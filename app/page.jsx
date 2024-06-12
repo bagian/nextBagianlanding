@@ -11,7 +11,7 @@ import IntroAbout from "./components/mainLanding/inAbout";
 function pageContainer() {
   return (
     <>
-      <div className={`${styles.pageContainer} relative`}>
+      <div className={`${styles.pageContainer}`}>
         <div className={`${styles.headerContent}`}>
           <Header />
         </div>

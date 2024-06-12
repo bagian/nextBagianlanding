@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import styles from "./styles.module.scss";
 import Link from "next/link";
@@ -61,6 +63,14 @@ const footerData = [
   },
 ];
 
+const trackFooterClick = (footerLink) => {
+  window.gtag &&
+    window.gtag("event", "click", {
+      event_category: "Footer",
+      event_label: footerLink,
+      value: "User clicked on footer item",
+    });
+};
 function Footer() {
   return (
     <>
@@ -84,7 +94,12 @@ function Footer() {
                   </div>
                   {item.links.map((link, index) => (
                     <span key={index} className={`${styles.footerLink_item}`}>
-                      <Link href={link.href}>{link.label}</Link>
+                      <Link
+                        href={link.href}
+                        onClick={() => trackFooterClick(link.label)}
+                      >
+                        {link.label}
+                      </Link>
                     </span>
                   ))}
                 </div>
@@ -107,7 +122,12 @@ function Footer() {
                 100% Karya Anak Bangsa Indonesia.
               </span>
               <span className={`${styles.footerBottom_item_link}`}>
-                <Link href="/pages/privacy-policy">Privacy Policy</Link>
+                <Link
+                  href="/pages/privacy-policy"
+                  onClick={() => trackFooterClick("Privacy Policy")}
+                >
+                  Privacy Policy
+                </Link>
               </span>
             </div>
           </div>
