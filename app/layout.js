@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 import Menu from "@/app/components/menu/Menu";
 import SmoothScroll from "@/app/components/smoothscroll/SmoothScroll";
@@ -177,6 +178,28 @@ export default function RootLayout({ children }) {
         <TopSlides />
         <NavbarNew />
         <SmoothScroll>{children}</SmoothScroll>
+
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-EHSDFVLHP7`}
+        />
+        <Script
+          id="google-analytics-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-EHSDFVLHP7', {
+        page_path: window.location.pathname,
+        page_location: window.location.href,
+        page_title: document.title
+      });
+    `,
+          }}
+        />
       </body>
     </html>
   );
