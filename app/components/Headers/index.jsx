@@ -39,6 +39,15 @@ export default function Navigation(e) {
   if (e.parentNode) {
     e.parentNode.removeChild(e);
   }
+
+  const trackTabClick = (tabName) => {
+    window.gtag &&
+      window.gtag("event", "click", {
+        event_category: "Tab",
+        event_label: tabName,
+        value: "User clicked on tab",
+      });
+  };
   return (
     <>
       <div className={styles.main}>
@@ -53,23 +62,40 @@ export default function Navigation(e) {
               </div>
               <ul className="hidden gap-10 xl:flex lg:flex">
                 <li>
-                  <Link href="/">Home</Link>
+                  <Link href="/" onClick={() => trackTabClick("Home")}>
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/tentang-kami">Tentang Kami</Link>
+                  <Link
+                    href="/tentang-kami"
+                    onClick={() => trackTabClick("Tentang Kami")}
+                  >
+                    Tentang Kami
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/#">Proyek</Link>
+                  <Link href="/#" onClick={() => trackTabClick("Proyek")}>
+                    Proyek
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/#">Tim</Link>
+                  <Link href="/#" onClick={() => trackTabClick("Tim")}>
+                    Tim
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/#">Blog</Link>
+                  <Link href="/#" onClick={() => trackTabClick("Blog")}>
+                    Blog
+                  </Link>
                 </li>
               </ul>
               <div className="hidden md:flex lg:flex">
-                <Link href="https://wa.link/s9c4s2" target="_blank">
+                <Link
+                  href="https://wa.link/s9c4s2"
+                  target="_blank"
+                  onClick={() => trackTabClick("Hubungi Kami")}
+                >
                   <span className={styles.buttonCta}>Hubungi Kami</span>
                 </Link>
               </div>
