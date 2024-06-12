@@ -7,13 +7,13 @@ export default function sitemap() {
       priority: 1,
     },
     {
-      url: "https://bagian.net/about",
+      url: "https://bagian.net/tentang-kami",
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.5,
     },
     {
-      url: "https://bagian.net/works",
+      url: "https://bagian.net/projects",
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.5,
@@ -25,10 +25,22 @@ export default function sitemap() {
       priority: 0.5,
     },
     {
-      url: "https://bagian.net/projects/",
+      url: "https://bagian.net/tim",
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.8,
+    },
+    {
+      url: "https://bagian.net/blog",
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.8,
+    },
+    {
+      url: "https://bagian.net/pages/privacy-policy",
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.2,
     },
   ];
 }
