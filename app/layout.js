@@ -182,7 +182,7 @@ export default function RootLayout({ children }) {
         {/* Google Analytics */}
         <Script
           strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-EHSDFVLHP7`}
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}
         />
         <Script
           id="google-analytics-script"
@@ -192,7 +192,7 @@ export default function RootLayout({ children }) {
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-EHSDFVLHP7', {
+      gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}', {
         page_path: window.location.pathname,
         page_location: window.location.href,
         page_title: document.title
