@@ -60,50 +60,6 @@ export const metadata = {
   },
 };
 
-// export const metadata = {
-//   title: "Bagian - Software House",
-//   description:
-//     "Bagian adalah salah satu Software House yang memiliki kredibilitas tinggi dalam proses pembuatan website, aplikasi berbasis web, dan UI/UX design.",
-//   keywords:
-//     "software house, pembuatan website, aplikasi web, UI/UX design, Bagian",
-//   image: openGraphImage.url, // Menggunakan .url bukan .src
-//   metaTags: {
-//     "og:title": "Bagian - Software House",
-//     "og:description":
-//       "Bagian adalah salah satu Software House yang memiliki kredibilitas tinggi dalam proses pembuatan website, aplikasi berbasis web, dan UI/UX design.",
-//     "og:image": openGraphImage.url, // Menggunakan .url bukan .src
-//     "og:type": "website",
-//     "twitter:card": "summary_large_image",
-//     "twitter:title": "Bagian - Software House",
-//     "twitter:description":
-//       "Bagian adalah salah satu Software House yang memiliki kredibilitas tinggi dalam proses pembuatan website, aplikasi berbasis web, dan UI/UX design.",
-//     "twitter:image": openGraphImage.url, // Menggunakan .url bukan .src
-//   },
-//   og: {
-//     basic: {
-//       url: openGraphImage.url,
-//       title: "Bagian - Software House",
-//       description:
-//         "Bagian adalah salah satu Software House yang memiliki kredibilitas tinggi dalam proses pembuatan website, aplikasi berbasis web, dan UI/UX design.",
-//     },
-//     image: {
-//       url: openGraphImage.url,
-//       width: openGraphImage.width,
-//       height: openGraphImage.height,
-//       alt: openGraphImage.alt,
-//       type: contentType,
-//     },
-//   },
-//   twitter: {
-//     card: "summary_large_image",
-//     site: "@Bagian",
-//     title: "Bagian - Software House",
-//     description:
-//       "Bagian adalah salah satu Software House yang memiliki kredibilitas tinggi dalam proses pembuatan website, aplikasi berbasis web, dan UI/UX design.",
-//     image: openGraphImage.url, // Menggunakan .url bukan .src
-//   },
-// };
-
 const LeMurmure = localFont({
   src: "../public/fonts/LeMurmure.woff",
   display: "swap",
@@ -146,26 +102,6 @@ const ChillaxRegular = localFont({
 const inter = Inter({ subsets: ["latin"] });
 
 <link rel="icon" href="/favicon.ico?<generated>" sizes="32x32" />;
-
-// export const metadata = {
-//   title: {
-//     default: "Bagian - Software House",
-//     tempalte: "%s - Software House",
-//   },
-//   description: [
-//     "Bagian adalah salah satu Software House yang memiliki kredible dalam proses pembuatan website, aplikasi berbasis website, UI/UX website. Kami berlokasi di Kota Sidoarjo.",
-//   ],
-//   keywords: [
-//     "Softwarehouse, Pembuatan Website, Website, UI, UI/UX, Aplikasi Berbasis Website, Bagian Softwarehouse, Bagian.net, Bagian, Bagian Corp, software house, Software House, Aplikasi Website, Pembuatan Website, Website Sekolah, Custom Website, Kustom Website,  Maintenance Website",
-//   ],
-//   authors: [
-//     {
-//       name: "Bagian.net",
-//       url: "https://www.bagian.net",
-//     },
-//   ],
-//   robots: "follow, index",
-// };
 
 export default function RootLayout({ children }) {
   return (
