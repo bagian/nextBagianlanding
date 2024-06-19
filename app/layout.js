@@ -171,7 +171,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${LeMurmure.variable} ${MangoMedium.variable} ${SwitzerRegular.variable} ${SwitzerLight.variable}`}
+      className={`${LeMurmure.variable} ${MangoMedium.variable} ${SwitzerRegular.variable} ${SwitzerLight.variable} ${ChillaxRegular.variable}`}
       suppressHydrationWarning
     >
       <body className={inter.className}>

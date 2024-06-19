@@ -12,7 +12,9 @@ function IntroAbout() {
         className={`${styles.introContent} mt-[47rem] lg:mt-[65rem] xl:mt-[65rem] mb-8 items-center justify-center flex flex-col py-16`}
       >
         <div className={`${styles.introItems} `}>
-          <div className={`${styles.introItems_title} text-center`}>
+          <div
+            className={`${styles.introItems_title} text-center font-SwitzerRegular`}
+          >
             <h1>Tentang Kami</h1>
           </div>
           <div

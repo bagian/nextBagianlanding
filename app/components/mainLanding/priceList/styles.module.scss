@@ -14,7 +14,17 @@
     animation: rotateAnimation 10s linear infinite;
 }
 
+// .priceList_title_tag {
+//     font-family: 'Tajawal', sans-serif;
+// }
 
+.priceList_description {
+    font-family: 'Tajawal', sans-serif;
+}
+
+.priceList_title_description {
+    font-family: 'Tajawal', sans-serif;
+}
 
 @keyframes rotateAnimation {
     from {
@@ -163,7 +173,7 @@
         .priceList_title {
             font-size: 1.8em;
             text-align: center;
-            font-weight: 700;
+            font-weight: 800;
             // margin: 30px 30px;
         }
 
@@ -350,6 +360,7 @@
 
         .priceList_title_description {
             padding: 50px 50px;
+            font-size: 16px;
         }
     }
 
@@ -436,6 +447,7 @@
 
         .priceList_title_description {
             padding: 50px 50px;
+            font-size: 16px;
         }
     }
 
