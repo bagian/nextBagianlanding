@@ -32,7 +32,7 @@
                     display: flex;
                     flex-direction: column;
                     // font-size: 3em;
-                    line-height: 1em;
+                    line-height: 1.5em;
                     font-weight: 800;
                 }
             }
@@ -44,8 +44,9 @@
         left: 0;
         max-width: 600px;
         // padding-top: 8em;
-        font-size: 1em;
+        font-size: 1.1em;
         line-height: 1.5em;
+        font-family: 'Tajawal', sans-serif;
     }
 
     .roadMap_slidewrapper {
@@ -474,7 +475,7 @@
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
 
 
     .roadMap {
@@ -496,7 +497,7 @@
         .roadMap_title_text {
             display: flex;
             flex-direction: column;
-            font-size: 2em;
+            font-size: 3em;
             line-height: 1em;
             font-weight: 800;
         }
@@ -504,16 +505,17 @@
 
 
     .roadMap_slidewrapper {
-        max-width: 800px;
+        max-width: 700px;
         padding: 9rem 0;
         position: relative;
 
         .roadMap_desc_slide {
-            font-size: 13px;
+            font-size: 16px;
         }
 
         .roadMap_title_slide {
-            font-size: 16px;
+            font-size: 20px;
+            font-weight: 800;
 
             svg {
                 object-fit: cover;

@@ -131,7 +131,7 @@ function RoadMap() {
             <div className={`${styles.roadMap_data}`}>
               <div className={`${styles.roadMap_title}`}>
                 <span
-                  className={`${styles.roadMap_title_text} block xl:-mt-36`}
+                  className={`${styles.roadMap_title_text} block xl:-mt-36 font-SwitzerRegular`}
                 >
                   Lihat Alur Bagaimana <span>Kami Bekerja</span>
                 </span>
@@ -158,11 +158,15 @@ function RoadMap() {
                         <span className={`${styles.roadMap_slide_item_number}`}>
                           {index + 1}
                         </span>
-                        <div className={`${styles.roadMap_title_slide}`}>
+                        <div
+                          className={`${styles.roadMap_title_slide} font-SwitzerRegular`}
+                        >
                           {/* {item.Icon}  */}
                           {item.title}
                         </div>
-                        <div className={`${styles.roadMap_desc_slide}`}>
+                        <div
+                          className={`${styles.roadMap_desc_slide} font-SwitzerRegular`}
+                        >
                           <div className={`${styles.roadMap_desc_slide_item}`}>
                             <span
                               className={`${styles.roadMap_title_desc_slide}`}
