@@ -26,7 +26,7 @@ const priceListData = [
     title: "Production",
     price: "Rp 2.800.000",
     description:
-      "Dirancang untuk yang membutuhkan website dengan fitur terupdate dan performa tinggi, Harga mulai Rp 2.800.000  tanpa harga desain.",
+      "Dirancang untuk yang membutuhkan website dengan fitur terupdate dan performa tinggi, Harga mulai dari Rp 2.800.000  tanpa harga desain.",
     list: [
       "Paket Desain",
       "Implementasi Ke Tahapan Koding",
@@ -41,13 +41,14 @@ const priceListData = [
     title: "Maintenance",
     price: "Rp 500.000",
     description:
-      "Layanan pemeliharaan Website untuk memastikan situs Anda tetap optimal dan aman, Harga mulai Rp 500.000 per Bulan.",
+      "Layanan pemeliharaan Website untuk memastikan situs Anda tetap optimal dan aman, Harga mulai dari Rp 500.000 per Bulan.",
     list: [
       "Pembaruan Koding",
       "Backup Bulanan",
       "Pembaruan  User Exsperience",
       "Debugging Kode",
       "Monitoring Kinerja Website",
+      "IT Support",
     ],
     link: "https://wa.link/s9c4s2",
     linkTag: "Hubungi Kami",
@@ -62,7 +63,9 @@ function PriceList() {
           <div
             className={`${styles.priceList_title} flex flex-col text-center py-20`}
           >
-            <span className={`${styles.priceList_title_tag}`}>
+            <span
+              className={`${styles.priceList_title_tag} font-SwitzerRegular`}
+            >
               Pilih Kategori Harga
             </span>
 
@@ -84,7 +87,9 @@ function PriceList() {
                 className={`${styles.priceList_item} flex flex-col`}
                 key={index}
               >
-                <span className={`${styles.priceList_title} my-6`}>
+                <span
+                  className={`${styles.priceList_title} my-6 font-SwitzerRegular`}
+                >
                   {item.title}
                 </span>
                 <span className={`${styles.priceList_description} my-16`}>
