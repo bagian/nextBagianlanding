@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import Footer from "../components/mainLanding/inFooter";
-// import Video from "next-video";
-// import WalkMoon from "/videos/walks-moon.mp4";
 import Image from "next/image";
 import Meeting from "public/img/meeting.webp";
 import MeetingTeenager from "public/img/meeting-teenager.webp";
