@@ -17,7 +17,7 @@ const navItems = [
     href: "/tentang-kami",
   },
   {
-    title: "Proyek",
+    title: "Portofolio",
     href: "/#",
   },
   {
