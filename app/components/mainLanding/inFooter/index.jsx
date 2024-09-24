@@ -53,10 +53,10 @@ const footerData = [
     ],
   },
   {
-    title: "Carrer",
+    title: "Career",
     links: [
       {
-        label: "Carrer Bagian",
+        label: "Career Bagian",
         href: "/#",
       },
     ],
