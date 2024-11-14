@@ -18,7 +18,7 @@ const footerData = [
         href: "/#",
       },
       {
-        label: "Proyek",
+        label: "Portofolio",
         href: "/#",
       },
       {
@@ -53,10 +53,14 @@ const footerData = [
     ],
   },
   {
-    title: "Carrer",
+    title: "Career",
     links: [
       {
+<<<<<<< HEAD
         label: "Carrer",
+=======
+        label: "Career",
+>>>>>>> 161f697 (feat: navigation link)
         href: "/#",
       },
     ],
@@ -76,6 +80,12 @@ function Footer() {
     <>
       <div className={`${styles.footer}`}>
         <div className={`${styles.footerContent}`}>
+<<<<<<< HEAD
+=======
+          {/* <div className={`${styles.footerHeading}`}>
+            <h2>Tak Kenal Maka Tak Sayang</h2>
+          </div> */}
+>>>>>>> 161f697 (feat: navigation link)
           <div className={`${styles.footerHead_link}`}>
             <div className={`${styles.footerHead_sub}`}>
               Setiap proyek adalah ajang untuk menunjukkan kreativitas dan

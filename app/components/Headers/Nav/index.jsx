@@ -18,7 +18,7 @@ const navItems = [
   },
   {
     title: "Portofolio",
-    href: "/#",
+    href: "/portofolio",
   },
   {
     title: "Tim",

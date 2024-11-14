@@ -75,13 +75,20 @@ export default function Navigation(e) {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#" onClick={() => trackTabClick("Portofolio")}>
+                  <Link
+                    href="/portofolio"
+                    onClick={() => trackTabClick("Portofolio")}
+                  >
                     Portofolio
                   </Link>
                 </li>
                 <li>
                   <Link href="/#" onClick={() => trackTabClick("Tim")}>
+<<<<<<< HEAD
                     Tim
+=======
+                    Tim Kami
+>>>>>>> 161f697 (feat: navigation link)
                   </Link>
                 </li>
               </ul>
