@@ -46,6 +46,25 @@
 //   //   title: "Grid gallery project Kinaya",
 //   // },
 // ];
+// const dataImage = [
+//   {
+//     image: KinayaTeam,
+//     title: "Team layout",
+//   },
+//   {
+//     image: KinayaLoading,
+//     title: "Default Logo",
+//   },
+//   {
+//     image: KinayaSlider,
+//     title: "Background image slider layout",
+//   },
+  // {
+  //   image: KinayaGallery,
+  //   title: "Grid gallery project Kinaya",
+  // },
+// ];
+
 
 // export default function KinayaProjects() {
 //   useEffect(() => {
