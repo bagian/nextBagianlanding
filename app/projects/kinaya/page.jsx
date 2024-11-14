@@ -4,10 +4,10 @@ import { useRef, useEffect } from "react";
 import styles from "../Projects.module.scss";
 import Image from "next/image";
 
-import KinayaConcept from "../../../public/img/KinayaMockup.jpg";
+// import KinayaConcept from "../../../public/img/KinayaMockup.jpg";
 import KinayaLoading from "../../../public/img/Kinaya.jpg";
 import KinayaSlider from "../../../public/img/dataImg2.jpg";
-import KinayaGallery from "../../../public/img/KinayaGallery.png";
+// import KinayaGallery from "../../../public/img/KinayaGallery.png";
 import KinayaTeam from "../../../public/img/KinayaTeam.jpg";
 import Link from "next/link";
 import { motion } from "framer-motion";
