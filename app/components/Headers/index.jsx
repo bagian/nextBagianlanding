@@ -84,11 +84,6 @@ export default function Navigation(e) {
                     Tim
                   </Link>
                 </li>
-                <li>
-                  <Link href="/#" onClick={() => trackTabClick("Blog")}>
-                    Blog
-                  </Link>
-                </li>
               </ul>
               <div className="hidden md:flex lg:flex">
                 <Link

@@ -24,10 +24,6 @@ const navItems = [
     title: "Tim",
     href: "/#",
   },
-  {
-    title: "Blog",
-    href: "/#",
-  },
 ];
 
 const trackMenuItem = (itemName) => {
