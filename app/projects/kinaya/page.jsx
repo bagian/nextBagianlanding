@@ -41,10 +41,10 @@ const dataImage = [
     image: KinayaSlider,
     title: "Background image slider layout",
   },
-  {
-    image: KinayaGallery,
-    title: "Grid gallery project Kinaya",
-  },
+  // {
+  //   image: KinayaGallery,
+  //   title: "Grid gallery project Kinaya",
+  // },
 ];
 
 export default function KinayaProjects() {
