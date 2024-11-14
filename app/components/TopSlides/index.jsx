@@ -37,9 +37,9 @@ export default function MarqueeText() {
         <div className={`${styles.header} whitespace-nowrap flex flex-row`}>
           <h1 className="font-bold">
             On Going{" "}
-            <span style={{ rotate: "-10deg", display: "inline-block" }}>
+            {/* <span style={{ rotate: "-10deg", display: "inline-block" }}>
               📢
-            </span>
+            </span> */}
           </h1>
         </div>
         <div className={styles.sliderContainer}>

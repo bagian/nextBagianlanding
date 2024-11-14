@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import Footer from "../components/mainLanding/inFooter";
 import Image from "next/image";
-import Meeting from "public/img/meeting.webp";
+import Meeting from "public/img/meeting.jpg";
 import MeetingTeenager from "public/img/meeting-teenager.webp";
 
 export default function TentangKami() {

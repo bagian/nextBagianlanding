@@ -18,14 +18,10 @@ const navItems = [
   },
   {
     title: "Portofolio",
-    href: "/#",
+    href: "/portofolio",
   },
   {
-    title: "Tim",
-    href: "/#",
-  },
-  {
-    title: "Blog",
+    title: "Tim Kami",
     href: "/#",
   },
 ];
