@@ -4,10 +4,10 @@ import React from "react";
 import "./OurTeam.scss";
 
 // data Image
-import teamImageOne from "./dataImage/dataImage-1.jpg";
+// import teamImageOne from "./dataImage/dataImage-1.jpg";
 import teamImageTwo from "./dataImage/dataImage-2.jpg";
 import teamImageThree from "./dataImage/dataImage-3.jpg";
-import teamImageFour from "./dataImage/dataImage-4.jpg";
+// import teamImageFour from "./dataImage/dataImage-4.jpg";
 import Image from "next/legacy/image";
 
 // Team Data
@@ -16,7 +16,7 @@ const teamMembers = [
     name: "Name Of Team",
     jobOne: "Frontend Developer",
     jobTwo: "UI/UX Design",
-    image: teamImageOne,
+    // image: teamImageOne,
   },
   {
     name: "Name Of Team",
@@ -34,7 +34,7 @@ const teamMembers = [
     name: "Name Of Team",
     jobOne: "Server Engineer",
     jobTwo: "Backend Developer",
-    image: teamImageFour,
+    // image: teamImageFour,
   },
 ];
 
