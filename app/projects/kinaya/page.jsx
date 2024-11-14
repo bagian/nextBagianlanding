@@ -199,7 +199,7 @@ export default function KinayaProjects() {
         ref={containerRef}
         className={`${styles.projectContainer} text-white pt-16`}
       >
-        <div className={`${styles.projectWrapper}`}>
+        {/* <div className={`${styles.projectWrapper}`}>
           {dataProject.map((data) => (
             <div className={`${styles.projectContent}`} key={data.projectName}>
               <div className={`${styles.projectHeading} bg-black`}>
@@ -336,7 +336,7 @@ export default function KinayaProjects() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </>
   );
