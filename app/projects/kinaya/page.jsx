@@ -17,16 +17,17 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const dataProject = [
-  {
-    projectName: "Kinaya",
-    projectHeading:
-      "Kinaya Interior Design adalah perusahaan profesional yang bergerak di bidang desain interior, konstruksi, dan sipil.",
-    projectImageTop: KinayaConcept,
-    projectDetail:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolor adipisci rem magnam officiis harum similique sit? Distinctio ipsa ullam et in alias esse ducimus. Excepturi pariatur neque optio. Obcaecati enim iure exercitationem quibusdam sed illum, accusantium minus, delectus ex animi adipisci, sequi eos beatae! Esse saepe provident quo sequi quam! Aliquid officiis quidem vel enim dolor sapiente unde nam cupiditate eius commodi, rem pariatur nisi voluptates rerum corporis. Culpa, tempora asperiores? Repellat, assumenda nam minima asperiores maxime eos vitae distinctio magnam. Id excepturi a ratione maxime! Optio deserunt sequi dolorum ad saepe reprehenderit eaque similique, assumenda cupiditate ut impedit?",
-  },
-];
+// const dataProject = [
+//   {
+//     projectName: "Kinaya",
+//     projectHeading:
+//       "Kinaya Interior Design adalah perusahaan profesional yang bergerak di bidang desain interior, konstruksi, dan sipil.",
+//     projectImageTop: KinayaConcept,
+//     projectDetail:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolor adipisci rem magnam officiis harum similique sit? Distinctio ipsa ullam et in alias esse ducimus. Excepturi pariatur neque optio. Obcaecati enim iure exercitationem quibusdam sed illum, accusantium minus, delectus ex animi adipisci, sequi eos beatae! Esse saepe provident quo sequi quam! Aliquid officiis quidem vel enim dolor sapiente unde nam cupiditate eius commodi, rem pariatur nisi voluptates rerum corporis. Culpa, tempora asperiores? Repellat, assumenda nam minima asperiores maxime eos vitae distinctio magnam. Id excepturi a ratione maxime! Optio deserunt sequi dolorum ad saepe reprehenderit eaque similique, assumenda cupiditate ut impedit?",
+//   },
+// ];
+
 const dataImage = [
   {
     image: KinayaTeam,
@@ -107,91 +108,91 @@ export default function KinayaProjects() {
     }
   }, []); // Tambahkan dependensi jika diperlukan
 
-  useEffect(() => {
-    gsap.to("#projectName", {
-      ease: "power1.inOut",
-      opacity: 1,
-      y: -20,
-    });
-    gsap.fromTo(
-      "#headingTitle",
-      {
-        opacity: 0,
-        y: 30,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        delay: 1,
-        stagger: 0.1,
-      }
-    );
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: ".cl-d",
-          start: "top 80%",
-          end: "bottom 20%",
-          scrub: 1.5,
-          stagger: 0.1,
-          once: true, // Menambahkan opsi 'once' untuk menjalankan animasi hanya sekali
-        },
-      })
-      .fromTo(
-        ".cl-d",
-        {
-          opacity: 0,
-          y: 30,
-        },
-        {
-          opacity: 1,
-          delay: 1,
-          stagger: 0.1,
-          y: 0,
-        }
-      );
-  }, []);
+  // useEffect(() => {
+  //   gsap.to("#projectName", {
+  //     ease: "power1.inOut",
+  //     opacity: 1,
+  //     y: -20,
+  //   });
+  //   gsap.fromTo(
+  //     "#headingTitle",
+  //     {
+  //       opacity: 0,
+  //       y: 30,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       y: 0,
+  //       delay: 1,
+  //       stagger: 0.1,
+  //     }
+  //   );
+  //   gsap
+  //     .timeline({
+  //       scrollTrigger: {
+  //         trigger: ".cl-d",
+  //         start: "top 80%",
+  //         end: "bottom 20%",
+  //         scrub: 1.5,
+  //         stagger: 0.1,
+  //         once: true, // Menambahkan opsi 'once' untuk menjalankan animasi hanya sekali
+  //       },
+  //     })
+  //     .fromTo(
+  //       ".cl-d",
+  //       {
+  //         opacity: 0,
+  //         y: 30,
+  //       },
+  //       {
+  //         opacity: 1,
+  //         delay: 1,
+  //         stagger: 0.1,
+  //         y: 0,
+  //       }
+  //     );
+  // }, []);
 
-  useEffect(() => {
-    gsap.to("#projectImage", {
-      ease: "power1.inOut",
-      opacity: 1,
-      y: -30,
-      delay: 1,
-    });
+  // useEffect(() => {
+  //   gsap.to("#projectImage", {
+  //     ease: "power1.inOut",
+  //     opacity: 1,
+  //     y: -30,
+  //     delay: 1,
+  //   });
 
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: "#projectPreview",
-          start: "top 80%",
-          end: "bottom 100%",
-          scrub: true,
-          once: true, // Animasi hanya akan dijalankan sekali
-        },
-      })
-      .fromTo(
-        "#projectPreview",
-        {
-          opacity: 0,
-          y: -50,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          delay: 2,
-          ease: "power3.out", // Menambahkan easing untuk animasi yang lebih halus
-          duration: 1.5, // Menentukan durasi animasi
-        }
-      );
+  //   gsap
+  //     .timeline({
+  //       scrollTrigger: {
+  //         trigger: "#projectPreview",
+  //         start: "top 80%",
+  //         end: "bottom 100%",
+  //         scrub: true,
+  //         once: true, // Animasi hanya akan dijalankan sekali
+  //       },
+  //     })
+  //     .fromTo(
+  //       "#projectPreview",
+  //       {
+  //         opacity: 0,
+  //         y: -50,
+  //       },
+  //       {
+  //         opacity: 1,
+  //         y: 0,
+  //         delay: 2,
+  //         ease: "power3.out", // Menambahkan easing untuk animasi yang lebih halus
+  //         duration: 1.5, // Menentukan durasi animasi
+  //       }
+  //     );
 
-    gsap.to("#imagePreview", {
-      ease: "power3.out",
-      opacity: 1,
-      y: -30,
-      delay: 3,
-    });
-  }, []);
+  //   gsap.to("#imagePreview", {
+  //     ease: "power3.out",
+  //     opacity: 1,
+  //     y: -30,
+  //     delay: 3,
+  //   });
+  // }, []);
 
   return (
     <>
