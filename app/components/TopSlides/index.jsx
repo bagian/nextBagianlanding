@@ -10,26 +10,25 @@ export default function MarqueeText() {
   const motionTextOne = useRef(null);
   const motionTextSecond = useRef(null);
   const slider = useRef(null);
-
-  let xPercent = 0;
+  const xPercent = useRef(0);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    // Menghapus animasi yang terkait dengan scroll
+
+    const animate = () => {
+      if (xPercent.current > 100) {
+        xPercent.current = 0;
+      } else if (xPercent.current < 0) {
+        xPercent.current = 100;
+      }
+      gsap.set(motionTextOne.current, { xPercent: -xPercent.current });
+      gsap.set(motionTextSecond.current, { xPercent: -xPercent.current });
+      requestAnimationFrame(animate);
+      xPercent.current += 0.002;
+    };
+
     requestAnimationFrame(animate);
   }, []);
-
-  const animate = () => {
-    if (xPercent > 100) {
-      xPercent = 0;
-    } else if (xPercent < 0) {
-      xPercent = 100;
-    }
-    gsap.set(motionTextOne.current, { xPercent: -xPercent });
-    gsap.set(motionTextSecond.current, { xPercent: -xPercent });
-    requestAnimationFrame(animate);
-    xPercent += 0.002;
-  };
 
   return (
     <>
@@ -136,14 +135,6 @@ export default function MarqueeText() {
                 </span>
               </div>
               <div className={styles.motion} ref={motionTextSecond}>
-                <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
-                  <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
-                  <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
-                  <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
-                  <StarsWhite />
-                </span>
                 <span className="flex gap-8">
                   Website Sekolah Darul Husada Surabaya
                   <StarsWhite />

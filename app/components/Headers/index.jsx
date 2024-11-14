@@ -33,7 +33,7 @@ export default function Navigation(e) {
   }, []);
 
   useEffect(() => {
-    if (isActive) setIsActive(false);
+    setIsActive(false);
   }, [pathname]);
 
   if (e.parentNode) {
@@ -84,11 +84,7 @@ export default function Navigation(e) {
                 </li>
                 <li>
                   <Link href="/#" onClick={() => trackTabClick("Tim")}>
-<<<<<<< HEAD
-                    Tim
-=======
                     Tim Kami
->>>>>>> 161f697 (feat: navigation link)
                   </Link>
                 </li>
               </ul>
