@@ -1,20 +1,19 @@
 .pageContainer {
-    width: 100%;
-    transition: padding-top 0.3s ease-in-out;
-    overflow: hidden;
-    padding-top: 60px;
-    position: absolute;
-    top: 7rem;
-    z-index: -5;
-    left: 0;
-    right: 0;
+  width: 100%;
+  transition: padding-top 0.3s ease-in-out;
+  overflow: hidden;
+  padding-top: 60px;
+  position: absolute;
+  top: 7rem;
+  z-index: -5;
+  left: 0;
+  right: 0;
 
-    .pageContent {
-        padding: 8em 0;
-        height: 100%;
-    }
+  .pageContent {
+    padding: 8em 0;
+    height: 100%;
+  }
 }
-
 
 // @media (max-width: 480px) {
 //     .pageContainer {
@@ -33,682 +32,672 @@
 // }
 
 @media (min-width: 280px) and (max-width: 480px) {
-    .pageContainer {
-
-        .pageContent {
-            padding: 25px;
-            margin: 0 auto !important;
-            // max-width: 1440px;
-        }
-
-        .pageHeader {
-            span {
-                font-family: "Tajawal", sans-serif;
-                margin: 0 auto !important;
-                font-size: 28px;
-                display: block;
-                text-align: center;
-                line-height: 1.2em;
-            }
-        }
-
-        .headerBanner {
-            overflow: hidden;
-            margin: 90px 0 90px 0;
-            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-            border-radius: 20px;
-
-            picture {
-
-                img {
-                    height: 378px;
-                    width: 100%;
-                    object-fit: cover;
-                    background-repeat: no-repeat;
-                }
-            }
-        }
-
-        .ourStoryHeader {
-            margin: 3em 0 3em 0 !important;
-
-            .ourStoryContent {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                grid-template-rows: 1fr;
-                gap: 55px;
-
-                .ourStory {
-                    .storyHeading {
-                        padding: 20px 0 20px;
-                        display: block;
-                        font-family: "Tajawal", sans-serif;
-                        text-transform: uppercase;
-                        color: #161616;
-                        font-size: 16px;
-                    }
-
-                    .storyHeadingTitle {
-                        padding: 45px 0 45px;
-
-                        .storyTitle {
-                            font-family: "Tajawal", sans-serif;
-                            font-size: 25px;
-                            font-weight: 700;
-                            line-height: 1.4em;
-                        }
-                    }
-
-                    .storyDescription {
-
-                        .storyDescriptionContent {
-                            font-family: "Tajawal", sans-serif;
-
-                            p {
-                                color: #575757;
-                                font-size: 16px;
-                                padding: 0 0 20px;
-                                line-height: 1.7em;
-
-                            }
-                        }
-                    }
-                }
-            }
-
-            .storyBannerSide {
-                picture {
-                    overflow: hidden;
-
-                    img {
-                        border-radius: 20px;
-                        height: 378px;
-                        width: 100%;
-                        object-fit: cover;
-                        background-repeat: no-repeat;
-                    }
-                }
-            }
-        }
-
-        .ourVsnMs {
-            position: relative;
-
-            .ourVsnMsHeader {
-                display: block;
-                text-align: center;
-                font-family: "Tajawal", sans-serif;
-                font-size: 28px;
-                font-weight: 700;
-                padding: 40px 0 40px;
-            }
-
-            .ourVMsContent {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                gap: 10px;
-
-                .ourVisionItem {
-                    background-color: #161616;
-                    color: #fff;
-                }
-
-                .ourMisionItem {
-                    color: #161616;
-                    background-color: #CAFD00;
-                }
-
-                .ourVmsItems {
-                    display: flex;
-                    flex-direction: column;
-                    border-radius: 20px;
-                    padding: 35px;
-                    font-family: "Tajawal", sans-serif;
-
-                    .vision {
-                        font-weight: 700;
-                        font-size: 25px;
-                    }
-
-
-                    .mision {
-                        font-weight: 700;
-                        font-size: 25px;
-                    }
-
-                    .VnMDesc {
-                        padding: 25px 0;
-                        // font-size: 17px;
-                        font-weight: 200;
-                    }
-
-                    .VisionDesc {
-                        font-size: 16px;
-                        // font-weight: 200;
-                        display: block;
-                    }
-
-                    .MisionDesc {
-                        font-size: 16px;
-                    }
-
-                    .misionItemUl {
-                        padding: 20px 8px;
-                        list-style: decimal;
-                    }
-                }
-            }
-        }
+  .pageContainer {
+    .pageContent {
+      padding: 25px;
+      margin: 0 auto !important;
+      // max-width: 1440px;
     }
+
+    .pageHeader {
+      span {
+        font-family: "Tajawal", sans-serif;
+        margin: 0 auto !important;
+        font-size: 28px;
+        display: block;
+        text-align: center;
+        line-height: 1.2em;
+      }
+    }
+
+    .headerBanner {
+      overflow: hidden;
+      margin: 90px 0 90px 0;
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      border-radius: 20px;
+
+      picture {
+        img {
+          height: 378px;
+          width: 100%;
+          object-fit: cover;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .ourStoryHeader {
+      margin: 3em 0 3em 0 !important;
+
+      .ourStoryContent {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        gap: 55px;
+
+        .ourStory {
+          .storyHeading {
+            padding: 20px 0 20px;
+            display: block;
+            font-family: "Tajawal", sans-serif;
+            text-transform: uppercase;
+            color: #161616;
+            font-size: 16px;
+          }
+
+          .storyHeadingTitle {
+            padding: 45px 0 45px;
+
+            .storyTitle {
+              font-family: "Tajawal", sans-serif;
+              font-size: 25px;
+              font-weight: 700;
+              line-height: 1.4em;
+            }
+          }
+
+          .storyDescription {
+            .storyDescriptionContent {
+              font-family: "Tajawal", sans-serif;
+
+              p {
+                color: #575757;
+                font-size: 16px;
+                padding: 0 0 20px;
+                line-height: 1.7em;
+              }
+            }
+          }
+        }
+      }
+
+      .storyBannerSide {
+        picture {
+          overflow: hidden;
+
+          img {
+            border-radius: 20px;
+            height: 378px;
+            width: 100%;
+            object-fit: cover;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+
+    .ourVsnMs {
+      position: relative;
+
+      .ourVsnMsHeader {
+        display: block;
+        text-align: center;
+        font-family: "Tajawal", sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        padding: 40px 0 40px;
+      }
+
+      .ourVMsContent {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+
+        .ourVisionItem {
+          background-color: #161616;
+          color: #fff;
+        }
+
+        .ourMisionItem {
+          color: #161616;
+          background-color: #cafd00;
+        }
+
+        .ourVmsItems {
+          display: flex;
+          flex-direction: column;
+          border-radius: 20px;
+          padding: 35px;
+          font-family: "Tajawal", sans-serif;
+
+          .vision {
+            font-weight: 700;
+            font-size: 25px;
+          }
+
+          .mision {
+            font-weight: 700;
+            font-size: 25px;
+          }
+
+          .VnMDesc {
+            padding: 25px 0;
+            // font-size: 17px;
+            font-weight: 200;
+          }
+
+          .VisionDesc {
+            font-size: 16px;
+            // font-weight: 200;
+            display: block;
+          }
+
+          .MisionDesc {
+            font-size: 16px;
+          }
+
+          .misionItemUl {
+            padding: 20px 8px;
+            list-style: decimal;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-    .pageContainer {
-
-        .pageContent {
-            padding: 25px;
-            margin: 0 auto !important;
-            // max-width: 1440px;
-        }
-
-        .pageHeader {
-            span {
-                font-family: "Tajawal", sans-serif;
-                margin: 0 auto !important;
-                font-size: 28px;
-                display: block;
-                text-align: center;
-                line-height: 1.2em;
-            }
-        }
-
-        .headerBanner {
-            overflow: hidden;
-            margin: 90px 0 90px 0;
-            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-            border-radius: 20px;
-
-            picture {
-
-                img {
-                    border-radius: 20px;
-                    height: 378px;
-                    width: 100%;
-                    object-fit: cover;
-                    background-repeat: no-repeat;
-                }
-            }
-        }
-
-        .ourStoryHeader {
-            margin: 3em 0 3em 0 !important;
-
-            .ourStoryContent {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                grid-template-rows: 1fr;
-                gap: 55px;
-
-                .ourStory {
-                    .storyHeading {
-                        padding: 20px 0 20px;
-                        display: block;
-                        font-family: "Tajawal", sans-serif;
-                        text-transform: uppercase;
-                        color: #161616;
-                        font-size: 16px;
-                    }
-
-                    .storyHeadingTitle {
-                        padding: 45px 0 45px;
-
-                        .storyTitle {
-                            font-family: "Tajawal", sans-serif;
-                            font-size: 25px;
-                            font-weight: 700;
-                            line-height: 1.4em;
-                        }
-                    }
-
-                    .storyDescription {
-
-                        .storyDescriptionContent {
-                            font-family: "Tajawal", sans-serif;
-
-                            p {
-                                color: #575757;
-                                font-size: 16px;
-                                padding: 0 0 20px;
-                                line-height: 1.7em;
-
-                            }
-                        }
-                    }
-                }
-            }
-
-            .storyBannerSide {
-                picture {
-                    overflow: hidden;
-
-                    img {
-                        border-radius: 20px;
-                        height: 378px;
-                        width: 100%;
-                        object-fit: cover;
-                        background-repeat: no-repeat;
-                    }
-                }
-            }
-        }
-
-        .ourVsnMs {
-            position: relative;
-
-            .ourVsnMsHeader {
-                display: block;
-                text-align: center;
-                font-family: "Tajawal", sans-serif;
-                font-size: 28px;
-                font-weight: 700;
-                padding: 40px 0 40px;
-            }
-
-            .ourVMsContent {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                gap: 10px;
-
-                .ourVisionItem {
-                    background-color: #161616;
-                    color: #fff;
-                }
-
-                .ourMisionItem {
-                    color: #161616;
-                    background-color: #CAFD00;
-                }
-
-                .ourVmsItems {
-                    display: flex;
-                    flex-direction: column;
-                    border-radius: 20px;
-                    padding: 35px;
-                    font-family: "Tajawal", sans-serif;
-
-                    .vision {
-                        font-weight: 700;
-                        font-size: 25px;
-                    }
-
-
-                    .mision {
-                        font-weight: 700;
-                        font-size: 25px;
-                    }
-
-                    .VnMDesc {
-                        padding: 35px 0;
-                        // font-size: 17px;
-                        font-weight: 200;
-                    }
-
-                    .VisionDesc {
-                        font-size: 16px;
-                        // font-weight: 200;
-                        display: block;
-                    }
-
-                    .MisionDesc {
-                        font-size: 16px;
-                    }
-
-                    .misionItemUl {
-                        padding: 20px 25px;
-                        list-style: decimal;
-                    }
-                }
-            }
-        }
+  .pageContainer {
+    .pageContent {
+      padding: 25px;
+      margin: 0 auto !important;
+      // max-width: 1440px;
     }
+
+    .pageHeader {
+      span {
+        font-family: "Tajawal", sans-serif;
+        margin: 0 auto !important;
+        font-size: 28px;
+        display: block;
+        text-align: center;
+        line-height: 1.2em;
+      }
+    }
+
+    .headerBanner {
+      overflow: hidden;
+      margin: 90px 0 90px 0;
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      border-radius: 20px;
+
+      picture {
+        img {
+          border-radius: 20px;
+          height: 378px;
+          width: 100%;
+          object-fit: cover;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .ourStoryHeader {
+      margin: 3em 0 3em 0 !important;
+
+      .ourStoryContent {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        gap: 55px;
+
+        .ourStory {
+          .storyHeading {
+            padding: 20px 0 20px;
+            display: block;
+            font-family: "Tajawal", sans-serif;
+            text-transform: uppercase;
+            color: #161616;
+            font-size: 16px;
+          }
+
+          .storyHeadingTitle {
+            padding: 45px 0 45px;
+
+            .storyTitle {
+              font-family: "Tajawal", sans-serif;
+              font-size: 25px;
+              font-weight: 700;
+              line-height: 1.4em;
+            }
+          }
+
+          .storyDescription {
+            .storyDescriptionContent {
+              font-family: "Tajawal", sans-serif;
+
+              p {
+                color: #575757;
+                font-size: 16px;
+                padding: 0 0 20px;
+                line-height: 1.7em;
+              }
+            }
+          }
+        }
+      }
+
+      .storyBannerSide {
+        picture {
+          overflow: hidden;
+
+          img {
+            border-radius: 20px;
+            height: 378px;
+            width: 100%;
+            object-fit: cover;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+
+    .ourVsnMs {
+      position: relative;
+
+      .ourVsnMsHeader {
+        display: block;
+        text-align: center;
+        font-family: "Tajawal", sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        padding: 40px 0 40px;
+      }
+
+      .ourVMsContent {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+
+        .ourVisionItem {
+          background-color: #161616;
+          color: #fff;
+        }
+
+        .ourMisionItem {
+          color: #161616;
+          background-color: #cafd00;
+        }
+
+        .ourVmsItems {
+          display: flex;
+          flex-direction: column;
+          border-radius: 20px;
+          padding: 35px;
+          font-family: "Tajawal", sans-serif;
+
+          .vision {
+            font-weight: 700;
+            font-size: 25px;
+          }
+
+          .mision {
+            font-weight: 700;
+            font-size: 25px;
+          }
+
+          .VnMDesc {
+            padding: 35px 0;
+            // font-size: 17px;
+            font-weight: 200;
+          }
+
+          .VisionDesc {
+            font-size: 16px;
+            // font-weight: 200;
+            display: block;
+          }
+
+          .MisionDesc {
+            font-size: 16px;
+          }
+
+          .misionItemUl {
+            padding: 20px 25px;
+            list-style: decimal;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .pageContainer {
-
-        .pageContent {
-            padding: 25px;
-            margin: 0 auto !important;
-            // max-width: 1440px;
-        }
-
-        .pageHeader {
-            span {
-                font-family: "Tajawal", sans-serif;
-                margin: 0 auto !important;
-                font-size: 38px;
-                display: block;
-                text-align: center;
-                line-height: 1.2em;
-            }
-        }
-
-        .headerBanner {
-            overflow: hidden;
-            margin: 90px 0 90px 0;
-            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-            border-radius: 20px;
-
-            picture {
-                img {
-                    border-radius: 20px;
-                    height: 478px;
-                    width: 100%;
-                    object-fit: cover;
-                    background-repeat: no-repeat;
-                }
-            }
-        }
-
-        .ourStoryHeader {
-            margin: 3em 0 3em 0 !important;
-
-            .ourStoryContent {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                grid-template-rows: 1fr;
-                gap: 55px;
-
-                .ourStory {
-                    .storyHeading {
-                        padding: 20px 0 20px;
-                        display: block;
-                        font-family: "Tajawal", sans-serif;
-                        text-transform: uppercase;
-                        color: #161616;
-                        font-size: 18px;
-                    }
-
-                    .storyHeadingTitle {
-                        padding: 45px 0 45px;
-
-                        .storyTitle {
-                            font-family: "Tajawal", sans-serif;
-                            font-size: 35px;
-                            font-weight: 700;
-                            line-height: 1.4em;
-                        }
-                    }
-
-                    .storyDescription {
-
-                        .storyDescriptionContent {
-                            font-family: "Tajawal", sans-serif;
-
-                            p {
-                                color: #575757;
-                                font-size: 17px;
-                                padding: 0 0 20px;
-                                line-height: 1.7em;
-
-                            }
-                        }
-                    }
-                }
-            }
-
-            .storyBannerSide {
-                picture {
-                    overflow: hidden;
-
-                    img {
-                        border-radius: 20px;
-                        height: 378px;
-                        width: 100%;
-                        object-fit: cover;
-                        background-repeat: no-repeat;
-                    }
-                }
-            }
-        }
-
-        .ourVsnMs {
-            position: relative;
-
-            .ourVsnMsHeader {
-                display: block;
-                text-align: center;
-                font-family: "Tajawal", sans-serif;
-                font-size: 28px;
-                font-weight: 700;
-                padding: 40px 0 40px;
-            }
-
-            .ourVMsContent {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                gap: 10px;
-
-                .ourVisionItem {
-                    background-color: #161616;
-                    color: #fff;
-                }
-
-                .ourMisionItem {
-                    color: #161616;
-                    background-color: #CAFD00;
-                }
-
-                .ourVmsItems {
-                    display: flex;
-                    flex-direction: column;
-                    border-radius: 20px;
-                    padding: 35px;
-                    font-family: "Tajawal", sans-serif;
-
-                    .vision {
-                        font-weight: 700;
-                        font-size: 25px;
-                    }
-
-
-                    .mision {
-                        font-weight: 700;
-                        font-size: 25px;
-                    }
-
-                    .VnMDesc {
-                        padding: 35px 0;
-                        // font-size: 17px;
-                        font-weight: 200;
-                    }
-
-                    .VisionDesc {
-                        font-size: 16px;
-                        // font-weight: 200;
-                        display: block;
-                    }
-
-                    .MisionDesc {
-                        font-size: 16px;
-                    }
-
-                    .misionItemUl {
-                        padding: 20px 25px;
-                        list-style: decimal;
-                    }
-                }
-            }
-        }
+  .pageContainer {
+    .pageContent {
+      padding: 25px;
+      margin: 0 auto !important;
+      // max-width: 1440px;
     }
+
+    .pageHeader {
+      span {
+        font-family: "Tajawal", sans-serif;
+        margin: 0 auto !important;
+        font-size: 38px;
+        display: block;
+        text-align: center;
+        line-height: 1.2em;
+      }
+    }
+
+    .headerBanner {
+      overflow: hidden;
+      margin: 90px 0 90px 0;
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      border-radius: 20px;
+
+      picture {
+        img {
+          border-radius: 20px;
+          height: 478px;
+          width: 100%;
+          object-fit: cover;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .ourStoryHeader {
+      margin: 3em 0 3em 0 !important;
+
+      .ourStoryContent {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        gap: 55px;
+
+        .ourStory {
+          .storyHeading {
+            padding: 20px 0 20px;
+            display: block;
+            font-family: "Tajawal", sans-serif;
+            text-transform: uppercase;
+            color: #161616;
+            font-size: 18px;
+          }
+
+          .storyHeadingTitle {
+            padding: 45px 0 45px;
+
+            .storyTitle {
+              font-family: "Tajawal", sans-serif;
+              font-size: 35px;
+              font-weight: 700;
+              line-height: 1.4em;
+            }
+          }
+
+          .storyDescription {
+            .storyDescriptionContent {
+              font-family: "Tajawal", sans-serif;
+
+              p {
+                color: #575757;
+                font-size: 17px;
+                padding: 0 0 20px;
+                line-height: 1.7em;
+              }
+            }
+          }
+        }
+      }
+
+      .storyBannerSide {
+        picture {
+          overflow: hidden;
+
+          img {
+            border-radius: 20px;
+            height: 378px;
+            width: 100%;
+            object-fit: cover;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+
+    .ourVsnMs {
+      position: relative;
+
+      .ourVsnMsHeader {
+        display: block;
+        text-align: center;
+        font-family: "Tajawal", sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        padding: 40px 0 40px;
+      }
+
+      .ourVMsContent {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+
+        .ourVisionItem {
+          background-color: #161616;
+          color: #fff;
+        }
+
+        .ourMisionItem {
+          color: #161616;
+          background-color: #cafd00;
+        }
+
+        .ourVmsItems {
+          display: flex;
+          flex-direction: column;
+          border-radius: 20px;
+          padding: 35px;
+          font-family: "Tajawal", sans-serif;
+
+          .vision {
+            font-weight: 700;
+            font-size: 25px;
+          }
+
+          .mision {
+            font-weight: 700;
+            font-size: 25px;
+          }
+
+          .VnMDesc {
+            padding: 35px 0;
+            // font-size: 17px;
+            font-weight: 200;
+          }
+
+          .VisionDesc {
+            font-size: 16px;
+            // font-weight: 200;
+            display: block;
+          }
+
+          .MisionDesc {
+            font-size: 16px;
+          }
+
+          .misionItemUl {
+            padding: 20px 25px;
+            list-style: decimal;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1025px) {
-    .pageContainer {
-        .pageContent {
-            padding: 80px;
-            margin: 0 auto !important;
-            max-width: 1440px;
-        }
-
-        .pageHeader {
-            span {
-                font-family: "Tajawal", sans-serif;
-                margin: 0 auto !important;
-                max-width: 900px;
-                font-size: 50px;
-                display: block;
-                text-align: center;
-                line-height: 1.2em;
-            }
-        }
-
-        .headerBanner {
-            overflow: hidden;
-            margin: 90px 0 90px 0;
-            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-            border-radius: 20px;
-
-            picture {
-
-                img {
-                    height: 578px;
-                    width: 100%;
-                    object-fit: cover;
-                    background-repeat: no-repeat;
-                }
-            }
-        }
-
-        .ourStoryHeader {
-            margin: 19em 0 19em 0 !important;
-
-            .ourStoryContent {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: 1fr;
-                gap: 55px;
-
-                .ourStory {
-                    .storyHeading {
-                        padding: 20px 0 20px;
-                        display: block;
-                        font-family: "Tajawal", sans-serif;
-                        text-transform: uppercase;
-                        color: #161616;
-                        font-size: 16px;
-                    }
-
-                    .storyHeadingTitle {
-                        padding: 45px 0 45px;
-
-                        .storyTitle {
-                            font-family: "Tajawal", sans-serif;
-                            font-size: 32px;
-                            font-weight: 700;
-                            line-height: 1.1em;
-                        }
-                    }
-
-                    .storyDescription {
-
-                        .storyDescriptionContent {
-                            font-family: "Tajawal", sans-serif;
-
-                            p {
-                                color: #575757;
-                                font-size: 17px;
-                                padding: 0 0 20px;
-                                line-height: 1.7em;
-
-                            }
-                        }
-                    }
-                }
-            }
-
-            .storyBannerSide {
-                picture {
-                    overflow: hidden;
-
-                    img {
-                        border-radius: 20px;
-                        height: 678px;
-                        width: 100%;
-                        object-fit: cover;
-                        background-repeat: no-repeat;
-                    }
-                }
-            }
-        }
-
-        .ourVsnMs {
-            position: relative;
-
-            .ourVsnMsHeader {
-                display: block;
-                text-align: center;
-                font-family: "Tajawal", sans-serif;
-                font-size: 32px;
-                font-weight: 700;
-                padding: 40px 0 40px;
-            }
-
-            .ourVMsContent {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-
-                .ourVisionItem {
-                    background-color: #161616;
-                    color: #fff;
-                }
-
-                .ourMisionItem {
-                    color: #161616;
-                    background-color: #CAFD00;
-                }
-
-                .ourVmsItems {
-                    display: flex;
-                    flex-direction: column;
-                    border-radius: 20px;
-                    padding: 35px;
-                    font-family: "Tajawal", sans-serif;
-
-                    .vision {
-                        font-weight: 700;
-                        font-size: 25px;
-                    }
-
-
-                    .mision {
-                        font-weight: 700;
-                        font-size: 25px;
-                    }
-
-                    .VnMDesc {
-                        padding: 35px 0;
-                        // font-size: 17px;
-                        font-weight: 200;
-                    }
-
-                    .VisionDesc {
-                        font-size: 20px;
-                        // font-weight: 200;
-                        display: block;
-                    }
-
-                    .MisionDesc {
-                        font-size: 18px;
-                    }
-
-                    .misionItemUl {
-                        padding: 20px 25px;
-                        list-style: decimal;
-                    }
-                }
-            }
-        }
+  .pageContainer {
+    .pageContent {
+      padding: 80px;
+      margin: 0 auto !important;
+      max-width: 1440px;
     }
+
+    .pageHeader {
+      span {
+        font-family: "Tajawal", sans-serif;
+        margin: 0 auto !important;
+        // max-width: 900px;
+        font-size: 50px;
+        display: block;
+        text-align: center;
+        line-height: 1.2em;
+      }
+    }
+
+    .headerBanner {
+      overflow: hidden;
+      margin: 90px 0 90px 0;
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      border-radius: 20px;
+
+      picture {
+        img {
+          height: 578px;
+          width: 100%;
+          object-fit: cover;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .ourStoryHeader {
+      margin: 19em 0 19em 0 !important;
+
+      .ourStoryContent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 55px;
+
+        .ourStory {
+          .storyHeading {
+            padding: 20px 0 20px;
+            display: block;
+            font-family: "Tajawal", sans-serif;
+            text-transform: uppercase;
+            color: #161616;
+            font-size: 16px;
+          }
+
+          .storyHeadingTitle {
+            padding: 45px 0 45px;
+
+            .storyTitle {
+              font-family: "Tajawal", sans-serif;
+              font-size: 32px;
+              font-weight: 700;
+              line-height: 1.1em;
+            }
+          }
+
+          .storyDescription {
+            .storyDescriptionContent {
+              font-family: "Tajawal", sans-serif;
+
+              p {
+                color: #575757;
+                font-size: 17px;
+                padding: 0 0 20px;
+                line-height: 1.7em;
+              }
+            }
+          }
+        }
+      }
+
+      .storyBannerSide {
+        picture {
+          overflow: hidden;
+
+          img {
+            border-radius: 20px;
+            height: 678px;
+            width: 100%;
+            object-fit: cover;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+
+    .ourVsnMs {
+      position: relative;
+
+      .ourVsnMsHeader {
+        display: block;
+        text-align: center;
+        font-family: "Tajawal", sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        padding: 40px 0 40px;
+      }
+
+      .ourVMsContent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+        .ourVisionItem {
+          background-color: #161616;
+          color: #fff;
+        }
+
+        .ourMisionItem {
+          color: #161616;
+          background-color: #cafd00;
+        }
+
+        .ourVmsItems {
+          display: flex;
+          flex-direction: column;
+          border-radius: 20px;
+          padding: 35px;
+          font-family: "Tajawal", sans-serif;
+
+          .vision {
+            font-weight: 700;
+            font-size: 25px;
+          }
+
+          .mision {
+            font-weight: 700;
+            font-size: 25px;
+          }
+
+          .VnMDesc {
+            padding: 35px 0;
+            // font-size: 17px;
+            font-weight: 200;
+          }
+
+          .VisionDesc {
+            font-size: 20px;
+            // font-weight: 200;
+            display: block;
+          }
+
+          .MisionDesc {
+            font-size: 18px;
+          }
+
+          .misionItemUl {
+            padding: 20px 25px;
+            list-style: decimal;
+          }
+        }
+      }
+    }
+  }
 }

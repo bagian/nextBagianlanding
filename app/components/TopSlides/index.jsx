@@ -46,89 +46,89 @@ export default function MarqueeText() {
             <div className={styles.motionContainer}>
               <div className={styles.motion} ref={motionTextOne}>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
-                <span className="flex gap-10">
-                  Website Sekolah Darul Husada Surabaya
+                <span className="flex gap-8">
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
@@ -136,81 +136,81 @@ export default function MarqueeText() {
               </div>
               <div className={styles.motion} ref={motionTextSecond}>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />
                 </span>
                 <span className="flex gap-8">
-                  Website Sekolah Darul Husada Surabaya
+                  Website Kost Yellow Kost
                   <StarsWhite />
-                  Monitoring Dashboard Sekolah SMA
+                  Aplikasi Kasir Berbasis Dashboard
                   <StarsWhite /> Pemeliharaan Website PT. Jaya Adi Nusantara
                   <StarsWhite /> Pemeliharaan Website CV. Agung Abadi
                   <StarsWhite />

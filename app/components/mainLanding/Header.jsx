@@ -2,7 +2,7 @@
 
 import styles from "../../styles.module.scss";
 import Link from "next/link";
-import { FiArrowRight } from "react-icons/fi";
+// import { FiArrowRight } from "react-icons/fi";
 import BgSmooth from "../../../public/img/blur-bg-bagian-smooth.png";
 import Image from "next/image";
 import SvgOne from "../svg/SvgOne";
@@ -12,6 +12,12 @@ import SvgFour from "../svg/SvgFour";
 import SvgFive from "../svg/SvgFive";
 
 function Header() {
+  const phoneNumber = "6285174295981";
+  const message =
+    "Hallo, Saya tertarik untuk melakukan pemesanan layanan (Web Design / Web Development / Web Maintenance).";
+  const urlWA = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
   return (
     <>
       <div className={`${styles.headerContainer_hd}`}>
@@ -39,7 +45,8 @@ function Header() {
           <div className={`${styles.headerButton_hd} flex m-auto`}>
             <Link
               target="_blank"
-              href="https://wa.link/s9c4s2"
+              href={urlWA}
+              rel="noopener noreferrer"
               className={`${styles.headerButton_link}`}
             >
               <button

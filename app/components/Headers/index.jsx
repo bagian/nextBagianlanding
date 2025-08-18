@@ -47,6 +47,12 @@ export default function Navigation(e) {
         value: "User clicked on tab",
       });
   };
+  const phoneNumber = "6285174295981";
+  const message =
+    "Hallo, Saya tertarik untuk melakukan pemesanan layanan (Web Design / Web Development / Web Maintenance).";
+  const urlWA = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
   return (
     <>
       <div className={styles.main}>
@@ -89,7 +95,7 @@ export default function Navigation(e) {
               </ul>
               <div className="hidden md:flex lg:flex">
                 <Link
-                  href="https://wa.link/s9c4s2"
+                  href={urlWA}
                   target="_blank"
                   onClick={() => trackTabClick("Hubungi Kami")}
                 >

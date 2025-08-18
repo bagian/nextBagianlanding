@@ -11,8 +11,8 @@ export default function TentangKami() {
       <div className={`${styles.pageContainer}`}>
         <div className={`${styles.pageContent}`}>
           <div className={`${styles.pageHeader}`}>
-            <span>
-              Kami membantu bisnis anda dan siap berkembang secara digital.
+            <span className="font-extrabold uppercase">
+              Kami siap membantu bisnis anda untuk berkembang secara digital
             </span>
             <div className={`${styles.headerBanner}`}>
               <picture>
