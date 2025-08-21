@@ -20,10 +20,10 @@ export const openGraphImage = {
 };
 // Menyiapkan metadata untuk SEO dan sharing
 // Memperbaiki metadata untuk Twitter agar gambar Open Graph muncul ketika dibagikan
-export const updateTwitterImage = () => {
-  metadata.metaTags["twitter:image"] = openGraphImage.url; // Menggunakan .url bukan .src
-  metadata.twitter.image = openGraphImage.url; // Menggunakan .url bukan .src
-};
+// export const updateTwitterImage = () => {
+//   metadata.metaTags["twitter:image"] = openGraphImage.url; // Menggunakan .url bukan .src
+//   metadata.twitter.image = openGraphImage.url; // Menggunakan .url bukan .src
+// };
 
 export const metadata = {
   title: "Bagian - Software House",
